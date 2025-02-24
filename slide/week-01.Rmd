@@ -221,6 +221,8 @@ The **Mobile Revolution** involves mobile phones evolving from simply ways to ta
 
 - The printing press, telegraph, radio, and television each transformed political discourse in distinct ways.
 
+.center[<img src = 'https://i.guim.co.uk/img/media/de1500cd6b83cb3e27edd5ac180b96954591f32e/40_37_2149_1289/master/2149.jpg?width=1900&dpr=2&s=none&crop=none' width = '35%'></img>]
+
 - The rise of the Internet and social media and digital platforms has brought about a decentralized, user-driven form of political communication, changing how politicians, activists, and the public interact.
 
 ---
@@ -228,7 +230,8 @@ The **Mobile Revolution** involves mobile phones evolving from simply ways to ta
 ## The Internet and the Platform Era
 - The Internet became a major force in global politics in the late 1990s and early 2000s.
 - The widespread adoption of smartphones accelerated the shift towards mobile-first digital interactions.
-- The Arab Spring demonstrated the potential of social media to mobilize protests and activism, while subsequent events, such as Brexit and the 2016 U.S. elections, highlighted concerns about digital manipulation and disinformation.
+- The **Arab Spring** demonstrated the potential of social media to mobilize protests and activism, while subsequent events, such as **Brexit** and the **2016 U.S. elections**, highlighted concerns about digital manipulation and disinformation.
+.center[<img src = 'https://www.eurozine.com/wp-content/uploads/2011/05/467296493cb09f9eeb7ae83927b275e9.jpg' width = "30%"></img>]
 - The platform era signifies the dominance of a few large corporations in structuring political conversations, often with opaque algorithms determining visibility and engagement.
 
 ---
@@ -241,23 +244,28 @@ The **Mobile Revolution** involves mobile phones evolving from simply ways to ta
 
 ### Negative Impacts:
 - Communication power concentration (and emergence of a new form of power)
-- The spread of misinformation and conspiracy theories (no editorial control by platforms).
-- Algorithm-driven polarisation leading to echo chambers and filter bubbles.
-- The commodification of political discourse through data-driven advertising and microtargeting.
+- The spread of information disorders (no editorial control by platforms).
+- Algorithm-driven **polarisation** leading to **echo chambers** and **filter bubbles**.
+- The **simplifcation and commodification of political discourse** through data-driven advertising and microtargeting.
 
 ---
 
-## Platforms and Political Actors
+## Platforms as Political Actors
 - **Political leaders** use platforms to engage directly with constituents, bypassing traditional media gatekeepers.
 - **Journalists** rely on social media for real-time reporting and audience engagement.
 - **Civil society organizations** leverage digital platforms for advocacy, petitions, and awareness campaigns.
 - **Citizens** use social media to participate in political discussions, share content, and mobilize for causes.
-- The interplay between these actors reshapes political communication in fundamental ways.
+- **Platforms** emerge as a new type of actor exercising large and un-checked communication power. 
+
+.content-box-yellow[The interplay between these actors reshapes political communication in fundamental ways].
 
 ---
 
 ## Platform Power and Media Systems
 - Platforms serve as both **infrastructure** and **gatekeepers** of political discourse.
+
+.center[<img src = "https://images.jpost.com/image/upload/q_auto/c_fill,g_faces:center,h_537,w_822/452281" width = "30%"></img>]
+
 - Affordances of platforms, influence what information gains traction.
 - Media systems are increasingly **hybrid**, blending traditional broadcast media with digital-first content distribution.
 - Example: Twitter (before Elon Musk bought it in 2022) had became a primary space for political scandals and crisis management, forcing traditional media to respond to trending digital conversations.
@@ -266,7 +274,11 @@ The **Mobile Revolution** involves mobile phones evolving from simply ways to ta
 
 ## What are affordances?
 
-Bucher and Helmond (2018) define affordances as a **relational property that describes the possibilities for action provided by an environment or technological system**. The concept originates from ecological psychology and has been adapted in design studies and media research. In the context of social media platforms, affordances are *not static* features but *dynamic relationships* between *users and the platform*'s technological architecture.
+Bucher and Helmond (2018) define affordances as a 
+
+> **relational property that describes the possibilities for action provided by an environment or technological system**. 
+
+The concept originates from ecological psychology and has been adapted in design studies and media research. In the context of social media platforms, affordances are *not static* features but *dynamic relationships* between *users and the platform*'s technological architecture.
 
 In essence, affordances define .content-box-yellow[what users can do on a platform], but .content-box-yellow[they do not dictate behaviour]—rather, they .content-box-yellow[structure possibilities and constraints within the platform environment].
 
@@ -350,8 +362,10 @@ or try https://sres.sydney.edu.au/go/67b810a74ca9f8033cbea6e2]
 - Understanding media systems in political communication requires a multidisciplinary approach.
 
 ---
+class: center, middle
+# Attendance
 
-## Attendance: Get your phone out again!
+## Get your phone out again!
 
 
 ---
