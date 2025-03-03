@@ -39,6 +39,15 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 
 I would like to acknowledge the Traditional Owners of Australia and  recognise their continuing connection to land, water and culture. The  University of Sydney is located on the land of the Gadigal people  of the Eora Nation. I pay my respects to their Elders, past and present.
 
+---
+
+## GOVT3901: Housekeeping
+
+- Tutorials start this week! Please make sure you know your tutorial's time, location and teacher (you should have received an email!).
+
+- Help your tutor get to know you better (and faster) by uploading your photo and recording the pronunciation of your name on Canvas (under the [Getting to know you better](https://canvas.sydney.edu.au/courses/64068/pages/getting-to-know-you-better?module_item_id=2637709) page) - this is of course totally optional.
+
+- Remember you can also engage in the weekly discussion board!
 
 ---
 
@@ -47,9 +56,6 @@ I would like to acknowledge the Traditional Owners of Australia and  recognise t
 **Note** When not otherwise referenced, materials are based on and adapted from from Klinger, U., Kreiss, D., & Mutsvairo, B. (2023). *Platforms, power, and politics: An introduction to political communication in the digital age*. Polity.
 
 ]
-
-
-
 
 ---
 
