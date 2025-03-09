@@ -240,6 +240,22 @@ class: segue-red
 | **5. Economic Power**                   | - Significant influence on market dynamics and competition<br>- Central in debates over regulation and anti-trust policies |
 | **6. Technological Power**              | - Use of algorithms for automated decision-making and content visibility<br>- Algorithms embed political and social values and biases |
 
+
+---
+
+## In-class task!
+
+.center[.content-box-green[
+
+In-class tasks during lectures are not assessed but participation is timestamped and recorded.
+
+]]
+
+.center[<img src = '../img/week-03-qr-inclass-task.png' width = '25%'> 
+
+or try https://sres.sydney.edu.au/go/67cdfd6893e32379e75dd2de]
+
+
 ---
 
 ## You might remember the three forms of communication power from last week...
