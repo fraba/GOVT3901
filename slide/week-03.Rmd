@@ -56,9 +56,9 @@ class: segue-red
 
 ---
 
-## First let's define a Key Concept behind Platforms: The Nework Effect
+## First let's define a Key Concept behind Platforms: The Network Effect
 
-- **Definition:** .conten-box-green[A phenomenon where the value or utility a user derives from a good or service increases as the number of users of that good or service grows.]
+- **Definition:** .content-box-green[A phenomenon where the value or utility a user derives from a good or service increases as the number of users of that good or service grows.]
 
 - **Key Idea:**
   - More users → greater value
