@@ -1,0 +1,229 @@
+---
+title: "GOVT3901</br>Digital Politics"
+subtitle: "Week 04</br>Platforms, Public Sphere and Public Opinion"
+author: "Francesco Bailo"
+institute: "The University of Sydney"
+date: "Semester 1, 2025 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/en/6/6a/Logo_of_the_University_of_Sydney.svg)
+background-size: 95%
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
+                      dev = 'svg', out.width = "45%", fig.width = 6,
+                      fig.align="center")
+
+```
+
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and  recognise their continuing connection to land, water and culture. The  University of Sydney is located on the land of the Gadigal people  of the Eora Nation. I pay my respects to their Elders, past and present.
+
+
+---
+
+.content-box-green[
+
+**Note** When not otherwise referenced, materials are based on and adapted from from Klinger, U., Kreiss, D., & Mutsvairo, B. (2023). *Platforms, power, and politics: An introduction to political communication in the digital age*. Polity.
+
+]
+
+
+---
+
+## Introduction
+- Political communication occurs within **public spheres**, where citizens engage in discussions, debates, and political actions.
+- **Digital platforms** have transformed the public sphere by altering:
+  - How opinions are formed.
+  - The reach of political messaging.
+  - The nature of political mobilization.
+- While public spheres **enable democracy**, they are often sites of **conflict and contestation**.
+- **Quote**: *“A democratic system is damaged as a whole if the infrastructure of the public sphere cannot direct the .content-box-yeallo[attention] of citizens to the relevant issues that need to be decided, and can no longer guarantee the formation of competing public opinions, i.e., qualitatively filtered opinions.”* (Habermas, 2021)
+
+
+.footnote[Habermas, J. (2021) “Überlegungen und Hypothesen zu einem erneuten Strukturwandel der politischen Öffentlichkeit.” In M. Seeliger & S. Sevignani (eds.) *Ein neuer Strukturwandel der Öffentlichkeit? Sonderband Leviathan 37* (2021). ]
+
+---
+
+## The Importance of Public Spheres
+- The concept of **public spheres** has been central to political communication theory for decades.
+- Public spheres serve key functions:
+  - **Opinion formation** – citizens express and shape collective viewpoints.
+  - **Public accountability** – political actors are scrutinized.
+  - **Democratic participation** – civic engagement and mobilization.
+- Digital platforms **both enhance and challenge** these functions.
+
+---
+
+## Digital Platforms and Public Spheres
+- Platforms like Facebook, Twitter, TikTok, and YouTube serve as **primary public arenas** in the digital age.
+- They differ from traditional public spheres in that they are:
+  - **Algorithmically curated** – what users see is determined by machine learning models.
+  - **Privately owned** – platforms are **corporate-controlled**, not state-regulated (except in some countries).
+  - **Monetized through engagement** – content that generates clicks is prioritized.
+- **Platforms are not neutral** – their design and business models shape public discourse.
+
+---
+
+## The Structure of Public Spheres
+- Public spheres exist **between** different forces:
+  - **The state** – Government institutions influence public discourse through policy and official messaging.
+  - **The market** – Commercial interests shape public discussions via media ownership and advertising.
+  - **The private sphere** – Personal interactions and relationships affect public dialogue.
+- **Platforms blur these distinctions**:
+  - State actors use them for governance and propaganda.
+  - Commercial entities manipulate public opinion for profit.
+  - Private discussions frequently become political.
+
+---
+
+## Public Spheres in the Digital Era
+- Historically, public spheres were tied to **physical spaces** (coffeehouses, town halls, newspapers).
+- Today, they exist in **networked, digital environments**.
+- This shift has led to:
+  - **Greater participation** – anyone can contribute.
+  - **Global interconnectivity** – national borders are less relevant.
+  - **Faster information spread** – issues emerge and escalate rapidly.
+
+---
+
+## The Emergence of Digital Counterpublics
+- **Counterpublics** are groups that challenge dominant narratives within public spheres.
+- **Examples of digital counterpublics**:
+  - **Black Twitter** – A digital space where Black users challenge racism, police brutality, and mainstream media narratives.
+  - **#MeToo Movement** – A social media-driven campaign against sexual harassment and assault.
+  - **Climate Activism (e.g., Fridays for Future)** – Youth-led movements using platforms to mobilize global protests.
+- Counterpublics provide spaces for marginalized voices to develop alternative discourses and challenge dominant power structures.
+
+---
+
+## Understanding Black Twitter  
+- **Black Twitter** is an online space where African Americans engage in discourse on racial justice, politics, and culture.  
+- It has played a major role in **national conversations** on racial inequality and police violence.  
+- **Key functions**:
+  - **Cultural expression** – Sharing experiences, humor, and commentary on Black life.  
+  - **Political mobilization** – Organizing protests and activism (#BlackLivesMatter, #ICantBreathe).  
+  - **Media critique** – Holding journalists and politicians accountable.  
+- **Quote**: *“Black Twitter possesses more of the characteristics of a counterpublic compared to other hashtag-based publics.”*
+
+---
+
+## Black Twitter as a Digital Counterpublic  
+- **Counterpublics** challenge dominant narratives and provide alternative spaces for marginalized voices (Fraser, 1990).  
+- **Findings from the study**:
+  - **More interactive than mainstream political hashtags** – Black Twitter users reply and discuss more than they simply retweet.  
+  - **Distinct thematic content** – Unlike mainstream political spheres, Black Twitter focuses on issues of racial justice.  
+  - **Challenges mainstream discourse** – Critiques media framing of Black issues and amplifies alternative perspectives.  
+- **Example**: The viral nature of hashtags like **#BlackLivesMatter** has influenced mainstream political debates.  
+- **Key takeaway**: Black Twitter serves as a **parallel discourse space**, shaping public opinion while resisting dominant narratives.  
+
+---
+
+## How Platforms Shape Public Spheres
+- Platforms influence discourse through:
+  - **Algorithmic amplification** – Some voices are prioritized over others.
+  - **Personalization** – Users see information tailored to their past behavior.
+  - **Content moderation** – Platforms enforce rules that shape what is allowed.
+- **Key challenge**: Platforms balance free expression with preventing harmful content.
+
+## Affective Publics and the Role of Emotion
+- Political communication on platforms is often **emotionally charged**.
+- **Affective publics**: Groups mobilized around shared emotions, such as outrage or solidarity.
+- **Examples**:
+  - Viral political hashtags (#BlackLivesMatter, #StopTheSteal).
+  - Protest movements that gain traction through emotional narratives.
+- **Quote**: *“The intensity of emotion can disrupt dominant political storytelling and narratives.”*
+
+## The Rise of Polarization: Filter Bubbles and Echo Chambers
+- **Filter bubbles**: Users are algorithmically exposed to content that aligns with their views.
+- **Echo chambers**: Users actively seek out like-minded communities, reinforcing their beliefs.
+- **Reality check**:
+  - Not all users are trapped in bubbles.
+  - Some are exposed to opposing views through incidental exposure.
+  - **Platforms often amplify divisive content** to increase engagement.
+
+## Disinformation and Manipulation in Public Spheres
+- Platforms are used for **propaganda, misinformation, and manipulation**.
+- **Key issues**:
+  - **Fake news** spreads faster than factual information.
+  - **State-sponsored disinformation** campaigns influence elections.
+  - **Conspiratorial movements** (e.g., QAnon) exploit digital public spheres.
+- **Platforms struggle to moderate harmful content effectively**.
+
+## Case Study: Algorithmic Influence on Political Discourse
+- **Facebook’s internal study** found that its algorithms led users towards **far-right extremist content**.
+- **Twitter’s algorithm** amplifies content from right-wing political actors more than left-wing ones.
+- **YouTube’s recommendation system** has been accused of **radicalizing viewers** by suggesting extremist content.
+- **Key question**: Can platforms design algorithms that **prioritize truth over engagement**?
+
+## The Future of Public Spheres: Opportunities
+- Despite challenges, platforms provide **new possibilities** for public discourse:
+  - **Increased political engagement** – More people are informed and active.
+  - **Decentralized activism** – Grassroots movements can gain traction without traditional media.
+  - **Fact-checking initiatives** – Collaborative efforts counter disinformation.
+
+## The Future of Public Spheres: Challenges
+- **Corporate power over digital spaces** – A few companies control most online public discourse.
+- **Lack of transparency** – Algorithmic decision-making is largely hidden from users.
+- **Regulatory dilemmas** – Governments struggle to balance platform accountability with free speech protections.
+
+## The Role of Journalism in Public Spheres
+- Platforms have **weakened traditional journalism** but also created **new journalistic forms**:
+  - **Digital-native investigative journalism** (e.g., Bellingcat, ProPublica).
+  - **Fact-checking collaborations** to combat misinformation.
+  - **Citizen journalism** – ordinary people document political events in real time.
+
+## Regulatory Responses to Platform Power
+- **Different countries approach platform regulation in different ways**:
+  - **EU’s Digital Services Act** – Forces platforms to moderate harmful content more aggressively.
+  - **Australia’s News Media Bargaining Code** – Requires platforms to pay news organizations for content.
+  - **China’s strict internet regulations** – Government controls digital discourse directly.
+- **Open question**: How should democracies regulate platforms while preserving free speech?
+
+## Conclusion: The Future of Public Spheres
+- Platforms **reshape** rather than replace public spheres.
+- **Key questions for the future**:
+  - Can platforms be **better regulated** to protect democratic discourse?
+  - Will **alternative platforms** emerge to challenge existing tech giants?
+  - How can citizens become **more media-literate** in navigating digital public spheres?
+- **Quote**: *“While platforms are very good at monetizing social relations, they are not particularly good at nurturing public spheres.”*
+
+
+---
+class: center, middle
+# Attendance
+
+## Get your phone out!
+
+
+---
+class: inverse, center, middle
+
+# Any Quick Question?
+
+---
+class: center, middle
+
+# See you next week!
+
+
