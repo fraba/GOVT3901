@@ -1,0 +1,473 @@
+---
+title: "GOVT3901</br>Digital Politics"
+subtitle: "Week 06</br>Platforms and Strategic Political Communication"
+author: "Francesco Bailo"
+institute: "The University of Sydney"
+date: "Semester 1, 2025 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/en/6/6a/Logo_of_the_University_of_Sydney.svg)
+background-size: 95%
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
+                      dev = 'svg', out.width = "45%", fig.width = 6,
+                      fig.align="center")
+
+```
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and  recognise their continuing connection to land, water and culture. The  University of Sydney is located on the land of the Gadigal people  of the Eora Nation. I pay my respects to their Elders, past and present.
+
+
+
+---
+
+.content-box-green[
+
+**Note** When not otherwise referenced, materials are based on and adapted from from Klinger, U., Kreiss, D., & Mutsvairo, B. (2023). *Platforms, power, and politics: An introduction to political communication in the digital age*. Polity.
+
+]
+
+
+---
+
+## Overview
+
+- What is strategic political communication?
+- How platform logics have changed it
+- Key domains:
+  - Public opinion
+  - Political marketing
+  - Public relations and public diplomacy
+  - Crisis communication
+  - Digital lobbying
+- Implications for democracy
+
+---
+
+---
+
+## In-class task!
+
+.center[.content-box-green[
+
+In-class tasks during lectures are not assessed but participation is timestamped and recorded.
+
+]]
+
+.center[<img src = '../img/week-06-qr-inclass-task.png' width = '25%'> 
+
+or try https://sres.sydney.edu.au/go/67e99c0dde35554018b2e479
+
+]
+
+---
+class: segue-red
+
+# What is Strategic Political Communication?
+
+---
+
+## Defining Strategic Political Communication
+
+> “Strategic political communication is as old as humanity itself.”  
+
+- Involves **intentional efforts** to achieve political goals through communication  
+- Goals might include:
+  - Legitimising political systems or actors
+  - Persuading publics or elites
+  - Mobilising support
+  - Contesting meanings or framing issues
+- Can be public (e.g. campaigns) or hidden (e.g. lobbying)
+
+---
+
+## Strategic ≠ Deliberative
+
+> “This is different from processes like ‘deliberation,’ where the goal is to arrive at a shared set of ends in a mutual, or general, interest.”  
+
+- Strategic communication is **instrumental**: it aims to persuade, mobilise, or win.
+- It often involves:
+  - **Asymmetric persuasion** – one-sided attempts to shape audience beliefs
+  - **Identity mobilisation** – constructing "us" vs "them" distinctions
+  - **Message control** – simplifying and repeating narratives to maximise impact
+- It **emphasises outcomes over consensus**, success over understanding
+
+---
+
+### Public Sphere vs Strategic Communication
+
+In contrast, the **public sphere** refers to the ideal of **rational-critical debate** among citizens:
+
+> “Only in and through public spheres do citizens create and get information about issues of common concern, hear various opinions and arguments, and give shape and voice to their own identities, preferences, and grievances.” (Ch 4) 
+
+- Public spheres are ideally:
+  - **Inclusive** and open to all
+  - Grounded in **deliberation**, not manipulation
+  - A space to form **public opinion** through dialogue and exposure to diverse perspectives
+- However, platform logics increasingly reward **strategic**, not deliberative, communication:
+  - Emotional engagement > rational argument
+  - Virality > nuance
+  - Influence > understanding
+
+---
+
+> “Public spheres are where individual opinions, interests, and enthusiasm or outrage are aggregated into public opinion, common policy concerns, and even social movements.”  (Ch 4)
+
+.content-box-yellow[
+
+**Strategic communication thrives on platforms**, but it may do so at the **expense of deliberative ideals** and the health of the democratic public sphere.
+
+] 
+
+.center[<img src = 'https://media1.tenor.com/m/nQIZ296FVzUAAAAC/court-jury.gif'>]
+
+---
+class: segue-red
+
+# Platforms and the Transformation of Strategic Communication
+
+---
+
+## Platform Logics and the Changing Landscape
+
+> “The Internet, and platforms especially, have dramatically lowered the cost and capital required to produce political information and speak to publics.”
+
+**Platform logics have changed**:
+- **Who can communicate** strategically (more actors, fewer gatekeepers)
+- **How information spreads** (virality, engagement-driven)
+- **Speed and visibility** of messaging (24/7, algorithmically amplified)
+
+---
+
+## Fragmentation and the Proliferation of Publics
+
+> “Alongside [journalism] is the seemingly endless profusion of new groups and audiences sustained through communication, which give shape to social life.”  
+
+Strategic communication now takes place across a **highly fragmented media environment**, where political actors must adapt their tactics to reach multiple overlapping or competing publics.
+
+### Key Arenas:
+- **Mainstream media**: traditional broadcast and print media remain important but are no longer dominant gatekeepers.
+- **Alternative and partisan media**: outlets aligned with ideological or identity-based positions that cater to niche audiences.
+- **Influencer networks**: political messages spread via creators and influencers on platforms like TikTok, YouTube, and Instagram, often blending entertainment and activism.
+- **Identity-driven subgroups**: online communities organised around shared cultural, racial, religious, or political identities (e.g. diasporic networks, LGBTQIA+ activists, nationalist subreddits).
+
+---
+
+## Rise of Affective Publics
+
+> “This includes… ‘affective publics’ shaped by emotional flows of communication.”  
+
+- Coined by Zizi Papacharissi, **affective publics** are:
+  - Loosely networked
+  - Organised more by **emotion than ideology**
+  - Mobilised around hashtags, outrage, or shared sentiment (e.g. #MeToo, #IStandWithDan)
+- They often **emerge quickly**, driven by social media dynamics
+- Strategic communicators seek to **tap into these emotional currents**, whether by:
+  - Evoking moral outrage
+  - Reinforcing in-group identity
+  - Using humour, irony, or spectacle
+
+---
+
+## Implications for Strategy
+
+
+```{r echo = FALSE, out.width="70%", fig.align='center'}
+library(DiagrammeR)
+
+grViz("
+digraph mass_to_fragmented {
+  graph [layout = dot, rankdir = LR]
+
+  node [shape = box, style = filled, fillcolor = '#a6cee3']
+  A [label = 'Mass Audience\\n(One-to-Many)']
+
+  node [shape = ellipse, style = filled, fillcolor = '#b2df8a']
+  B [label = 'Alt Media Public']
+  C [label = 'Influencer Fandom']
+  D [label = 'Identity Group']
+  E [label = 'Affective Public']
+  F [label = 'Micro Community']
+
+  A -> B
+  A -> C
+  A -> D
+  A -> E
+  A -> F
+}
+")
+
+```
+
+---
+
+- The decline of the “mass audience” forces communicators to:
+  - Customise content for different publics
+  - Manage contradictory messages across platforms
+  - Balance broad messaging with microtargeted appeals
+- Platform affordances (e.g. trending topics, algorithmic boosts) shape **what gets traction**—often privileging emotionally resonant over factually complex messages
+
+.content-box-yellow[
+
+Strategic communication today is about **navigating a fragmented, emotional, and highly visible digital environment.**
+
+]
+
+---
+
+## Where have you seen examples of political communication that felt emotionally persuasive but not informative?
+
+.center[<img src = '../img/week-06-qr-menti.png' width = '25%'> 
+
+or try https://www.menti.com/altcdquhopd8]
+
+
+---
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/al6hqrxw6bvspf3hsxged8rdf96rjdbj/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+---
+class: segue-red
+
+# Strategic Communication and Public Opinion
+
+---
+
+## Public Opinion as a Strategic Battlefield
+
+Strategic communication operates on the premise that **public opinion isn’t just measured — it’s constructed** through a range of communicative practices:
+
+.small[
+
+.pull-left[
+
+- **Polls**: 
+  - Quantitative snapshots that *create* a public by asking specific questions.
+  - What is asked — and how — shapes what counts as ‘opinion’.
+  - Used to claim public support or identify constituencies.
+
+- **Media narratives**: 
+  - Journalists, commentators, and broadcasters frame public sentiment by selecting which voices and events to amplify.
+  - News stories often speak *on behalf of* "the public".
+
+]
+
+.pull-right[
+
+- **Platform analytics**: 
+  - Metrics like likes, shares, and comments become *proxies* for opinion.
+  - Politicians and communicators use engagement stats to shape decisions, messaging, and target audiences.
+
+- **Political claims**: 
+  - Leaders routinely invoke “what the public wants” to advance agendas.
+  - These are often rhetorical devices that *construct* a public aligned with a speaker’s goals.
+
+
+]
+
+]
+
+---
+
+## Constructing Publics and Identities
+
+> “Strategic communication… is centrally concerned with the making, convening, mobilizing, persuading, maintenance, or manipulation of publics.”
+
+.center[<img src = 'https://media1.tenor.com/m/tn8M_LiWayIAAAAd/home-alone.gif' width = '20%'>]
+
+- Publics are not pre-existing — they’re built through:
+  - Narratives
+  - Symbolic appeals
+  - Identity work
+- E.g. “The people,” “taxpayers,” “patriots,” “climate voters”
+
+---
+
+.content-box-yellow[
+
+Strategic communicators use these representations of public opinion to:
+
+- **Justify policies**: “We’re doing what people want.”
+- **Exert pressure**: Mobilise opinion as a tool to influence institutions and opponents.
+- **Construct legitimacy**: Claim democratic authority by aligning with the ‘will of the people’.
+
+Public opinion, in this view, is not discovered — it is **strategically assembled, shaped, and invoked**.
+
+]
+
+
+---
+class: segue-red
+
+# Political Marketing
+
+---
+
+## Political Marketing in the Platform Era
+
+> “Platforms incentivize the most engaging content… often the most extreme, emotional, identity-based, or ideologically consistent.”  
+
+**Political marketing** refers to sustained campaigns designed to **promote ideas, policies, candidates, parties**, or influence public attitudes and policy outcomes.
+
+---
+
+### How platforms reshape political marketing:
+
+.small[
+
+- **Targeting strategies**:
+  - Use of **microtargeting**: tailored content to individuals or micro-audiences based on behaviour, demographics, interests.
+  - **Influencer outreach**: collaboration with digital creators to embed political messages in trusted, personalised voices (especially among youth or disengaged publics).
+
+- **Message design**:
+  - Platforms favour **short, emotionally engaging content** – content that provokes outrage, hope, pride, or fear is more likely to be shared.
+  - Rise of **visual storytelling**: memes, TikToks, and livestreams are often more persuasive than policy documents or traditional ads.
+
+- **Audience construction**:
+  - Rather than reaching ‘everyone,’ marketers now build and target **niche publics** — interest-based, identity-based, or affect-driven groups.
+  - **Data analytics** allow parties and causes to segment, track, and experiment with different appeals in real time.
+
+]
+
+---
+
+Political marketing on platforms is **not just about visibility** — it's about **strategic alignment of message, medium, and moment** to influence behaviour and shape public meaning.
+
+.content-box-yellow[
+
+The logic of political communication shifts from broadcasting to **precision persuasion**.
+
+] 
+
+
+
+---
+class: segue-red
+
+# Public Relations and Public Diplomacy
+
+---
+
+## Public Relations in a Hybrid Media System
+
+> “Press releases are now rarely just for journalists.”
+
+- Public relations = relationship-building with stakeholders
+  - Journalists
+  - Influencers
+  - Supporters
+- Press releases → social media posts, livestreams, Instagram stories
+- Platform PR uses:
+  - **Visual storytelling**
+  - **Real-time feedback** (e.g. sentiment analysis)
+  - **Cross-platform narratives**
+
+---
+
+## Public Diplomacy in the Digital Age
+
+> “Digital platforms opened the opportunity to speak to international audiences... for a wider range of actors including NGOs, small activist groups, and even terrorist groups.”
+
+- Governments communicate with foreign publics
+- Goals: shape image, influence opinion, apply pressure
+- Includes:
+  - Nation-branding
+  - Crisis responses
+  - Disinformation (e.g. Russian troll farms)
+
+---
+
+## Case: Schwarzenegger’s Anti-War Video
+
+> “It is a brilliant example of persuasive communication, employing psychological techniques to gain the trust of the audience and break their resilience against a message they might not want to hear.”
+
+- Addressed to Russian citizens during Ukraine invasion
+- Appeals to shared cultural symbols, emotion, personal narrative
+- Circulated via Twitter — bypassed traditional diplomacy
+
+.center[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fWClXZd9c78?si=XTqVVGfkSK6xAv2m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+]
+
+---
+class: segue-red
+
+# Crisis Communication
+
+---
+
+## Communicating During Crisis
+
+> “Crises are fluid, and communicative demands can change as the crisis morphs.”
+
+- Challenges:
+  - Fast-evolving info
+  - Need for transparency **and** reassurance
+  - Balancing consistency with adaptability
+- Examples:
+  - Covid-19 messaging
+  - Environmental disasters
+  - Political scandals
+
+---
+
+## Strategic Use of Crises
+
+- Crisis = opportunity for:
+  - Reframing events
+  - Demonstrating leadership
+  - Blame avoidance
+- Platforms accelerate:
+  - Rumours and misinformation
+  - Public backlash or support
+  - Narratives of victimhood or heroism
+
+---
+
+# Platforms and Strategic Political Communication 
+
+## Key Takeaways
+
+- Strategic communication is central to political power and consent
+- Platforms have transformed its logic, speed, actors, and effects
+- Public opinion, identity, and legitimacy are all contested communicatively
+- Understanding strategic communication helps decode modern politics
+
+---
+class: center, middle
+# Attendance
+
+## Get your phone out!
+
+
+---
+class: inverse, center, middle
+
+# Any Quick Question?
+
+---
+class: center, middle
+
+# See you next week!
+
+
