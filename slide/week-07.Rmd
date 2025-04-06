@@ -57,6 +57,22 @@ I would like to acknowledge the Traditional Owners of Australia and  recognise t
 - Introduces the “four ages of campaigning” model.
 
 ---
+
+## In-class task!
+
+.center[.content-box-green[
+
+In-class tasks during lectures are not assessed but participation is timestamped and recorded.
+
+]]
+
+.center[<img src = '../img/week-07-qr-inclass-task.png' width = '25%'> 
+
+or try https://sres.sydney.edu.au/go/67f2f60ede35554018fd4e8c
+
+]
+
+---
 class: segue-red
 
 # Introduction
