@@ -184,7 +184,7 @@ class: segue-red
 
 ---
 
-## Target-Group-Centred Campaigning
+## 3. Target-Group-Centred Campaigning
 
 > "Broadcasting messages to the mass public increasingly sat alongside what scholars called 'narrowcasting' by the 1990s."
 
