@@ -461,18 +461,85 @@ class: segue-red
 
 ---
 
+## 1. Attention and Interaction  
 
-## Attention and Interaction
+.small[
 
-> “Candidates treated websites primarily as one-way... This began to change during the early and mid-2000s.”
+.pull-left[
 
-- **Interactivity** now central to campaign strategy.
-- Platforms offer controlled environments for structured engagement.
+### From Broadcast to Engagement
+- Early campaign websites were one-way, mass-media style.
+- Social media introduced *interactive* campaigning—e.g. forums, Meetups, supporter sharing.
+- Campaigns use “structured” or “controlled” interaction to steer engagement (e.g. curated Q&As, pre-loaded content).
 
-## Mobilisation and Demobilisation
+### Context Shapes Tech Uptake
+- Adoption depends on political, institutional, and media environments.
+- E.g. Austria’s late social media uptake due to fear of ridicule or failure.
 
-- Platforms mobilise volunteers, donations, votes.
-- Also used to demobilise opponents via disinformation or discouragement.
+
+]
+
+.pull-right[
+
+### Authenticity and Perception
+- Voters respond to *"authenticity illusions”*—strategic performances of realness.
+- Despite interactive potential, campaigns still largely use social media to *broadcast*, not dialogue.
+
+]
+
+
+
+]
+
+---
+
+## 2. Persuasion  
+
+### Strategic Communication
+- Campaigns try to shift opinions, identities, emotions—but real persuasion is hard.
+- Most people hold stable political views shaped by long-term socialisation.
+
+### Role of Social Media
+- Blends mass messaging with interpersonal sharing.
+- Messages often received via *weak ties* (friends, acquaintances), increasing credibility.
+
+### Identity and Issue Appeals
+- Campaigns aim to make certain identities (e.g. national, economic) or issues feel urgent.
+- Politicians try to persuade voters to *prioritise* those identities/issues at the ballot box.
+
+---
+
+## 3. Mobilisation and Demobilisation  
+
+.small[
+
+.pull-left[
+
+### Mobilising Supporters
+- Easier to mobilise partisans than persuade swing voters.
+- Campaigns use: partisan messaging, peer-to-peer sharing, “I Voted” buttons, and social pressure.
+- Social norms on platforms can influence turnout.
+
+### Demobilising Opponents
+- Strategies include:
+  - Avoiding controversy to keep opposition passive (e.g. Merkel)
+  - Negative ads to lower enthusiasm
+  - Disinformation to confuse or discourage
+
+
+]
+
+.pull-right[
+
+### Platforms as Arena
+- Social media blend all forms of campaign messaging: official, peer-shared, algorithmic.
+- Mobilisation and demobilisation both happen *within and through* platforms.
+
+]
+
+
+
+]
 
 ---
 class: segue-red
