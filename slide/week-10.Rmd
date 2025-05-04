@@ -1,0 +1,283 @@
+---
+title: "GOVT3901</br>Digital Politics"
+subtitle: "Week 10</br>Platforms, Misinformation, Disinformation, and Propaganda"
+author: "Francesco Bailo"
+institute: "The University of Sydney"
+date: "Semester 1, 2025 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/en/6/6a/Logo_of_the_University_of_Sydney.svg)
+background-size: 95%
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
+                      dev = 'svg', out.width = "45%", fig.width = 6,
+                      fig.align="center")
+
+```
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and  recognise their continuing connection to land, water and culture. The  University of Sydney is located on the land of the Gadigal people  of the Eora Nation. I pay my respects to their Elders, past and present.
+
+
+
+---
+
+.content-box-green[
+
+**Note** When not otherwise referenced, materials are based on and adapted from from Klinger, U., Kreiss, D., & Mutsvairo, B. (2023). *Platforms, power, and politics: An introduction to political communication in the digital age*. Polity.
+
+]
+---
+
+class: segue-red
+# Introduction
+
+---
+
+> “The Pope endorses Donald Trump” — a Facebook hoax that went viral in 2016
+
+.center[<img src = 'https://web.colby.edu/cogblog/files/2019/12/ctm-clean-7am-cr470c-20161117-frame-79036-768x804.jpg' width = '30%'>]
+
+- Appeared absurd, yet became influential
+- A symbol of the rising global concern around false information online
+
+---
+
+## Threats to Democracy
+- **Misinformation, disinformation, and propaganda (MDP)** now seen as fundamental threats
+- Events such as QAnon, Covid-19 misinformation, and Jan 6 US Capitol riot in 2021 highlight dangers
+- Obama (in 2018): Algorithms feed bias, create bubbles, fuel polarisation
+
+## Democratic Backsliding
+> “Erosion of the institutions and norms of democracy” (Levitsky & Ziblatt, 2018)
+
+- Media and MDP play roles in undermining elections, trust, and accountability
+
+---
+
+class: segue-red
+# Definitions and Delineations
+
+---
+
+## Key Terms
+
+- **Misinformation**: False information, not intended to deceive
+- **Disinformation**: False information, intended to deceive
+- **Malinformation**: True but used harmfully or stripped of context
+- **Propaganda**: Long-term, manipulative campaigns
+
+---
+
+
+
+---
+
+## Polarisation Types
+- **Ideological**: Differences in policy views
+- **Affective**: Hostility between groups
+- **Social**: Perceived group distance
+
+## Historical Context
+- Propaganda has long been used for racial, political, and wartime purposes
+- MDP not new — only amplified by digital platforms
+
+---
+
+class: segue-red
+# 10.3 Platforms, Information, and Political Identity
+
+## Political Identity Formation
+- Identities are socially constructed: race, class, gender, nationality, etc.
+- Media play a central role in shaping and reinforcing political identities
+
+## Polarisation and Identity
+- Sorting: Partisanship as “mega-identity” (Mason, 2016)
+- Increasing alignment of political views with race, religion, geography, class
+
+## The Role of Media
+- Media help to construct “stories of peoplehood” (Smith, 2003)
+- Platforms facilitate the formation of political identities and polarisation
+
+---
+
+## Is Polarisation Always Bad?
+- Sometimes reflects real inequality, not just “division”
+- Conflict may be necessary to address systemic injustice
+
+## Technology’s Role
+- Easy to blame digital media, but structural and identity-based factors matter more
+- Elites shape identities and conflict via media narratives
+
+---
+
+class: segue-red
+# 10.4 Mis- and Disinformation and Propaganda (MDP)
+
+## What is MDP?
+> “Like a river” — flows through existing cultural and social channels
+
+- Repurposes truth, half-truths, and symbols
+- Works through existing prejudices and power structures
+
+## MDP Dynamics
+- Not new — existed since mass media era
+- Now amplified by platforms and algorithms
+- Can distort public opinion and undermine democratic accountability
+
+---
+
+## Network and Computational Propaganda
+- **Network Propaganda**: Multiple, decentralised sources reinforce messages
+- **Computational Propaganda**: Social bots, automation, and manipulation
+
+## Impact on Democracy
+- Skews public understanding
+- Targets minority candidates and vulnerable groups
+- Can silence dissent, distort opinion climates
+
+---
+
+## Deepfakes and Automation
+- AI-generated videos and manipulated content pose new threats
+- “Dark participation”: trolling, mass-reporting, hashtag hijacking
+
+---
+
+class: segue-red
+# 10.5 How MDP Works
+
+## MDP and Power
+> “MPD is a tool of political elites and systems of power”
+
+- Targets marginalised groups or amplifies dominant ones
+- Often reflects pre-existing inequality and systemic conflict
+
+## Examples
+- Facebook's role in anti-Rohingya violence in Myanmar
+- Covid-19 misinformation driven by right-wing political goals
+- “Freedom Convoy” in Canada boosted by international and online disinformation networks
+
+---
+
+## Elite Cues and Public Opinion
+- Elites shape public beliefs; MDP gains power when echoed by leaders
+- People engage with MDP to express identity and affiliation
+
+## Superusers and Networks
+- MDP is often spread by a small number of coordinated or influential actors
+- Hybrid media systems amplify messages across online and offline spaces
+
+---
+
+class: segue-red
+# 10.6 Public Knowledge, Information, and Democracy
+
+## Enlightenment Ideals
+- Rational debate, informed public central to democratic legitimacy
+- Institutions: journalism, academia, government statistics
+
+## Crises of Trust
+- Declining trust in knowledge-producing institutions
+- Platforms challenge legacy institutions; also empower marginalised voices
+
+## Inequality and Information
+- “Trust” is not universal — histories of exclusion, colonialism, and racism matter
+- Platforms and journalism often reproduce existing power dynamics
+
+---
+
+## Who Gets to Decide?
+- Who determines what is “truthful” or “harmful”?
+- What information should platforms elevate or suppress?
+
+---
+
+class: segue-red
+# 10.7 What Should Be Our Response to MDP
+
+## Individual Action
+- Be critical of content
+- Avoid sharing unverified information
+- Support fact-based institutions and marginalised voices
+
+## Collective and Institutional Action
+- Platforms must develop:
+  - Clear, democracy-worthy policies
+  - Strong moderation, especially of elite actors
+  - Transparency and accountability mechanisms
+
+## Role of Journalism
+- Journalism should:
+  - Fact-check
+  - Hold elites and platforms accountable
+  - Balance representation with commitment to truth
+
+---
+
+## Challenges
+- Some “disinformation” claims are themselves weaponised
+- Correcting MDP does not resolve deeper political conflict
+
+> Focus should be on *resilience*, not just takedowns
+
+---
+
+class: segue-red
+# 10.8 Summary
+
+## Key Takeaways
+- MDP is deeply embedded in power and identity
+- Polarisation is not always a threat — inequality often is
+- Journalism, platforms, and publics all play a role in responding
+- Trust, truth, and regulation are deeply political
+
+## Final Reflection
+> We are only beginning to understand how political communication and identity are shaped in the digital age
+
+---
+
+class: segue-red
+# Discussion Questions
+
+- How would you write a clickbait headline to lure readers into this chapter?
+- What dangers do deepfakes pose to democracy? Can they be mitigated?
+- Should platforms have the power to decide what is “true”? Why or why not?
+
+---
+class: center, middle
+# Attendance
+
+## Get your phone out!
+
+
+---
+class: inverse, center, middle
+
+# Any Quick Question?
+
+---
+class: center, middle
+
+# See you next week!
+
+
