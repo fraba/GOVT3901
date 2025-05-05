@@ -186,6 +186,15 @@ Mattes, K. & Redlawsk, D. P. (2015) The Positive Case for Negative Campaigning. 
 .center[<img src = 'https://upload.wikimedia.org/wikipedia/it/thumb/c/c9/Discesa_Berlusconi.png/960px-Discesa_Berlusconi.png' width = '45%'>]
 
 .footnote[Silvio Berlusconi’s “discesa in campo” — his entry into politics — was announced on 26 January 1994 via a 9-minute pre-recorded TV message aired on all national news programs.]
+
+---
+
+> "Our left-wing parties claim to have changed. .**They** say they’ve become liberal-democratic. But it’s not true. **Their** people are still the same, their mentality, their culture, their deepest convictions, their behaviours have remained the same. **They** don’t believe in the market, they don’t believe in private initiative, they don’t believe in profit, **they** don’t believe in the individual. **They** don’t believe the world can be improved through the free contribution of many people, each different from the other. **They** haven’t changed. Listen to them speak, watch **their** state-funded news programs, read **their** press. **They** no longer believe in anything. **They** want to turn the country into a shouting square — screaming, accusing, condemning." [...]
+
+> "**We** want to renew Italian society. **We** want to support and instil confidence in those who create jobs and prosperity. **We** want to embrace and win the great productive and technological challenges of Europe and the modern world. **We** want to make space for anyone who wants to act and build their own future — in the North as well as the South. **We** want a government and a parliamentary majority that can give due dignity to the fundamental unit of every society — the family — that can respect every faith, and that can inspire reasonable hope in those who are vulnerable: those seeking work, those in need of care, those who, after a life of hard work, have the right to live in peace."
+
+.footnote[Silvio Berlusconi in 1994: Source: https://it.wikisource.org/wiki/Italia_-_26_gennaio_1994,_Messaggio_televisivo_di_Silvio_Berlusconi]
+
 ---
 
 class: segue-red
