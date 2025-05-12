@@ -47,6 +47,121 @@ I would like to acknowledge the Traditional Owners of Australia and  recognise t
 
 ]
 
+
+---
+class: segue
+
+# But first... 
+
+# A few words about A3 (Critical analysis essay)
+
+---
+
+**Task**: 3,000-word essay critically analysing a key issue covered in the unit.
+
+Specifically,
+
+| #  | Verb     | Object                        |
+|----|----------|-------------------------------|
+| 1  | Choose   | a **key issue**, then         |
+| 2  | Build    | an **argument** by            |
+| 3  | Applying | some **theory** of choice, while |
+| 4  | Using    | **real-world examples**       |
+
+
+
+### What is an **issue**?
+
+.content-box-yellow[
+From my dictionary: "An important **topic** or **problem** for debate or discussion". 
+- An *issue* can be one of the **concepts** discussed over the semester. 
+- But can also be a specific **event** (or series of *events*). 
+]
+
+---
+
+### What is an **argument**?
+
+.content-box-yellow[
+
+An argument is your **main idea** and **claim** about the issue.
+
+- **What** is going on about this issue? 
+- And **why**? Or **how**?
+
+Your argument must be **convincing** but also **interesting**.  
+]
+
+### What is a **theory**?
+
+.content-box-yellow[
+
+- A theory is an **idea** that **explains** something.
+
+  - A (good) theory can be applied by different researchers to different contexts.
+
+  - But your theory is not what you observe! Instead, a theory helps you make sense of what you observe.
+
+- **Concepts** are the building blocks of theories. 
+
+]
+
+---
+
+## In conclusion ...
+
+### 1. Your **issue** sets the boundaries of your essay  
+It defines *what* you're talking about.
+
+### 2. Your **theory** (or theoretical framework) explains your **evidence**  
+It helps make sense of real-world examples (i.e. your evidence).
+
+### 3. Your **argument** is convincing when theory and evidence work together  
+A clear, consistent application of theory helps you explain, interpret, or gain insight into your chosen issue.
+---
+
+## Theory vs Concept: Connective Action Example
+
+- **Connective action** is a **theory**:  
+  It explains how digital media enables new, personalized forms of political participation outside traditional institutions.
+
+- **Networks** are a **concept** in that theory:  
+  They describe the digital structures through which individuals connect, share content, and coordinate action.
+  
+  
+---
+
+## Connective Action and Networks in Context
+
+- **Connective action** is a **theory** introduced by Bennett and Segerberg  
+  - to .content-box-red[**explain**] .content-box-red[**how**] modern protests (like Occupy or the indignados)  
+  - .content-box-yellow[are driven by personalized expression shared through digital media].
+
+- **Networks** are a **concept** used in this theory:  
+  - They .content-box-red[**describe**] the flexible, opt-in/opt-out digital connections (e.g. Twitter, WhatsApp) 
+  - .content-box-yellow[through which people coordinate actions without relying on formal organisations.]
+  
+  
+.content-box-green[
+
+Notably, connective action theory was then .content-box-red[**used**] (because found *useful*) by other researchers to explain .content-box-red[**whys**] and .content-box-red[**hows**] about the emergence of other movements.
+
+]
+
+
+---
+
+## Do I need to use relevant theories (and their concepts) in my A3?
+
+- **Yes!** Using theory is essential. And it is likely easier for your to build your argument around a single **theory**. 
+
+- Don't list a bunch of theories without applying them! Relying on too many theories can confuse your argument — and your reader.
+
+## Where can I find theories and concepts to use?
+
+- Start with the **index of your textbook** — it’s a great place to find key theories and related concepts we've covered.
+
+
 ---
 class: segue-red
 
@@ -412,6 +527,16 @@ class: segue-red
 - The affordances that enable populism—**virality, anonymity, direct reach**—also empower extremism when left unchecked.
 
 .footnote[Schmuck, D., Fawzi, N., Reinemann, C., & Riesmeyer, C. (2022) “Social media use and political cynicism among German youth: the role of information-orientation, exposure to extremist content, and online media literacy,” *Journal of Children and Media* 16(3): 313–31.]
+
+---
+
+# Populism, Radicalism, or Extremism?
+
+## Vote on which concept best fits each statement.
+
+.center[<img src = '../img/week-10-qr-menti.png' width = '25%'> 
+
+or try https://www.menti.com/alug1w37pur3]
 
 ---
 class: segue-red
