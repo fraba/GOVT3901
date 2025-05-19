@@ -1,0 +1,564 @@
+---
+title: "GOVT3901</br>Digital Politics"
+subtitle: "Week 10</br>Platform, Politics and Entertainment"
+author: "Francesco Bailo"
+institute: "The University of Sydney"
+date: "Semester 1, 2025 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/sydney-fonts.css", "assets/sydney.css"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    includes:
+      in_header: "assets/mathjax-equation-numbers.html"
+    nature:
+      beforeInit: ["assets/remark-zoom.js", "https://platform.twitter.com/widgets.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/en/6/6a/Logo_of_the_University_of_Sydney.svg)
+background-size: 95%
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, 
+                      dev = 'svg', out.width = "45%", fig.width = 6,
+                      fig.align="center")
+
+```
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and  recognise their continuing connection to land, water and culture. The  University of Sydney is located on the land of the Gadigal people  of the Eora Nation. I pay my respects to their Elders, past and present.
+
+
+
+---
+
+.content-box-green[
+
+**Note** When not otherwise referenced, materials are based on and adapted from from Klinger, U., Kreiss, D., & Mutsvairo, B. (2023). *Platforms, power, and politics: An introduction to political communication in the digital age*. Polity.
+
+]
+---
+
+class: segue-red
+# Introduction
+
+---
+
+## What Counts as Political Communication?
+
+> “Political communication concerns all manner of things that relate to what we share and how we live with others.”
+
+- Political communication is not limited to parties or policies  
+- It is embedded in popular culture: music, sport, fashion, memes  
+- Politics can be “sung,” “performed,” or “streamed”
+
+---
+
+## Examples of Everyday Political Expression
+
+.pull-left[
+- Athletes kneeling for racial justice  
+- Comedians parodying governments  
+- Memes mocking leaders or celebrating resistance  
+- TikTok dance trends that incorporate protest slogans  
+- Clothes worn by politicians and celebrities
+]
+
+.pull-right[
+
+.center[<img src = 'https://upload.wikimedia.org/wikipedia/commons/6/61/Washington_Redskins_National_Anthem_Kneeling_%2837301887651%29_%28cropped%29_%28cropped%29.jpg' width = "80%"></img>
+]
+
+.footnote[Washington Redskins teammates during the national anthem before a game against the Oakland Raiders at FedExField on September 24, 2017 in Landover, Maryland.]
+
+]
+
+---
+
+## In-class task!
+
+.center[.content-box-green[
+
+In-class tasks during lectures are not assessed but participation is timestamped and recorded.
+
+]]
+
+.center[<img src = '../img/week-12-qr-inclass-task.png' width = '25%'> 
+
+or try https://sres.sydney.edu.au/go/682a76ad16f4f8b55449b6fb
+
+]
+
+### (What is a "normative" debate?)
+
+---
+
+class: segue-red
+
+# The History of Politainment and Infotainment
+
+---
+
+
+## From Elitism to Cultural Politics
+
+> “For most of the twentieth century, scholars... made a distinction between high culture and low culture... serious news and low-quality information.”
+
+- Early critics like Neil Postman decried entertainment’s rise  
+- Cultural studies (e.g. Stuart Hall) reclaimed popular culture as political  
+- Resistance and identity emerge from subcultures and style
+
+---
+
+## The Personal Is Political
+
+.pull-left[
+
+- Feminists showed how everyday life is structured by power  
+- Rap and hip hop exposed systemic injustice and mobilised action  
+- Pop culture isn't just escapism – it can be a battlefield of ideas
+
+]
+
+.pull-right[
+
+<img src = 'https://upload.wikimedia.org/wikipedia/commons/d/da/Public_Enemy-01-mika.jpg' width = '100%'></img>
+]
+.footnote[Public Enemy performing in 2000.]
+
+---
+
+class: segue-red
+# Politicians and Celebrities
+
+---
+
+## When Politicians -> Become -> Celebrities
+
+.pull-left[
+
+.center[<img src = 'https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg' width = "70%">]
+
+]
+
+.pull-right[
+
+> “Some politicians become celebrities and icons of pop culture.”
+
+- Example: Obamas, Kennedys, Greta Thunberg  
+- They influence not only politics, but fashion, language, lifestyles
+
+]
+
+
+
+---
+
+## When Celebrities -> Become -> Politicians
+
+.pull-left[
+
+
+> “Trump, Reagan, Schwarzenegger, Zelensky... transformed from entertainer to elected official.”
+
+- Fame becomes political capital  
+- Digital charisma replaces institutional credibility
+
+]
+
+.pull-right[
+
+.center[<img src = 'https://image.guardian.co.uk/sys-images/Guardian/Pix/pictures/2004/06/07/1reagan2.jpg'>]
+
+Actor Ronald Reagan loads his gun in the **1953** western film Law and Order before becoming President in 1981. (Photograph: AP/Universal)
+
+]
+
+---
+
+## Political Celebrity Typologies
+
+### Superstar Politicians
+
+- Rely on **broadcast media** and **staged charisma**
+- Project strength, control, and exceptionality
+- Examples: Ronald Reagan, Barack Obama, Volodymyr Zelensky (as TV figure), Queen Elizabeth II
+- Often work through curated media appearances, professional PR teams, and high-production value events
+
+> “Superstar celebrity politicians rely more on broadcast media and have consciously staged marketing techniques and perform an exceptional role.” (see Wood et al., 2016)
+
+.footnote[Wood, M. Corbett, J., & Flinders, M. (2016) “Just like us: everyday celebrity politicians and the pursuit of popularity in an age of anti-politics,” *The British Journal of Politics and International Relations* 18(3): 581–98.]
+
+---
+
+### Everyday Political Celebrities
+
+.pull-left[
+
+- Emerge via **digital platforms** using informal, intimate content
+- Perform authenticity, spontaneity, and relatability
+- Examples: Alexandria Ocasio-Cortez’s Instagram Lives, Macron’s hoodie photos, Boris Johnson’s “dishevelled” persona
+- More likely to show flaws and ‘behind-the-scenes’ moments, aligning with audience affect
+
+> They "perform authentic roles as flawed, regular folks" (see Wood et al., 2016)
+]
+
+.pull-right[
+<img src = 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/08/21/20/screen-shot-2020-08-21-at-3.58.50-pm.png?quality=75&width=1250&crop=3%3A2%2Csmart&auto=webp'>
+Alexandria Ocasio-Cortez shares her entire beauty routine for Vogue.
+]
+
+
+
+.footnote[Wood, M. Corbett, J., & Flinders, M. (2016) “Just like us: everyday celebrity politicians and the pursuit of popularity in an age of anti-politics,” *The British Journal of Politics and International Relations* 18(3): 581–98.]
+
+---
+
+### Tensions and Trade-offs
+
+- **Democratic engagement**: Reach disengaged citizens, especially young people; bypass elite filters; energise participation  
+- **Post-democratic spectacle**: Risk of style over substance; populism; erosion of deliberation and accountability  
+
+> "Spectacularization" of politics, of the "dumbing down" of culture ... "The rise of celebrity politicians is just another symptom of the hollowing out of democracy... but may also mark a democratisation process.” (see Street, 2012)
+
+.footnote[Street, J. (2012) “Do celebrity politics and celebrity politicians matter?” The *British Journal of Politics and International Relations* 14(3): 346–56.]
+
+---
+
+class: segue-red
+# Media Monarchies and the Internet
+
+---
+
+## Monarchs as Media Figures
+
+### Monarchs as Political Symbols
+
+- Monarchs are not just ceremonial: they **stabilise national identity** and embody continuity  
+- Even when stripped of formal power, they participate in **political communication** through ritual, tradition, and symbolism  
+- Example: Queen Elizabeth II’s long reign offered symbolic consistency through periods of crisis (e.g., Brexit, COVID-19)
+
+> “Monarchs are politicians – in obvious ways, when they hold political power, but also in more subtle ways when they do not and speak only through symbols.”
+
+---
+
+### The Politics of Presentation
+
+- Royal families are **carefully curated media brands**  
+- Strategic use of **visuals** to project meaning and legitimacy:
+  - Instagram portraits
+  - Subtle political messaging through jewellery and fashion (e.g., EU hat during Brexit speech)
+  - Family imagery as dynastic continuity (e.g., 4-generation Windsor photo)
+
+> “The image carries a dynastic claim... spanning roughly 150 years of past and future rule.”  
+
+.center[<img src = 'https://i.guim.co.uk/img/media/944d93868496ec353f31e527a92617abe93f84f6/0_0_2560_1536/master/2560.jpg?width=1900&dpr=2&s=none&crop=none' width = '30%'>]
+
+
+---
+
+### Media Monarchies in the Platform Age
+
+.pull-left[
+
+- Royals operate as **celebrity influencers with political weight**
+  - Official social media accounts with millions of followers  
+  - Mix of tradition and digital savviness
+- Perform **spectacle and governance** through platforms:
+  - Instagram, YouTube, Facebook
+  - Tweets, live streams, curated photo ops
+
+
+]
+
+
+  
+.pull-right[
+
+.center[
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTheBritishMonarchy%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=796510997039190" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+]
+]
+
+---
+
+class: segue-red
+# Political Influencers
+
+---
+
+## Rise of the Political Influencer
+
+> “Influencers are digital opinion leaders... with **leadership** based in **authenticity**.” (see Riedl et al. 2021)
+
+### Who Are Political Influencers?
+
+- Individuals with significant social media followings  
+- Operate **outside formal institutions** (not politicians, journalists, or NGOs)  
+- Blend lifestyle, identity, and ideology—often starting from non-political content  
+- Range from YouTubers and podcasters to TikTok creators and micro-influencers
+
+.footnote[Riedl, M., Schwemmer, C., Ziewiecki, S., & Ross, L. M. (2021) “The rise of political influencers: perspectives on a trend towards meaningful content,” *Frontiers in Communication* 6: 1–7.]
+---
+
+### Strategic Authenticity
+
+.pull-left[
+
+- **Perceived relatability** is their key asset  
+- Success depends on appearing **real**, **unfiltered**, and **vulnerable**  
+- This authenticity is often **staged and strategic** (e.g., “behind-the-scenes” content, family vlogs, Q&A videos)
+
+> “Networked intimacy and strategic authenticity are now being mobilized in support for metapolitical goals.” (Maly, 2020)
+
+]
+
+
+
+.pull-right[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SbiWrOMhMho?si=SJrcZU99KRMDbdGr&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+]
+
+.footnote[Maly, I. (2020) “Metapolitical new right influencers: the case of Brittany Pettibone,” *Social Sciences* 9(7): 113.]
+
+---
+
+### Political Campaigns and Influencer Marketing
+
+- Influencers are hired by parties or advocacy groups to:
+  - Promote campaigns to niche or hard-to-reach audiences
+  - Circulate political messages in relatable formats (e.g., feminist make-up tutorials)
+  - Encourage voting, activism, or ideological alignment
+
+- Example: Use of TikTokers and Instagrammers to engage Gen Z during elections
+
+.center[<img src = 'https://images.theconversation.com/files/415672/original/file-20210811-23-7e0crk.png?ixlib=rb-4.1.0&q=45&auto=format&w=1000&fit=clip' width = '55%'>]
+
+.footnote[Zeng, J. & Abidin, C. (2021) “‘# OkBoomer, time to meet the Zoomers’: studying the memefication of intergenerational politics on TikTok,” *Information, Communication & Society* 24(16): 2459–81.]
+
+---
+
+## #OkBoomer: A Memetic Youth Movement (Zeng & Abidin, 2021)
+
+- TikTok served as a key site for Gen Z’s political identity and generational critique  
+- The #OkBoomer meme became a form of **discursive activism** and everyday politics, mixing humour, music, and skits to express discontent with older generations  
+- Topics included climate change, gender norms, mental health, and economic insecurity
+
+> “Being a Boomer is not an age-specific phenomenon but rather a mindset.” – Zeng & Abidin (2021)
+
+.footnote[Zeng, J. & Abidin, C. (2021) “‘# OkBoomer, time to meet the Zoomers’: studying the memefication of intergenerational politics on TikTok,” *Information, Communication & Society* 24(16): 2459–81.]
+
+---
+
+## Memes as Political Communication (Zeng & Abidin, 2021)
+
+- Gen Z used TikTok memes to **construct generational borders** and express shared grievances  
+- Memes combined sound templates, duets, visual stickers, and performance (e.g., lip-sync activism)  
+
+- Three major communicative functions:  
+  - **Critique**: calling out patronising or conservative attitudes  
+  - **Community**: sharing experiences and solidarity  
+  - **Commerce**: turning memes into merchandise, risking dilution of meaning
+
+- Memes function as “small-p” politics, framing identity and injustice through everyday cultural participation
+
+.footnote[Zeng, J. & Abidin, C. (2021) “‘# OkBoomer, time to meet the Zoomers’: studying the memefication of intergenerational politics on TikTok,” *Information, Communication & Society* 24(16): 2459–81.]
+
+---
+
+### Tensions and Risks
+
+- Often **not transparent** about paid affiliations: “volunteer digital door knockers” or covert campaigners?  
+- Risk of **manipulation**, **misinformation**, and **unregulated political advertising**  
+- Blurs lines between personal opinion, monetisation, and propaganda
+
+.content-box-yellow[
+
+.center[<img src = 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Logo_Tenet_Media.svg' width = '30%'>]
+
+- **Tenet Media**, a U.S. right-wing media startup, was secretly funded with $10 million by Russian state actors to spread propaganda through popular conservative influencers.
+
+- The founders allegedly **masked Russian ties** using a fictitious European sponsor; influencers were paid large sums to produce political content aligned with Kremlin interests.
+
+- The scheme was exposed by the U.S. DOJ in 2024, leading to **indictments, YouTube bans, and Tenet’s shutdown**, as influencers claimed to be unwitting participants.
+
+]
+
+---
+
+## Political Campaigning Meets Platform Culture
+
+- Targeted content via influencers = new propaganda?  
+- Micro-influencers often unpaid or undisclosed surrogates  
+- Lifestyle content can carry ideological messages
+
+.pull-left[
+
+### Influencer Case Examples
+
+- AOC’s Vogue make-up video: 3.6M+ views  
+- Far-right influencer Brittany Pettibone blends family with conspiracy  
+- Feminist make-up tutorials and queer TikTok activism
+
+]
+
+.pull-right[
+
+.center[<img src = 'https://m.media-amazon.com/images/I/71njATldC+L._SL1500_.jpg' width = '40%'></img>]
+
+.footnote[On how New Age and wellness influencers merged spiritual messaging with far-right conspiracy theories during the COVID-19 pandemic]
+
+]
+
+---
+
+class: segue-red
+# Music and Political Communication
+
+---
+
+## Songs as Tools of Resistance and Identity
+
+> “Music sustains oppositional identities that have deep political implications.”
+
+- Protest anthems across history: La Marseillaise, reggae, anti-apartheid  
+- Soundtracks of movements: Black Lives Matter and Kendrick Lamar
+
+.pull-left[
+
+- **Kendrick Lamar**’s 2025 Super Bowl show used powerful symbolism to confront racism, white supremacy, and America’s treatment of Black Americans.  
+- Samuel L. Jackson portrayed a critical “Uncle Sam” figure, and the performance referenced reparations and resistance.  
+
+]
+
+.pull-right[
+
+.center[<img src = 'https://d4804za1f1gw.cloudfront.net/wp-content/uploads/sites/130/2025/02/Kendrick-with-Dancers-in-flag-e1739561345668.jpg' width = '100%'>]
+
+.footnote[NEW ORLEANS, LOUISIANA - FEBRUARY 09: Kendrick Lamar performs onstage during Apple Music Super Bowl LIX Halftime Show at Caesars Superdome on February 09, 2025 in New Orleans, Louisiana. (Photo by Patrick Smith/Getty Images)]
+
+]
+
+
+---
+
+## Music in the Hands of Politicians
+
+- Politicians use music for branding: playlists, walk-on songs  
+- Artists sometimes push back: e.g., Springsteen vs Reagan  
+- Music communicates belonging, identity, resistance
+
+.center[<img src = 'https://upload.wikimedia.org/wikipedia/en/3/31/BruceBorn1984.JPG'>]
+
+---
+
+class: segue-red
+# Movies, Shows, and Political Communication
+
+---
+
+## Fiction as Political Reality
+
+> “Visual communication is powerful... the ways we perceive the world are influenced by media representations.”
+
+- Shows like *The West Wing*, *Borgen*, *Game of Thrones* shape political imagination  
+- Political satire increases participation and knowledge
+
+.center[<img src = 'https://upload.wikimedia.org/wikipedia/en/5/58/Twenty_Five_%28The_West_Wing_episode_-_screenshot%29.jpg'>]
+
+---
+
+## Entertainment as Political Pedagogy
+
+### Shows as Analogies for Real Politics
+
+- Politicians and movements often use popular shows to **frame political narratives** and connect with audiences.  
+
+.pull-left[
+
+- Example: Spain’s left-populist party **Podemos** referenced *Game of Thrones* in speeches and media—likening their struggle to Daenerys Targaryen’s fight against elites.  
+- Party leader Pablo Iglesias even edited a book of political essays analysing *GoT*—using fiction to **mobilise younger voters** and communicate complex ideas in accessible ways.
+
+]
+
+
+.pull-right[
+
+.center[<img src = "https://static.euronews.com/articles/stories/03/19/81/48/1920x2987_cmsv2_86c6ee98-fbc6-5cb4-95c4-852792a060f8-3198148.jpg" width = '50%'>]
+
+]
+
+
+
+---
+
+### From Apolitical to Political Talk
+
+- Even content not explicitly political can **spark political discussion**: reality TV, romance dramas, and true crime shows raise issues around gender, justice, inequality, and identity.  
+- Casual conversations about shows often evolve into **informal political dialogue**, which research shows is critical for civic awareness.  
+
+> "It matters for political knowledge how much people talk about politics, even more than with whom they talk." (see Amsalem & Nir 2021)
+
+.footnote[Amsalem, E. & Nir, L. (2021) “Does interpersonal discussion increase political knowledge? A meta-analysis,” *Communication Research* 48(5): 619–41.]
+
+---
+
+### Streaming Platforms as Political Spaces
+
+- Platforms like **Spotify**, **YouTube, Netflix, TikTok, and Twitch** are key sites of political meaning-making and debate.  
+- Influencers, streamers, and content creators integrate activism, satire, and commentary into entertainment—blurring lines between information, opinion, and art.  
+- This transforms passive viewing into **participatory political engagement**, especially for younger, digitally native audiences.
+
+.center[<img src = 'https://charismanews.com/wp-content/uploads/2024/10/Rogan-and-Trump.jpg' width = '40%'>]
+
+---
+
+
+# What Counts as Political?
+
+
+.center[<img src = '../img/week-12-qr-menti.png' width = '25%'> 
+
+or try https://www.menti.com/alqr1ycb19e4]
+
+
+---
+class: segue-red
+#  Summary
+
+---
+
+## Key Takeaways
+
+- Politics pervades entertainment and popular culture  
+- Celebrity and influence reshape political authority  
+- Entertainment media shape identities, discourse, and participation  
+- Political communication today is hybrid, symbolic, and networked
+
+---
+class: center, middle
+# Attendance
+
+## Get your phone out!
+
+
+---
+class: inverse, center, middle
+
+# Any Quick Question?
+
+---
+class: center, middle
+
+# See you next week!
+
+

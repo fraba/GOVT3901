@@ -534,7 +534,7 @@ class: segue-red
 
 ## Vote on which concept best fits each statement.
 
-.center[<img src = '../img/week-10-qr-menti.png' width = '25%'> 
+.center[<img src = '../img/week-11-qr-menti.png' width = '25%'> 
 
 or try https://www.menti.com/alug1w37pur3]
 
