@@ -1,6 +1,6 @@
 ---
 title: "GOVT3901</br>Digital Politics"
-subtitle: "Week 10</br>Platform, Politics and Entertainment"
+subtitle: "Week 12</br>Platform, Politics and Entertainment"
 author: "Francesco Bailo"
 institute: "The University of Sydney"
 date: "Semester 1, 2025 (updated: `r Sys.Date()`)"
