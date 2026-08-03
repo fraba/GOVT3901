@@ -1,0 +1,375 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 01: Introduction — Political Communication in the Platform Era<br>Last updated: 2026-08-03
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Your teacher
+
+Francesco Bailo (francesco.bailo@sydney.edu.au)
+
+I am a Lecturer in the School of Social and Political Sciences, University of Sydney. I research forms of political engagement and political talk on social media — the emergence and dynamics of online communities, the relationship between news organisations and social media, and the interdependence between social media activists and news organisations. I use quantitative text analysis (NLP) and network analysis.
+
+This semester I am also teaching SSPS4102/SSPS6006 (Data Analytics) and GOVT6139 (Research Design).
+
+## Housekeeping {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Scheduled classes**
+
+- Lectures (13 scheduled)
+- Tutorials (weeks 2–13), Thursdays 10:00am–12:00pm
+
+**Canvas**
+
+1. Unit information (readings, announcements, materials)
+2. Weekly discussion board
+3. Submission of all assignments
+4. Q&A — use Canvas discussion boards for assignment questions
+:::
+
+::: {.column width="50%"}
+**Assessments**
+
+- A1 — Digital Media Campaign Video Presentation (30%)
+- A2 — Digital Politics Artefacts Portfolio (30%)
+- A3 — Final Written Exam (30%)
+- A4 — Participation (10%)
+
+**Participation (A4)**
+
+1. Attend and engage in lectures and tutorials
+2. Engage in in-class tasks
+3. Engage on Canvas discussion boards
+:::
+:::
+
+## The unit's running question {.smaller}
+
+::: {.callout-important}
+### The question we return to every week
+
+**Does the massification of digital media strengthen or weaken democratic institutions and participation?**
+:::
+
+Every week's textbook chapter is required reading and stays the constant spine of the unit. But each lecture also adds **one piece of evidence** — a concept, a case, sometimes an extra journal article — toward a running verdict on this question, which we revisit directly in Week 13.
+
+::: {.incremental}
+- **Week 3** — does losing human gatekeepers to algorithms weaken accountability?
+- **Week 7** — does lowering the cost of participation reduce or reinforce inequality?
+- **Week 8** — can "Internet capital" let movements bypass institutions social capital used to gatekeep?
+:::
+
+::: {.notes}
+This slide previews the semester's argument structure. Don't dwell — the point is students know a throughline exists, not that they memorise it yet.
+:::
+
+## Weekly readings: Textbook and journal articles
+
+::: {.callout-tip}
+### Check the reading list on Canvas
+:::
+
+::: {.columns}
+::: {.column width="55%"}
+*Platforms, power, and politics: An introduction to political communication in the digital age* [@klingerPlatformsPowerPolitics2023]. Polity.
+
+- **Ulrike Klinger** — Professor of Political Theory and Digital Democracy, European University Viadrina.
+- **Daniel Kreiss** — Edgar Thomas Cato Distinguished Professor, Hussman School of Journalism and Media, UNC Chapel Hill.
+- **Bruce Mutsvairo** — Professor and Chair of Media, Politics and the Global South, Utrecht University.
+:::
+
+::: {.column width="45%"}
+Most weeks also carry **one additional required journal article** — the empirical or theoretical anchor for that week's case study, on top of the textbook chapter.
+:::
+:::
+
+## Today's class {.smaller}
+
+Introduction: Political Communication in the Platform Era (Ch 1)
+
+- Explain the relationship between media, technology, and political communication, tracing historical developments and modern transformations.
+- Define key terms: media, digital media, the Internet, social media, platforms, technologies.
+- Recognise why analysing digital platforms matters for understanding contemporary political communication.
+- Preview the unit's running question: does the platform era strengthen or weaken democratic institutions?
+
+## Angela Merkel's reflection on digital media {.smaller}
+
+::: {.columns}
+::: {.column width="65%"}
+- Angela Merkel, former Chancellor of Germany, reflected on how political discourse has changed due to digital media in a **2021** farewell interview [@merkelFarewellInterview2021].
+- She noted that in **2005**, when she assumed office, smartphones, Facebook, and Twitter were either non-existent or in their infancy.
+- Merkel argued digital platforms have made politics "harsher" — everyone can now have their personal opinions confirmed by many others, making compromise harder.
+- A central theme of this unit: the evolving landscape of political communication in the platform era.
+:::
+
+::: {.column width="35%"}
+![](https://cdn.britannica.com/17/172817-050-B5A3AE9B/Angela-Merkel-2012.jpg){width="90%"}
+:::
+:::
+
+## The digital revolution {.smaller}
+
+The massification of Internet technologies has revolutionised how people connect with each other and access information [@rainieNetworkedNewSocial2012].
+
+::: {.columns}
+::: {.column width="50%"}
+**The Social Media Revolution**
+
+A shift in how people relate to each other — reaching beyond tight-knit groups, allowing more **diversity** in relationships, but also introducing the stress of not having a single home base.
+
+::: {.callout-tip}
+On **26 September 2006**, Facebook opened to everyone 13+ with an email address.
+:::
+:::
+
+::: {.column width="50%"}
+**The Mobile Revolution**
+
+Mobile phones evolved from talking on the fly to **always-available accessibility** — enhancing the ascent of broadband and the always-on Internet.
+
+::: {.callout-tip}
+The first **iPhone** went on sale on **29 June 2007**.
+:::
+:::
+:::
+
+::: {.footer}
+Rainie & Wellman (2012), *Networked: The new social operating system*.
+:::
+
+## What does the digital revolution mean for social networks? {.smaller}
+
+- The key change in how people connect socially: a shift **from being embedded in groups** to becoming **networked individuals**.
+- Instead of primarily functioning as members of a family, work unit, neighbourhood, or social group, **people increasingly operate as individuals connected through diverse networks**.
+- **Partial membership in multiple networks**: connections to many networks rather than permanent membership in one settled group.
+- **Looser, more fragmented networks**: the new social environment is oriented around networks that are less tight-knit than in the past.
+
+> "The new media is the new neighborhood" [@rainieNetworkedNewSocial2012, p. 13].
+
+- The emerging role of **digital platforms** in *creating*, *mediating*, and *curating* connection among people and between people and information.
+
+## The digital transformation of political communication
+
+- Traditional political communication was structured around mass media — newspapers, radio, television.
+- The Internet and digital media have made communication more participatory and interactive.
+- Platforms like TikTok, Facebook, X, and YouTube serve as intermediaries, influencing what information reaches the public and how political actors engage with audiences.
+- This shift has raised questions about misinformation, polarisation, and who controls the algorithms shaping political discourse.
+
+## The role of technology in political communication {.smaller}
+
+::: {.columns}
+::: {.column width="60%"}
+- **Technology has always played a role in shaping political communication.**
+- Oral traditions helped societies transmit political narratives before writing systems existed.
+- The printing press, telegraph, radio, and television each transformed political discourse in distinct ways.
+- The Internet, social media, and digital platforms have brought about a decentralised, user-driven form of political communication.
+:::
+
+::: {.column width="40%"}
+![](https://i.guim.co.uk/img/media/de1500cd6b83cb3e27edd5ac180b96954591f32e/40_37_2149_1289/master/2149.jpg?width=1900&dpr=2&s=none&crop=none){width="100%"}
+:::
+:::
+
+## The Internet and the platform era {.smaller}
+
+- The Internet became a major force in global politics in the late 1990s and early 2000s.
+- Widespread smartphone adoption accelerated the shift towards mobile-first digital interactions.
+- The **Arab Spring** demonstrated social media's potential to mobilise protests and activism; **Brexit** and the **2016 US election** later raised concerns about digital manipulation and disinformation.
+- The platform era signifies the dominance of a few large corporations in structuring political conversations, often with opaque algorithms determining visibility and engagement.
+
+::: {.notes}
+This is the point in the semester where the "techno-optimism to darker narrative" pivot (Ch1) sits — keep brief, it recurs properly in Week 9/10.
+:::
+
+## The dual nature of platforms {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Potential benefits**
+
+- Increased political engagement and mobilisation through digital activism.
+- More access to diverse political viewpoints and alternative media sources.
+- Enhanced transparency and direct communication between political leaders and the public.
+:::
+
+::: {.column width="50%"}
+**Potential costs**
+
+- Communication power concentration (a new form of power).
+- Spread of information disorders (no editorial control by platforms).
+- Algorithm-driven **polarisation** — echo chambers and filter bubbles.
+- The **simplification and commodification** of political discourse through data-driven advertising and microtargeting.
+:::
+:::
+
+::: {.callout-important}
+### Keep this tension in mind
+This is exactly the "does it strengthen or weaken democracy?" question this unit keeps testing, week by week.
+:::
+
+## Platforms as political actors {.smaller}
+
+- **Political leaders** use platforms to engage directly with constituents, bypassing traditional media gatekeepers.
+- **Journalists** rely on social media for real-time reporting and audience engagement.
+- **Civil society organisations** leverage digital platforms for advocacy, petitions, and awareness campaigns.
+- **Citizens** use social media to participate in political discussions, share content, and mobilise for causes.
+- **Platforms** emerge as a new type of actor exercising large and largely unchecked communication power.
+
+::: {.callout-tip}
+The interplay between these actors reshapes political communication in fundamental ways.
+:::
+
+## Platform power and media systems {.smaller}
+
+::: {.columns}
+::: {.column width="60%"}
+- Platforms serve as both **infrastructure** and **gatekeepers** of political discourse.
+- Their affordances influence what information gains traction.
+- Media systems are increasingly **hybrid** [@chadwickHybridMediaSystem2013], blending traditional broadcast media with digital-first content distribution.
+- Example: Twitter (before Musk's 2022 acquisition) became a primary space for political scandals and crisis management, forcing traditional media to respond to trending digital conversations.
+:::
+
+::: {.column width="40%"}
+![](https://images.jpost.com/image/upload/q_auto/c_fill,g_faces:center,h_537,w_822/452281){width="100%"}
+:::
+:::
+
+## What are affordances? {.smaller}
+
+Bucher and Helmond [-@bucherAffordancesSocialMedia2018] define affordances as a
+
+> **relational property that describes the possibilities for action provided by an environment or technological system**.
+
+The concept originates from ecological psychology and has been adapted in design studies and media research. In social media, affordances are *not static* features but *dynamic relationships* between *users and the platform's technological architecture*.
+
+::: {.callout-important}
+Affordances define **what users can do** on a platform, but **they do not dictate behaviour** — rather, they **structure possibilities and constraints** within the platform environment.
+:::
+
+## Affordances are ... {.smaller}
+
+::: {.callout-note}
+### Affordances
+
+- **Relational nature**: affordances exist in the interaction between users and the platform — shaped by user expectations and behaviours, not just built-in features.
+- **Perceived vs. hidden affordances**: some are immediately visible (a "Like" button); others require exploration (algorithmic content curation).
+- **Communicative and social affordances**: enable visibility (who sees what), editability (modifying content), persistence (how long content remains), and association (how users are linked to content and each other).
+- **Platform-sensitive**: affordances change with platform architecture — e.g. Twitter replacing the "Favorite" star with a "Like" heart altered the perceived meaning of user interactions.
+:::
+
+## First in-class task! {.center}
+
+::: {.callout-tip}
+In-class tasks during lectures are not assessed, but participation is timestamped and recorded.
+:::
+
+::: {.center-image}
+![](img/week-01-qr-inclass-task.png){width="25%"}
+
+or try https://sres.sydney.edu.au/go/67b810a74ca9f8033cbea6e2
+:::
+
+## What is the best definition of affordances? {.smaller}
+
+A) The fixed technological features of a platform that dictate user behaviour.
+B) The possibilities for action provided by a platform, shaped by both design and user perception.
+C) The way a platform's algorithms completely control user interaction.
+D) The visual design of a platform that makes it aesthetically appealing.
+
+. . .
+
+**Which of the following are examples of affordances in social media?** *(Select all that apply.)*
+
+A) The ability to like, comment, or share posts on a platform.
+B) The price of a social media subscription.
+C) Algorithmic curation of content that influences what users see.
+D) A platform's terms of service and privacy policy.
+E) The option to tag other users in a post.
+
+## Which statement about affordances is TRUE? {.smaller}
+
+A) Affordances are static and do not change over time.
+B) Affordances are relational — they depend on both platform design and user perception.
+C) Affordances completely determine how users behave on a platform.
+D) Affordances are the same across all platforms.
+
+## Global variations in platform governance {.smaller}
+
+- The regulatory landscape of digital platforms varies significantly across regions:
+  - **United States** — emphasis on free speech, limited platform regulation.
+  - **European Union** — stronger data protection and content moderation policies (DSA/DMA — see Week 9).
+  - **China & Russia** — state-controlled platforms with strict content guidelines.
+- The **"splinternet"** reflects the increasing fragmentation of digital spaces due to national regulations.
+
+::: {.notes}
+Light touch here — Week 9 (Governance) is where DSA/DMA and platform self-regulation get the full treatment.
+:::
+
+## Defining key terms {.smaller}
+
+1. **Media** — all forms of communication, including traditional and digital formats.
+2. **Digital media** — media content distributed in digital formats, accessible via the Internet.
+3. **Internet** — a global network enabling connectivity and data exchange.
+4. **Social media** — platforms that facilitate user-generated content and networked communication.
+5. **(Digital) platforms** — digital infrastructures that organise and curate information, interactions, and transactions.
+6. **Technologies** — tools, knowledge, and processes that shape communication and society.
+
+## Where the semester is going {.smaller}
+
+::: {.incremental}
+- **Week 2**: definitions, variations, and how political/media systems condition platform effects.
+- **Week 3**: platform power and algorithmic mediation — our first "leg" of the running verdict.
+- **Weeks 4–6**: public spheres, journalism, strategic communication.
+- **Week 7**: campaigns — the participation paradox, our second "leg."
+- **Week 8**: movements — Internet capital vs. social capital, our third "leg."
+- **Weeks 9–12**: governance, misinformation, populism, entertainment.
+- **Week 13**: back to the running question — what's the verdict?
+:::
+
+## Key takeaways {.smaller}
+
+- The platform era has fundamentally altered political communication.
+- Digital media amplify both democratic engagement and the risks of information disorders.
+- Platforms shape political discourse, engagement, and governance through their affordances and algorithms.
+- Regulatory environments influence how platforms operate globally.
+- This semester tests one running question: **does the platform era strengthen or weaken democratic institutions?** — keep it in mind every week.
+
+## {.center}
+
+# Attendance
+
+Get your phone out again!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+## References
