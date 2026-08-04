@@ -16,6 +16,7 @@ format:
     scrollable: false
     pdf-max-pages-per-slide: 1
     history: false
+    include-after-body: assets/print-pdf-button.html
 bibliography: assets/biblatex.bib
 csl: assets/apa-old-doi-prefix.csl
 execute:
@@ -30,9 +31,11 @@ I would like to acknowledge the Traditional Owners of Australia and recognise th
 
 Francesco Bailo (francesco.bailo@sydney.edu.au)
 
-I am a Lecturer in the School of Social and Political Sciences, University of Sydney. I research forms of political engagement and political talk on social media — the emergence and dynamics of online communities, the relationship between news organisations and social media, and the interdependence between social media activists and news organisations. I use quantitative text analysis (NLP) and network analysis.
+I am a Senior Lecturer in the School of Social and Political Sciences, University of Sydney. I research forms of political engagement and political talk on social media — the emergence and dynamics of online communities, the relationship between news organisations and social media, and the interdependence between social media activists and news organisations. I use quantitative text analysis (NLP) and network analysis.
 
-This semester I am also teaching SSPS4102/SSPS6006 (Data Analytics) and GOVT6139 (Research Design).
+This semester I am also teaching GOVT6139 (Research Design).
+
+I have a website here: [francescobailo.net](https://francescobailo.net/)
 
 ## Housekeeping {.smaller}
 
@@ -41,7 +44,7 @@ This semester I am also teaching SSPS4102/SSPS6006 (Data Analytics) and GOVT6139
 **Scheduled classes**
 
 - Lectures (13 scheduled)
-- Tutorials (weeks 2–13), Thursdays 10:00am–12:00pm
+- Tutorials (weeks 2–13), Thursdays 10:00am OR 1:00pm
 
 **Canvas**
 
@@ -69,13 +72,18 @@ This semester I am also teaching SSPS4102/SSPS6006 (Data Analytics) and GOVT6139
 
 ## The unit's running question {.smaller}
 
-::: {.callout-important}
-### The question we return to every week
+::: {.center}
 
 **Does the massification of digital media strengthen or weaken democratic institutions and participation?**
+
 :::
 
-Every week's textbook chapter is required reading and stays the constant spine of the unit. But each lecture also adds **one piece of evidence** — a concept, a case, sometimes an extra journal article — toward a running verdict on this question, which we revisit directly in Week 13.
+What do you think? [menti.com/al95qcjc7sbx](https://www.menti.com/al95qcjc7sbx)
+
+Every week's textbook chapter is required reading and stays the constant spine of the unit. But each lecture also adds **one piece of evidence** (a required reading) — a concept, a case, sometimes an extra journal article — toward a running verdict on this question, which we revisit directly in Week 13. For each week, we also add a number of recommended readings that can help you in developing your own argument across the different assignments. 
+
+
+For example,
 
 ::: {.incremental}
 - **Week 3** — does losing human gatekeepers to algorithms weaken accountability?
@@ -83,9 +91,6 @@ Every week's textbook chapter is required reading and stays the constant spine o
 - **Week 8** — can "Internet capital" let movements bypass institutions social capital used to gatekeep?
 :::
 
-::: {.notes}
-This slide previews the semester's argument structure. Don't dwell — the point is students know a throughline exists, not that they memorise it yet.
-:::
 
 ## Weekly readings: Textbook and journal articles
 
@@ -116,20 +121,33 @@ Introduction: Political Communication in the Platform Era (Ch 1)
 - Recognise why analysing digital platforms matters for understanding contemporary political communication.
 - Preview the unit's running question: does the platform era strengthen or weaken democratic institutions?
 
-## Angela Merkel's reflection on digital media {.smaller}
+## From techno-optimism to a darker narrative {.smaller}
 
 ::: {.columns}
 ::: {.column width="65%"}
-- Angela Merkel, former Chancellor of Germany, reflected on how political discourse has changed due to digital media in a **2021** farewell interview [@merkelFarewellInterview2021].
-- She noted that in **2005**, when she assumed office, smartphones, Facebook, and Twitter were either non-existent or in their infancy.
-- Merkel argued digital platforms have made politics "harsher" — everyone can now have their personal opinions confirmed by many others, making compromise harder.
-- A central theme of this unit: the evolving landscape of political communication in the platform era.
+- The **Arab Spring** (2010–11) was read as proof that social media could topple entrenched regimes and spread democracy — a wave of techno-optimism.
+- **Brexit** (2016) and the **2016 US election** flipped the narrative: the same platforms were now blamed for disinformation, manipulation, and polarisation.
+- Neither story is the whole truth — but the swing between them is itself a central theme of this unit and of Ch 1.
+- A central theme: democracy is a **contingent achievement** — it must be continually performed, legitimated, and protected, not something platforms guarantee or destroy on their own.
 :::
 
 ::: {.column width="35%"}
-![](https://cdn.britannica.com/17/172817-050-B5A3AE9B/Angela-Merkel-2012.jpg){width="90%"}
+![](https://www.eurozine.com/wp-content/uploads/2011/05/467296493cb09f9eeb7ae83927b275e9.jpg){width="100%"}
 :::
 :::
+
+## The hybrid media system {.smaller}
+
+Andrew Chadwick [-@chadwickHybridMediaSystem2013] argues old and new media don't replace each other — they interact dynamically, in a single, complex system.
+
+::: {.callout-important}
+### Example logic
+A leader's tweet becomes a news story → the story triggers street protests → the protests generate more tweets and coverage.
+:::
+
+- Older and newer media logics **coexist and feed each other**, rather than one simply displacing the other.
+- This is why understanding "the platform era" requires looking at platforms *and* legacy media together, not platforms in isolation.
+- We'll return to this concept explicitly in **Week 5** (journalism) and **Week 8** (movements).
 
 ## The digital revolution {.smaller}
 
@@ -198,11 +216,10 @@ Rainie & Wellman (2012), *Networked: The new social operating system*.
 
 - The Internet became a major force in global politics in the late 1990s and early 2000s.
 - Widespread smartphone adoption accelerated the shift towards mobile-first digital interactions.
-- The **Arab Spring** demonstrated social media's potential to mobilise protests and activism; **Brexit** and the **2016 US election** later raised concerns about digital manipulation and disinformation.
 - The platform era signifies the dominance of a few large corporations in structuring political conversations, often with opaque algorithms determining visibility and engagement.
 
 ::: {.notes}
-This is the point in the semester where the "techno-optimism to darker narrative" pivot (Ch1) sits — keep brief, it recurs properly in Week 9/10.
+The Arab Spring / Brexit / 2016 pivot was already covered two slides ago — don't repeat it here.
 :::
 
 ## The dual nature of platforms {.smaller}
@@ -281,53 +298,11 @@ Affordances define **what users can do** on a platform, but **they do not dictat
 - **Platform-sensitive**: affordances change with platform architecture — e.g. Twitter replacing the "Favorite" star with a "Like" heart altered the perceived meaning of user interactions.
 :::
 
-## First in-class task! {.center}
 
-::: {.callout-tip}
-In-class tasks during lectures are not assessed, but participation is timestamped and recorded.
-:::
+## Week 01 Quiz
 
-::: {.center-image}
-![](img/week-01-qr-inclass-task.png){width="25%"}
+Head to Canvas to complete the Quiz or complete it by the end of the week.
 
-or try https://sres.sydney.edu.au/go/67b810a74ca9f8033cbea6e2
-:::
-
-## What is the best definition of affordances? {.smaller}
-
-A) The fixed technological features of a platform that dictate user behaviour.
-B) The possibilities for action provided by a platform, shaped by both design and user perception.
-C) The way a platform's algorithms completely control user interaction.
-D) The visual design of a platform that makes it aesthetically appealing.
-
-. . .
-
-**Which of the following are examples of affordances in social media?** *(Select all that apply.)*
-
-A) The ability to like, comment, or share posts on a platform.
-B) The price of a social media subscription.
-C) Algorithmic curation of content that influences what users see.
-D) A platform's terms of service and privacy policy.
-E) The option to tag other users in a post.
-
-## Which statement about affordances is TRUE? {.smaller}
-
-A) Affordances are static and do not change over time.
-B) Affordances are relational — they depend on both platform design and user perception.
-C) Affordances completely determine how users behave on a platform.
-D) Affordances are the same across all platforms.
-
-## Global variations in platform governance {.smaller}
-
-- The regulatory landscape of digital platforms varies significantly across regions:
-  - **United States** — emphasis on free speech, limited platform regulation.
-  - **European Union** — stronger data protection and content moderation policies (DSA/DMA — see Week 9).
-  - **China & Russia** — state-controlled platforms with strict content guidelines.
-- The **"splinternet"** reflects the increasing fragmentation of digital spaces due to national regulations.
-
-::: {.notes}
-Light touch here — Week 9 (Governance) is where DSA/DMA and platform self-regulation get the full treatment.
-:::
 
 ## Defining key terms {.smaller}
 

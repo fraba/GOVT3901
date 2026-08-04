@@ -1,0 +1,35 @@
+<style>
+#print-pdf-button {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  z-index: 1000;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-family: sans-serif;
+  background: #e64626;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+#print-pdf-button:hover {
+  opacity: 1;
+}
+@media print {
+  #print-pdf-button {
+    display: none;
+  }
+}
+</style>
+<button id="print-pdf-button" title="Opens reveal.js print view — then use your browser's Print dialog and save/print as PDF">
+  Print PDF
+</button>
+<script>
+document.getElementById("print-pdf-button").addEventListener("click", function () {
+  var url = new URL(window.location.href);
+  url.searchParams.set("print-pdf", "");
+  window.location.href = url.toString();
+});
+</script>
