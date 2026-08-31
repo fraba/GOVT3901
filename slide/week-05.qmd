@@ -1,0 +1,461 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 05: Platforms and Journalism<br>Last updated: 2026-08-31
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    include-after-body: assets/print-pdf-button.html
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Last week(s) {.smaller}
+
+::: {.incremental}
+- **Week 3** — platforms hold structural power across six dimensions, and a defining feature of that power is that it is **invisible and unaccountable**. Soffer: algorithms now perform the "second step" that human opinion leaders once did — personalising content, but with no one to ask *why*.
+- **Week 4** (Nayeli) — public spheres, publics, and public opinion on platforms.
+- Today we take **Week 3's case — Facebook's 2018 feed change and Australian journalism — and look at it from the other side of the gate**: how does journalism, as an institution, respond when algorithms take over the gatekeeping it used to do?
+:::
+
+## Today's running question {.smaller}
+
+::: {.callout-important}
+### Still Leg 1 of the semester's verdict
+Does digital media strengthen or weaken democratic institutions? Week 3 showed platforms took gatekeeping power *from* journalism. Today: **does what replaces institutional gatekeeping — a networked, crowdsourced version — do the democratic job that journalism used to do?**
+:::
+
+Today's class (Ch 5):
+
+- **Define journalism** and see why the definition is contested — professional, citizen, "four Ps".
+- Journalism's **three core political functions**: gatekeeping, agenda setting, framing.
+- How platforms **fragment and redistribute** all three — *networked* gatekeeping and *networked* framing.
+- Read Meraz & Papacharissi's [-@merazNetworkedGatekeepingNetworked2013] study of the **2011 Egyptian uprising on Twitter** — the empirical anchor for what networked gatekeeping/framing actually looks like.
+- Journalism's other crises: **business models**, trust, "fake news", data and algorithmic journalism.
+
+## In-class activity 1 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+Think about the last genuinely important news story you learned about. **How did it first reach you?**
+
+- A news organisation directly (its app, site, homepage, broadcast, newsletter)
+- A social media feed — posted or reshared by someone I follow
+- An algorithmic feed with no clear human source (For You, Discover, recommendations)
+- A person told me — in a message, a group chat, in person
+- A search I ran myself
+
+---
+
+# What is journalism?
+
+## Journalism is a dangerous profession {.smaller}
+
+::: {.columns}
+::: {.column width="60%"}
+- The chapter opens with a roll-call of killed and jailed journalists — Mexico ("the deadliest country for media professionals outside a warzone"), Belarus, Russia's 2022 media law (15 years for calling the war a "war").
+- Reporters Without Borders: **1,668 journalists killed worldwide, 2003–2022**.
+- The point is not just tragedy. It is a **definition by contrast**: journalism is dangerous *because it is impossible to separate from politics*.
+:::
+
+::: {.column width="40%"}
+::: {.callout-important}
+### The core claim
+"Journalism is inherently political." Even the most "objective" reporter chooses what to cover — and that choice asserts the public's right to know. "There is no more political claim than that."
+:::
+:::
+:::
+
+## Defining journalism: the "four Ps" {.smaller}
+
+Greste's (2021) framework — a more complete definition than "just telling the truth":
+
+| P | What it covers |
+|---|---|
+| **Person** | Who the journalist is — training, employment status, sources of income |
+| **Product** | What is produced — the report, article, broadcast, thread |
+| **Purpose** | The mission — informing a public, holding power to account |
+| **Process** | *How* news is gathered — verification, sourcing, checking |
+
+::: {.callout-tip}
+Why this matters today: platforms have made **Product** trivially easy to distribute and **Person** open to anyone. What still distinguishes journalism is **Process** and **Purpose** — and those are exactly what is hardest to see in a social media feed.
+:::
+
+## Professional, amateur, citizen {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Professional journalism** — affiliated with a news organisation, institutionalised norms, a business model behind it.
+
+**Citizen / participatory journalism** — "anyone who records, witnesses, or documents public events, especially at moments of great public import."
+:::
+
+::: {.column width="50%"}
+::: {.callout-note}
+### Events make citizen journalists
+- Ukrainians reporting war crimes from bomb shelters, 2022.
+- Bystanders filming police killings of Black Americans (Richardson, 2020).
+- **The 2011 Egyptian uprising** — our case study today.
+:::
+:::
+:::
+
+::: {.callout-important}
+The institution's *purpose* has stayed constant — an obligation to tell the truth to some public. What has changed is **who can perform that function, and how visibly**.
+:::
+
+## Whose truth? {.smaller}
+
+Journalism "promises truthfulness" — but a recurring question in the chapter is *whose* truth.
+
+- Trump says an election was rigged (without evidence). Congo's Sassou Nguesso says his was fair. **Both are powerful leaders making claims.** What does the journalist report — the claims, or an independent judgement of the facts?
+- Journalism cultures differ: **watchdog** cultures keep politicians at arm's length; **partisan / state-aligned** cultures embrace an ideological or national position (e.g. the Russian state media model).
+- There is no view from nowhere. The choice of *which* facts matter is itself a political act.
+
+---
+
+# Journalism's three political functions
+
+## The three interlocking functions {.smaller}
+
+::: {.callout-note}
+### How journalism shapes public opinion
+1. **Gatekeeping** — selecting what gets access to a mass audience (and what stays invisible).
+2. **Agenda setting** — covering selected issues *often and prominently*, so the public comes to see them as important.
+3. **Framing** — presenting an issue in a context that shapes how the public understands it.
+:::
+
+Each was, for most of the 20th century, something a **relatively small set of institutions** did. The platform era doesn't abolish these functions — it **multiplies the actors performing them**.
+
+## 1. Gatekeeping {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+> Gatekeeping "describes the powerful process through which events are covered by the mass media, explaining how and why certain information either passes through gates or is closed off from media attention." [Shoemaker & Vos 2009]
+
+- Every day, more happens than can (or should) be reported. Time and space are limited.
+- Journalists reduce the flood — ideally keeping the "junk, nonsense, and 'bullshit'" out. Bimber & Gil de Zúñiga call this **"epistemic editing"**.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+### The democratic bet
+Gatekeeping is *useful*. A shared, curated, verified information supply is part of what lets a society "know itself" and prioritise problems. The worry in Week 3 was that we are losing this — today we ask what replaces it.
+:::
+:::
+:::
+
+## Networked gatekeeping and gatewatching {.smaller}
+
+::: {.callout-note}
+### Two extensions to the theory
+- **Networked gatekeeping** [@merazNetworkedGatekeepingNetworked2013] — trusted but *non-institutional* curators (influencers, activists, domain experts) now help decide what circulates.
+- **Gatewatching** [Bruns 2005/2018] — users don't just select; they *monitor* what mainstream outlets publish, then take up, criticise, extend, or reshare it.
+:::
+
+- Barzilai-Nahon (2008): "networked gatekeeping" describes many actors with **diverse and unequal levels of power** negotiating what passes.
+- Teenagers on TikTok can reach larger audiences than a newsroom. Activists cover their own protests. Politicians talk directly to voters — *and* set the agenda for journalists.
+
+## 2. Agenda setting {.smaller}
+
+> "The more coverage an issue receives, the more important it is to people." [Coleman et al. 2008]
+
+- Classic agenda setting: salient issues in the **media** become salient issues in **politics** and in the **public mind**. It is about *quantity* — how often and how prominently.
+- **Second-level agenda setting** — the media don't just make an issue salient, they make particular *attributes* of it salient.
+- Networked versions: trending topics challenging state media in authoritarian contexts (Fu & Chau, 2014); issues bouncing between Twitter and broadcast news (Su & Borah, 2019).
+
+## 3. Framing {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+> To frame "is to select some aspects of a perceived reality and make them more salient ... so as to promote a particular problem definition, causal interpretation, moral evaluation, and/or treatment recommendation." [Entman 1993]
+
+Frames: (1) **define problems**, (2) **diagnose causes**, (3) **make moral judgements**, (4) **suggest remedies**.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+### Same event, different frame
+A protest is either **a legitimate claim** (civil rights, climate) or **a public nuisance** (traffic, litter, troublemakers). Research shows mass media lean to hostile framing of protest — especially by non-dominant groups (Harlow et al., 2017).
+:::
+:::
+:::
+
+::: {.callout-important}
+### Networked framing
+Prominent users can be **elevated to elite status within a network** and shape reality perceptions — or mount **frame contestation** against a dominant frame [@merazNetworkedGatekeepingNetworked2013; Knüpfer & Entman, 2018].
+:::
+
+## In-class activity 2 {.smaller}
+
+::: {.center}
+
+**Quick reflection — Mentimeter (open text)**
+
+:::
+
+Pick a political issue or event you have seen discussed a lot on social media in the last month.
+
+**Who set the frame you encountered it through — a news organisation, a politician, an activist account, an influencer, or "the crowd" collectively? How can you tell?**
+
+---
+
+# Case: networked gatekeeping and framing on #Egypt
+
+## The study {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+Meraz & Papacharissi [-@merazNetworkedGatekeepingNetworked2013] — *The International Journal of Press/Politics*.
+
+- **Data**: ~1 million tweets on **#egypt**, 24 January – 24 February 2011 — the month that led to Mubarak's resignation.
+- **Mixed methods**: network analysis + content/frequency analysis of *who* was prominent, plus **discourse analysis** of *what* prominent actors actually tweeted.
+- Traces influence through Twitter's **addressivity markers**: retweet (RT), mention (@), and "via".
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Why this case
+It is the cleanest early empirical picture of gatekeeping and framing happening **without a newsroom** — and it maps directly onto Week 3's question about invisible, distributed power.
+:::
+:::
+:::
+
+## Finding 1: power laws, but not the expected elite {.smaller}
+
+- **Concentration is real**: the top 10% of RT'd accounts produced 84% of retweets; the top 10% of mentioned accounts, 73% of mentions.
+- **But the prominent nodes were a mix** — no significant difference in numbers between mass-media outlets, mass-media journalists, and bloggers/activists/citizen journalists/digerati among the top 100.
+- General feeds of legacy outlets (NYT, CNN, Washington Post, the *Telegraph*, Bloomberg) were often **isolates or weakly connected** — they could not transfer offline prominence into the stream.
+- Regionally embedded actors did better: **Al Jazeera English** more connected than US outlets; individual journalists with Middle East ties (Mona Eltahawy, Dima Khatib, Ben Wedeman) and activists (Wael Ghonim) ranked highest.
+
+## Finding 2: the crowd is the filter {.smaller}
+
+::: {.callout-important}
+### The key structural result
+Prominent actors were **not** densely tied to *each other* (low network density, low reciprocity). Their prominence was built from **the long tail** — thousands of ordinary users retweeting and mentioning them.
+:::
+
+- In the old model, an editor's authority came from a newsroom position. Here, **eliteness is emergent and contingent** — "crowdsourced to prominence."
+- Meraz & Papacharissi's definition: **networked gatekeeping** is "a process through which actors are crowdsourced to prominence through ... conversational, social practices that symbiotically connect elite and crowd in the determination of information relevancy."
+- Non-elites could spike to prominence for **a day at a time** (\@3arabawy on 27 Jan, \@Zeinobia on 25 Jan) — impossible in a broadcast gatekeeping regime.
+
+## Finding 3: hashtags as organic frames {.smaller}
+
+- 41,172 unique hashtags, used 1.75 million times. Most-used tags were **content frames**: places (#Cairo, #Tahrir), figures (#Mubarak), dates (#25Jan).
+- Day by day, the top hashtags **tracked events on the ground** — #sidibouzid linking Egypt to Tunisia (25–27 Jan); #twitter / #google when the government cut the internet (31 Jan); #Bahrain, #Libya, #Iran as protest spread.
+- **Networked framing** (their adaptation of Entman): problem definitions, causal stories, moral evaluations and remedies "attain prominence through **crowdsourcing practices**."
+- Unlike Entman's *cascading activation* (elites competing to set a frame), hashtag competition involves **elites and non-elites together** making a small set of tags "sticky."
+
+## Finding 4: how the framing actually happened {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Front stage, not back stage.** In a newsroom, frame negotiation between sources, reporters and editors is hidden. On #egypt it happened **in public**, in the feed, visible to everyone.
+
+**Refrains.** Frames rose by **repetition** — retweets and near-repeated mentions acted as a "refrain," accumulating intensity until "revolution" became the dominant frame *before* the regime fell.
+:::
+
+::: {.column width="50%"}
+**Affect and ambience.** Tweets were "not just news or just opinion, but ... emotionally charged opinions on news." The always-on, affect-laden stream is what sustained collaboration.
+
+**Objectivity abandoned — to get more accurate.** Journalists like Wedeman and Khatib became *more* conversational and personal — asking activists for information, integrating commentary — and that made their reporting more contextually informed.
+:::
+:::
+
+## What the study concludes for journalism {.smaller}
+
+::: {.incremental}
+- Networked gatekeeping produced **transparency** (verification done openly in the feed) and **iterative, contestable** frame-making — arguably *more* accountable than a hidden newsroom process.
+- But it also depends entirely on **the platform's socio-technical architecture** — the addressivity markers, the algorithms that "collate individual-level preferences." Change the architecture and you change who can be a gatekeeper.
+- "The elite's power to frame is **dependent on the networked actions of the non-elite**" — a genuinely new, symbiotic relationship.
+- The authors are optimistic — "hybrid and fluid journalisms" of "subjective pluralism, cocreation, and collaborative curation." Written in 2013. **Hold that optimism up against Week 3 and the rest of this chapter.**
+:::
+
+## In-class activity 3 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+Meraz & Papacharissi (writing in 2013) saw networked gatekeeping as a mostly **positive** development for journalism and democracy.
+
+**Thinking about the platform environment now, is their optimism justified?**
+
+- Yes — open, crowd-checked curation beats a hidden newsroom
+- Partly — it works in a crisis like Egypt, less so day-to-day
+- No — the same mechanisms now spread misinformation just as efficiently
+- The problem is the architecture changed: 2011 Twitter ≠ any platform today
+
+---
+
+# Journalism's other crises
+
+## The business model problem {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+The old commercial model rested on three revenue streams: **display advertising, classified advertising, subscriptions**. Platforms broke all three.
+
+- Classifieds migrated to Craigslist, eBay, specialised apps.
+- Google and Meta capture the **attention and the ad dollars**.
+- Audiences got used to free content and "news finds me" — only ~17% of people across 20 markets paid for online news (Reuters, 2022).
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Survival experiments
+Paywalls; NYT-style multimedia empires (newsletters, podcasts, games); Axios "smart brevity"; individual newsletters; **non-profit** conversion (Salt Lake Tribune); **crowdfunding** (De Correspondent, the Kyiv Independent — £1.6m from 27,000 donations in three months, 2022); press subsidies.
+:::
+:::
+:::
+
+## Platforms vs. publishers: the Australian case {.smaller}
+
+::: {.callout-important}
+### The News Media Bargaining Code (2021)
+Australia moved to **force Facebook and Google to pay news publishers** for content. Facebook responded by **blocking all news** for Australian users for several days before a deal was reached.
+:::
+
+- This is the **Week 3 Facebook case again**, at the level of law and money rather than algorithm.
+- It reveals the underlying contest: incumbent media vs. platforms over who captures the value of news — and regulators forced to **adjudicate between rival powerful actors**.
+- Canada, and the EU have watched closely; note it also connects forward to **Week 9** (platform governance).
+
+## "Fake news" — two meanings {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Meaning 1 — a real phenomenon.** Literally false content, and outlets that *look* like journalism but use sensational, half-true, or fabricated claims for political or economic gain. Also **hyper-partisan** "pink slime" outlets masquerading as local news.
+:::
+
+::: {.column width="50%"}
+**Meaning 2 — a weapon.** "Fake news" as a label political elites use to **discredit accurate reporting** and dodge accountability — the "alternative facts" / "post-truth" move.
+:::
+:::
+
+::: {.callout-tip}
+Journalism's institutional response: the **fact-checking movement** — explicitly *evaluating* claims, not just reporting them. (More in **Week 10** on misinformation.)
+:::
+
+## Media knowledge changes how people use platforms {.smaller}
+
+Schulz et al. (2022), five Western countries:
+
+> Higher news media knowledge — knowledge about **how the news is made** — is positively associated with using social media *as a* source of news, but negatively associated with using it as the *primary or only* source.
+
+::: {.callout-note}
+### The literacy split
+- **Higher media knowledge** → social media as *part of a mix*, aware that algorithms shape visibility.
+- **Lower media knowledge** → higher risk of relying *only* on social media, and more exposure to misinformation.
+:::
+
+## Data journalism {.smaller}
+
+- "Both a process and a product": gathering, cleaning, analysing, visualising and publishing data to *do journalism* — finding and telling stories **with and through data**.
+- Examples: Covid-19 dashboards, gun-death visualisations, election-tracking; the **Panama / Pandora Papers** (ICIJ made 11.5m leaked records legible).
+- Caution: **"objective data" is a myth**. Data are constructs — operationalisations, approximations, snapshots. They must be read against theory and other data.
+- It is **resource-intensive** — local newsrooms rarely have the money or skills. So data journalism deepens a "journalism of the elite, for the elite" (Usher, 2021).
+
+## Algorithmic journalism {.smaller}
+
+Four areas [Kotenidis & Veglis 2021]:
+
+| Area | What it is | Where the debate is |
+|---|---|---|
+| **Automated content production** | NLG / AI writes routine news — weather, sports, earnings | Job loss, misinformation from bad data, "assembly-line" news |
+| **Data mining** | Algorithms surface stories hidden in large datasets | Mostly positive — enables investigation |
+| **News dissemination** | Site and platform algorithms decide what content is shown | This *is* the Week 3 problem, from inside the newsroom |
+| **Content optimisation** | A/B-tested headlines, page formats to maximise clicks/shares | Civic value vs. engagement metrics |
+
+::: {.callout-tip}
+Diakopoulos: the future is **co-evolution** — "human journalists will still have a lot to add when it comes to complex communication, expert thinking, and ethical judgment." Note the parallel with Meraz & Papacharissi's hybrid journalisms.
+:::
+
+## In-class activity 4 {.smaller}
+
+::: {.center}
+
+**Short answer — Mentimeter (open text)**
+
+:::
+
+A newsroom automates its routine coverage, optimises every headline algorithmically, and relies on platform feeds for most of its reach.
+
+**At what point — if any — does it stop being journalism? Use the "four Ps" (person, product, purpose, process) to make your case.**
+
+---
+
+# Where this leaves Leg 1
+
+## Bringing Week 3 and Week 5 together {.smaller}
+
+::: {.incremental}
+- **Week 3** — platforms took distributional and gatekeeping power *from* journalism, and that power is invisible and unaccountable.
+- **Week 5** — what has partly replaced institutional gatekeeping is **networked** gatekeeping and framing: crowdsourced, front-stage, transparent in its verification, genuinely more contestable.
+- **But** it is entirely dependent on platform architecture (which has changed a lot since 2011), it runs on **affect** as much as accuracy, and the **business model** that funds professional Process and Purpose is collapsing underneath it.
+- **The Leg 1 reading so far**: platforms didn't simply weaken journalism's democratic function — they **redistributed** it, to actors and mechanisms that are more open but also less resourced, less stable, and less accountable in a *different* way (no institution to hold responsible).
+:::
+
+## Where this connects forward {.smaller}
+
+::: {.incremental}
+- **Week 6** — strategic political communication: if journalists are no longer the only gatekeepers, campaigns and governments communicate *around* them. Cambridge Analytica as a skeptical counter-case.
+- **Week 8** — movements: #Egypt is also a **movements** case. We return to it via Internet capital vs. social capital (Leg 3).
+- **Week 9** — governance: the Australian bargaining code, and whether regulation can restore accountability.
+- **Week 10** — misinformation: the same networked mechanisms that carried "revolution" to prominence also carry falsehood.
+- **Week 13** — the verdict: is redistributed, networked gatekeeping *enough* for democratic accountability?
+:::
+
+## Key takeaways {.smaller}
+
+- **Journalism is inherently political** — the choice of what to cover asserts the public's right to know. The "four Ps": person, product, purpose, process.
+- Journalism's three functions — **gatekeeping, agenda setting, framing** — still happen, but are now performed by **many more actors**.
+- **Networked gatekeeping / framing** [@merazNetworkedGatekeepingNetworked2013]: on #Egypt, prominence was **crowdsourced** — the crowd was the filter, frames rose by repetition and affect, and the process was public rather than hidden in a newsroom.
+- Journalism also faces **business-model collapse, trust decline, "fake news"** (both a phenomenon and a weapon), and its own turn to **data and algorithmic** methods.
+- **Leg 1 so far**: platforms *redistributed* journalism's democratic function rather than simply destroying it — more open, less accountable in a new way.
+
+## In-class quiz! {.smaller}
+
+::: {.center}
+
+In-class tasks during lectures are not assessed, but participation is timestamped and recorded.
+
+:::
+
+## {.center}
+
+# Attendance
+
+Get your phone out again!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+## References
