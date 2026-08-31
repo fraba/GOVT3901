@@ -75,21 +75,25 @@ Think about the last genuinely important news story you learned about. **How did
 ::: {.columns}
 ::: {.column width="60%"}
 - The chapter opens with a roll-call of killed and jailed journalists — Mexico ("the deadliest country for media professionals outside a warzone"), Belarus, Russia's 2022 media law (15 years for calling the war a "war").
-- Reporters Without Borders: **1,668 journalists killed worldwide, 2003–2022**.
+- Reporters Without Borders: **1,945 journalists killed worldwide, 2003–2026**.
 - The point is not just tragedy. It is a **definition by contrast**: journalism is dangerous *because it is impossible to separate from politics*.
 :::
 
 ::: {.column width="40%"}
 ::: {.callout-important}
 ### The core claim
-"Journalism is inherently political." Even the most "objective" reporter chooses what to cover — and that choice asserts the public's right to know. "There is no more political claim than that."
+"Journalism is inherently political." 
+
+Even the most "objective" reporter chooses what to cover and that choice asserts the public's right to know. 
+
+"There is no more political claim than that."
 :::
 :::
 :::
 
 ## Defining journalism: the "four Ps" {.smaller}
 
-Greste's (2021) framework — a more complete definition than "just telling the truth":
+Greste's [-@gresteDefineJournalismNot2021] framework — a more complete definition than "just telling the truth":
 
 | P | What it covers |
 |---|---|
@@ -152,10 +156,10 @@ Each was, for most of the 20th century, something a **relatively small set of in
 
 ::: {.columns}
 ::: {.column width="55%"}
-> Gatekeeping "describes the powerful process through which events are covered by the mass media, explaining how and why certain information either passes through gates or is closed off from media attention." [Shoemaker & Vos 2009]
+> Gatekeeping "describes the powerful process through which events are covered by the mass media, explaining how and why certain information either passes through gates or is closed off from media attention." [@shoemakerGatekeepingTheory2009]
 
 - Every day, more happens than can (or should) be reported. Time and space are limited.
-- Journalists reduce the flood — ideally keeping the "junk, nonsense, and 'bullshit'" out. Bimber & Gil de Zúñiga call this **"epistemic editing"**.
+- Journalists reduce the flood — ideally keeping the "junk, nonsense, and 'bullshit'" out. Bimber & Gil de Zúñiga call this **"epistemic editing"** [-@bimberUneditedPublicSphere2020].
 :::
 
 ::: {.column width="45%"}
@@ -171,15 +175,61 @@ Gatekeeping is *useful*. A shared, curated, verified information supply is part 
 ::: {.callout-note}
 ### Two extensions to the theory
 - **Networked gatekeeping** [@merazNetworkedGatekeepingNetworked2013] — trusted but *non-institutional* curators (influencers, activists, domain experts) now help decide what circulates.
-- **Gatewatching** [Bruns 2005/2018] — users don't just select; they *monitor* what mainstream outlets publish, then take up, criticise, extend, or reshare it.
+- **Gatewatching** [@brunsGatewatchingCollaborativeOnline2005; @brunsGatewatchingNewsCuration2018] — users don't just select; they *monitor* what mainstream outlets publish, then take up, criticise, extend, or reshare it.
 :::
 
-- Barzilai-Nahon (2008): "networked gatekeeping" describes many actors with **diverse and unequal levels of power** negotiating what passes.
+- Barzilai-Nahon [-@barzilainahonTowardTheoryNetwork2008]: "networked gatekeeping" describes many actors with **diverse and unequal levels of power** negotiating what passes.
 - Teenagers on TikTok can reach larger audiences than a newsroom. Activists cover their own protests. Politicians talk directly to voters — *and* set the agenda for journalists.
+
+## From one gate to many {.smaller}
+
+Node size = number of connections, a rough stand-in for gatekeeping power. One structure concentrates it; the other spreads it unevenly.
+
+::: {.columns}
+::: {.column width="50%"}
+```{r}
+#| label: fig-broadcast-gatekeeping
+#| fig-cap: "Broadcast gatekeeping: one newsroom, many passive recipients"
+#| fig-width: 5
+#| fig-height: 5
+library(igraph)
+set.seed(42)
+g_broadcast <- make_star(13, mode = "out")
+plot(g_broadcast,
+     layout = layout_as_star(g_broadcast),
+     vertex.size = c(40, rep(10, 12)),
+     vertex.color = c("#e64626", rep("#F1F1F1", 12)),
+     vertex.label = NA,
+     vertex.frame.color = "#424242",
+     edge.arrow.size = 0.4,
+     edge.color = "#B0B0B0")
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-networked-gatekeeping
+#| fig-cap: "Networked gatekeeping: many actors, unequal degrees of power"
+#| fig-width: 5
+#| fig-height: 5
+set.seed(7)
+g_networked <- sample_pa(n = 25, power = 1.1, m = 2, directed = FALSE)
+deg <- degree(g_networked)
+pal <- colorRampPalette(c("#FFB800", "#e64626"))(max(deg) + 1)
+plot(g_networked,
+     layout = layout_with_fr(g_networked),
+     vertex.size = 4 + deg * 2.2,
+     vertex.color = pal[deg + 1],
+     vertex.label = NA,
+     vertex.frame.color = "#424242",
+     edge.color = "#B0B0B0")
+```
+:::
+:::
 
 ## 2. Agenda setting {.smaller}
 
-> "The more coverage an issue receives, the more important it is to people." [Coleman et al. 2008]
+> "The more coverage an issue receives, the more important it is to people." [@colemanAgendaSetting2008]
 
 - Classic agenda setting: salient issues in the **media** become salient issues in **politics** and in the **public mind**. It is about *quantity* — how often and how prominently.
 - **Second-level agenda setting** — the media don't just make an issue salient, they make particular *attributes* of it salient.
