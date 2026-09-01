@@ -31,7 +31,7 @@ I would like to acknowledge the Traditional Owners of Australia and recognise th
 
 ::: {.incremental}
 - **Week 3** — platforms hold structural power across six dimensions, and a defining feature of that power is that it is **invisible and unaccountable**. Soffer: algorithms now perform the "second step" that human opinion leaders once did — personalising content, but with no one to ask *why*.
-- **Week 4** (Nayeli) — public spheres, publics, and public opinion on platforms.
+- **Week 4** (Nayeli) — public spheres, publics, and counterpublics (Fraser, against Habermas' rational-critical ideal); platforms *organise*, not just host, communication via **social media logic** (Poell & van Dijck: programmability, popularity, connectivity, datafication) and algorithmic curation; public opinion ≠ trace data — a like isn't support. Landed on the **Democratic Paradox**: platforms expand participation *and* concentrate power, expand *and* fragment information, enable solidarity *and* hostility.
 - Today we take **Week 3's case — Facebook's 2018 feed change and Australian journalism — and look at it from the other side of the gate**: how does journalism, as an institution, respond when algorithms take over the gatekeeping it used to do?
 :::
 
@@ -119,7 +119,7 @@ Why this matters today: platforms have made **Product** trivially easy to distri
 ::: {.callout-note}
 ### Events make citizen journalists
 - Ukrainians reporting war crimes from bomb shelters, 2022.
-- Bystanders filming police killings of Black Americans (Richardson, 2020).
+- Bystanders filming police killings of Black Americans [@richardsonBearingWitnessBlack2020].
 - **The 2011 Egyptian uprising** — our case study today.
 :::
 :::
@@ -233,13 +233,13 @@ plot(g_networked,
 
 - Classic agenda setting: salient issues in the **media** become salient issues in **politics** and in the **public mind**. It is about *quantity* — how often and how prominently.
 - **Second-level agenda setting** — the media don't just make an issue salient, they make particular *attributes* of it salient.
-- Networked versions: trending topics challenging state media in authoritarian contexts (Fu & Chau, 2014); issues bouncing between Twitter and broadcast news (Su & Borah, 2019).
+- Networked versions: trending topics challenging state media in authoritarian contexts [@fuUseMicroblogsGrassroots2014]; issues bouncing between Twitter and newspapers [@suWhoAgendaSetter2019a].
 
 ## 3. Framing {.smaller}
 
 ::: {.columns}
 ::: {.column width="55%"}
-> To frame "is to select some aspects of a perceived reality and make them more salient ... so as to promote a particular problem definition, causal interpretation, moral evaluation, and/or treatment recommendation." [Entman 1993]
+> To frame "is to select some aspects of a perceived reality and make them more salient ... so as to promote a particular problem definition, causal interpretation, moral evaluation, and/or treatment recommendation." [@entmanFramingClarificationFractured1993]
 
 Frames: (1) **define problems**, (2) **diagnose causes**, (3) **make moral judgements**, (4) **suggest remedies**.
 :::
@@ -247,7 +247,7 @@ Frames: (1) **define problems**, (2) **diagnose causes**, (3) **make moral judge
 ::: {.column width="45%"}
 ::: {.callout-tip}
 ### Same event, different frame
-A protest is either **a legitimate claim** (civil rights, climate) or **a public nuisance** (traffic, litter, troublemakers). Research shows mass media lean to hostile framing of protest — especially by non-dominant groups (Harlow et al., 2017).
+A protest is either **a legitimate claim** (civil rights, climate) or **a public nuisance** (traffic, litter, troublemakers). Research shows mass media lean to hostile framing of protest — especially by non-dominant groups [@harlowProtestParadigmMultimedia2017].
 :::
 :::
 :::
@@ -292,6 +292,73 @@ It is the cleanest early empirical picture of gatekeeping and framing happening 
 :::
 :::
 
+## The most important law you never learned {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+School teaches you the **bell curve**: height, exam marks, IQ — most things cluster around an average, extremes are rare.
+
+**Almost nothing online works like that.** Follower counts, retweets, hyperlinks, YouTube views, city sizes, word frequency — all follow a **power law**: a tiny number of nodes capture an enormous share, and almost everyone else gets next to nothing. There is no "typical" node, and no average to speak of.
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### Why it matters on the Internet
+A handful of hubs — Google, Wikipedia, a few mega-accounts — absorb a wildly disproportionate share of attention and links. This is the opposite of the early "long tail democratises voice" hope for the internet, and it is the *structural* reason gatekeeping power concentrates even in an open, networked system.
+:::
+:::
+:::
+
+::: {.callout-tip}
+### The Matthew effect
+"For unto every one that hath shall be given" (Matthew 25:29) — **the rich get richer.** In networks this is **preferential attachment**: a node that already has many connections is more likely to attract the next one too. Small, often accidental early advantages compound into the extreme hubs a power law produces.
+:::
+
+## What a power law looks like {.smaller}
+
+```{r}
+#| include: false
+library(igraph)
+set.seed(11)
+g_pl <- sample_pa(n = 300, power = 1, m = 2, directed = TRUE)
+deg_pl <- degree(g_pl, mode = "in")
+```
+
+::: {.columns}
+::: {.column width="50%"}
+```{r}
+#| label: fig-powerlaw-network
+#| fig-cap: "A hypothetical network grown by preferential attachment"
+#| fig-width: 4
+#| fig-height: 4
+plot(g_pl,
+     layout = layout_with_fr(g_pl),
+     vertex.size = 1.5 + sqrt(deg_pl) * 2.4,
+     vertex.color = colorRampPalette(c("#FFB800", "#e64626"))(max(deg_pl) + 1)[deg_pl + 1],
+     vertex.label = NA,
+     vertex.frame.color = NA,
+     edge.arrow.size = 0.1,
+     edge.color = "#DEDEDE",
+     edge.width = 0.5)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-powerlaw-distribution
+#| fig-cap: "Log-log axes: a straight line is the power-law signature"
+#| fig-width: 4
+#| fig-height: 4
+tab <- table(deg_pl)
+tab <- tab[names(tab) != "0"]
+par(mar = c(5, 5, 2, 2))
+plot(as.numeric(names(tab)), as.numeric(tab), log = "xy", pch = 19, col = "#e64626",
+     xlab = "Indegree (log)", ylab = "Nodes (log)",
+     cex = 1.3, cex.lab = 1.1)
+```
+:::
+:::
+
 ## Finding 1: power laws, but not the expected elite {.smaller}
 
 - **Concentration is real**: the top 10% of RT'd accounts produced 84% of retweets; the top 10% of mentioned accounts, 73% of mentions.
@@ -309,6 +376,77 @@ Prominent actors were **not** densely tied to *each other* (low network density,
 - In the old model, an editor's authority came from a newsroom position. Here, **eliteness is emergent and contingent** — "crowdsourced to prominence."
 - Meraz & Papacharissi's definition: **networked gatekeeping** is "a process through which actors are crowdsourced to prominence through ... conversational, social practices that symbiotically connect elite and crowd in the determination of information relevancy."
 - Non-elites could spike to prominence for **a day at a time** (\@3arabawy on 27 Jan, \@Zeinobia on 25 Jan) — impossible in a broadcast gatekeeping regime.
+
+## Density and reciprocity, visually {.smaller}
+
+**Density** = share of possible ties that exist. **Reciprocity** = share of ties returned both ways.
+
+```{r}
+#| include: false
+g_dense <- make_full_graph(6, directed = TRUE)
+dens_dense <- edge_density(g_dense)
+recip_dense <- reciprocity(g_dense)
+
+n_elite <- 4
+n_crowd <- 16
+g_sparse <- make_empty_graph(n = n_elite + n_crowd, directed = TRUE)
+V(g_sparse)$type <- c(rep("elite", n_elite), rep("crowd", n_crowd))
+set.seed(5)
+edges <- c()
+for (i in 1:n_crowd) {
+  target <- sample(1:n_elite, 1)
+  edges <- c(edges, n_elite + i, target)
+}
+g_sparse <- add_edges(g_sparse, edges)
+dens_sparse <- edge_density(g_sparse)
+recip_sparse <- reciprocity(g_sparse)
+
+cap_dense <- sprintf("A dense, reciprocal elite (density = %.2f, reciprocity = %.2f)", dens_dense, recip_dense)
+cap_sparse <- sprintf("What #Egypt's elites looked like (density = %.2f, reciprocity = %.2f)", dens_sparse, recip_sparse)
+```
+
+::: {.columns}
+::: {.column width="50%"}
+```{r}
+#| label: fig-dense-reciprocal
+#| fig-cap: !expr cap_dense
+#| fig-width: 4
+#| fig-height: 4
+plot(g_dense,
+     layout = layout_in_circle(g_dense),
+     vertex.size = 22,
+     vertex.color = "#e64626",
+     vertex.label = NA,
+     vertex.frame.color = "#424242",
+     edge.arrow.size = 0.3,
+     edge.color = "#424242",
+     edge.curved = 0.15)
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-sparse-nonreciprocal
+#| fig-cap: !expr cap_sparse
+#| fig-width: 4
+#| fig-height: 4
+lay <- matrix(0, nrow = n_elite + n_crowd, ncol = 2)
+lay[1:n_elite, ] <- cbind(seq(-1, 1, length.out = n_elite), 0)
+ang <- seq(0, 2*pi, length.out = n_crowd + 1)[1:n_crowd]
+lay[(n_elite+1):(n_elite+n_crowd), ] <- cbind(2.6*cos(ang), 2.6*sin(ang))
+plot(g_sparse,
+     layout = lay,
+     vertex.size = ifelse(V(g_sparse)$type == "elite", 22, 8),
+     vertex.color = ifelse(V(g_sparse)$type == "elite", "#e64626", "#FFB800"),
+     vertex.label = NA,
+     vertex.frame.color = "#424242",
+     edge.arrow.size = 0.25,
+     edge.color = "#B0B0B0")
+```
+:::
+:::
+
+Egypt's elites got attention *from* the crowd, not *from each other*.
 
 ## Finding 3: hashtags as organic frames {.smaller}
 
@@ -367,31 +505,43 @@ Meraz & Papacharissi (writing in 2013) saw networked gatekeeping as a mostly **p
 
 ::: {.columns}
 ::: {.column width="55%"}
-The old commercial model rested on three revenue streams: **display advertising, classified advertising, subscriptions**. Platforms broke all three.
+The old commercial model rested on three revenue streams: **1) display advertising, 2) classified advertising, 3) subscriptions**. Platforms broke all three.
 
 - Classifieds migrated to Craigslist, eBay, specialised apps.
 - Google and Meta capture the **attention and the ad dollars**.
-- Audiences got used to free content and "news finds me" — only ~17% of people across 20 markets paid for online news (Reuters, 2022).
+- Audiences got used to free content and "news finds me" — only ~17% of people across 20 markets paid for online news [@newmanReutersInstituteDigital2022].
 :::
 
 ::: {.column width="45%"}
 ::: {.callout-note}
 ### Survival experiments
-Paywalls; NYT-style multimedia empires (newsletters, podcasts, games); Axios "smart brevity"; individual newsletters; **non-profit** conversion (Salt Lake Tribune); **crowdfunding** (De Correspondent, the Kyiv Independent — £1.6m from 27,000 donations in three months, 2022); press subsidies.
+
+- Paywalls; NYT-style multimedia empires (newsletters, podcasts, games); Axios "smart brevity"; individual newsletters; 
+
+- **non-profit** conversion (Salt Lake Tribune); 
+
+- **crowdfunding** (De Correspondent, the Kyiv Independent — £1.6m from 27,000 donations in three months, 2022); press subsidies.
 :::
 :::
 :::
+
+### But have you ever paid for news?
 
 ## Platforms vs. publishers: the Australian case {.smaller}
 
 ::: {.callout-important}
 ### The News Media Bargaining Code (2021)
-Australia moved to **force Facebook and Google to pay news publishers** for content. Facebook responded by **blocking all news** for Australian users for several days before a deal was reached.
+Australia's law forcing **Google and Meta to negotiate payment deals** with news publishers, or face binding arbitration. Facebook responded by **blocking all news** for Australian users for five days (17–22 Feb 2021) before a deal was reached. By 2023: 30+ deals, worth roughly $200m combined.
 :::
 
-- This is the **Week 3 Facebook case again**, at the level of law and money rather than algorithm.
-- It reveals the underlying contest: incumbent media vs. platforms over who captures the value of news — and regulators forced to **adjudicate between rival powerful actors**.
-- Canada, and the EU have watched closely; note it also connects forward to **Week 9** (platform governance).
+::: {.callout-note}
+### It's unravelling
+**Meta stopped renewing** its news deals in **March 2024**; **Google followed in May 2025**. Aus Govt's fallback — the **News Bargaining Incentive** (Dec 2024) — would charge large platforms unless they pay publishers directly. No platform has yet been formally "designated" under either scheme - probably worried for Trump's retaliation [@meeseCompellingNegotiationsNews2026].
+:::
+
+- This is the **Week 3 Facebook case again** — fought with law and money rather than algorithm.
+- Regulators are forced to **adjudicate between rival powerful actors** — and a law can force a deal, but not force platforms to *keep* honouring it.
+- Canada and the EU watched closely; this also connects forward to **Week 9** (platform governance).
 
 ## "Fake news" — two meanings {.smaller}
 
@@ -411,7 +561,7 @@ Journalism's institutional response: the **fact-checking movement** — explicit
 
 ## Media knowledge changes how people use platforms {.smaller}
 
-Schulz et al. (2022), five Western countries:
+Schulz et al. [-@schulzRoleNewsMedia2024], five Western countries:
 
 > Higher news media knowledge — knowledge about **how the news is made** — is positively associated with using social media *as a* source of news, but negatively associated with using it as the *primary or only* source.
 
@@ -426,11 +576,11 @@ Schulz et al. (2022), five Western countries:
 - "Both a process and a product": gathering, cleaning, analysing, visualising and publishing data to *do journalism* — finding and telling stories **with and through data**.
 - Examples: Covid-19 dashboards, gun-death visualisations, election-tracking; the **Panama / Pandora Papers** (ICIJ made 11.5m leaked records legible).
 - Caution: **"objective data" is a myth**. Data are constructs — operationalisations, approximations, snapshots. They must be read against theory and other data.
-- It is **resource-intensive** — local newsrooms rarely have the money or skills. So data journalism deepens a "journalism of the elite, for the elite" (Usher, 2021).
+- It is **resource-intensive** — local newsrooms rarely have the money or skills. So data journalism deepens a "journalism of the elite, for the elite" [@usherNewsRichWhite2021].
 
 ## Algorithmic journalism {.smaller}
 
-Four areas [Kotenidis & Veglis 2021]:
+Four areas [@kotenidisAlgorithmicJournalismCurrent2021]:
 
 | Area | What it is | Where the debate is |
 |---|---|---|
@@ -440,7 +590,7 @@ Four areas [Kotenidis & Veglis 2021]:
 | **Content optimisation** | A/B-tested headlines, page formats to maximise clicks/shares | Civic value vs. engagement metrics |
 
 ::: {.callout-tip}
-Diakopoulos: the future is **co-evolution** — "human journalists will still have a lot to add when it comes to complex communication, expert thinking, and ethical judgment." Note the parallel with Meraz & Papacharissi's hybrid journalisms.
+Diakopoulos [-@diakopoulosAutomatingNewsHow2019]: the future is **co-evolution** — "human journalists will still have a lot to add when it comes to complex communication, expert thinking, and ethical judgment." Note the parallel with Meraz & Papacharissi's hybrid journalisms.
 :::
 
 ## In-class activity 4 {.smaller}
@@ -463,6 +613,7 @@ A newsroom automates its routine coverage, optimises every headline algorithmica
 
 ::: {.incremental}
 - **Week 3** — platforms took distributional and gatekeeping power *from* journalism, and that power is invisible and unaccountable.
+- **Week 4** — the general mechanism behind that: platforms *organise* public communication (social media logic, algorithmic curation), and the result is Week 4's **Democratic Paradox** — participation expands *while* power concentrates. #Egypt is that paradox with real numbers: networked, crowdsourced, and *still* a power law.
 - **Week 5** — what has partly replaced institutional gatekeeping is **networked** gatekeeping and framing: crowdsourced, front-stage, transparent in its verification, genuinely more contestable.
 - **But** it is entirely dependent on platform architecture (which has changed a lot since 2011), it runs on **affect** as much as accuracy, and the **business model** that funds professional Process and Purpose is collapsing underneath it.
 - **The Leg 1 reading so far**: platforms didn't simply weaken journalism's democratic function — they **redistributed** it, to actors and mechanisms that are more open but also less resourced, less stable, and less accountable in a *different* way (no institution to hold responsible).
