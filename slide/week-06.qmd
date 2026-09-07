@@ -1,0 +1,546 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 06: Platforms and Strategic Political Communication<br>Last updated: 2026-09-07
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    include-after-body: assets/print-pdf-button.html
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Housekeeping: A1 is due this week {.smaller}
+
+::: {.callout-important}
+### A1 — Digital Media Campaign Video Presentation (30%)
+**Due Sunday 13 September 2026, 11:59pm.** A single video file, **under 500MB**, submitted on Canvas.
+:::
+
+::: {.columns}
+::: {.column width="55%"}
+- Choose **one** of Ch6's five strategic-communication practices — **political marketing, public relations, public diplomacy, crisis communication, digital lobbying** — attach it to a real issue, and design (and defend) the digital campaign that practice would run.
+- Scope is **Weeks 1–6 only**. It is *not* an election campaign (Ch7) or a movement (Ch8) — those come after the due date.
+- Check your file size **before** submission day, not on it. Export at 720p if 1080p is too large.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+### Today's lecture is A1's conceptual backbone
+Everything in Ch6 — the five practices, the four-part positioning analysis, public opinion as *constructed* — is exactly what the "Audience & platform strategy" criterion (25%) rewards you for using well.
+:::
+:::
+:::
+
+## Last week(s): where Leg 1 left us {.smaller}
+
+::: {.incremental}
+- **Week 3** — platforms hold structural power, and it is **invisible and unaccountable**: algorithms perform the gatekeeping humans used to do, with no one to ask *why*.
+- **Week 5** — journalism's gatekeeping, agenda setting and framing didn't disappear; they were **redistributed** to a networked, crowdsourced, front-stage process — more open, but less resourced and less accountable in a new way.
+- **The Leg 1 reading**: platforms *redistributed* journalism's democratic function rather than simply destroying it.
+:::
+
+## This week is not a "leg" — it's a complication {.smaller}
+
+::: {.callout-important}
+### Still the same running question
+Does digital media strengthen or weaken democratic institutions? This week adds a **complicating data point**, not a load-bearing leg.
+:::
+
+Two moves today:
+
+1. **The skeptical counter-case.** The loudest post-2016 story about platforms and persuasion — **Cambridge Analytica and Brexit** — is largely a *moral panic*. Platform persuasion is real, but its power is routinely overstated. That should make us cautious about the "platforms broke democracy" verdict.
+2. **But** platforms are not neutral pipes either. Kreiss & McGregor show technology firms as **active co-producers of campaign strategy** — a quieter, more structural kind of influence than mind-control microtargeting.
+
+## Today's class (Ch 6) {.smaller}
+
+- **Define strategic political communication** — and distinguish it from deliberation and from the public sphere ideal.
+- **Public opinion** as a strategic battleground — constructed and represented, not simply measured.
+- The five practices: **political marketing; public relations & public diplomacy; crisis communication; digital lobbying.**
+- **Case:** Cambridge Analytica / Brexit as a skeptical counter-case — effects overstated relative to the panic [@jamiesonCyberwar2020].
+- **Reading:** Kreiss & McGregor [-@kreissMcGregorTechnologyFirms2018] — platforms as active agents in campaign communication, not neutral channels.
+
+## In-class activity 1 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+Think of the last time a political message clearly changed your mind — or someone you know changed theirs.
+
+**Where did that persuasion actually come from?**
+
+- A paid ad (on any platform or channel)
+- Something a friend, family member, or someone I follow posted
+- A news story or journalist
+- A politician or campaign speaking directly
+- Honestly, I can't think of a time my mind was changed
+
+---
+
+# What is strategic political communication?
+
+## A working definition {.smaller}
+
+> "Strategic political communication is as old as humanity itself." [@klingerPlatformsPowerPolitics2023, Ch 6]
+
+- Any attempt to **legitimate, persuade, convince, contest, or secure power** in line with a pre-established goal.
+- **"Strategic" = there is intent behind it.** Governments, campaigns, leaders, NGOs, citizens — all do it.
+- It varies along four dimensions:
+  - *what* the actor wants to achieve
+  - *how* public the communication is (a rally vs. a quiet word with a legislator)
+  - the *means* they can legitimately use
+  - *who* the actor is
+
+## Strategic ≠ deliberative {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Strategic communication** is *instrumental*: persuade, mobilise, win.
+
+- Asymmetric persuasion — one-sided attempts to shape beliefs.
+- Identity mobilisation — building "us" vs. "them".
+- Message discipline — a limited, coherent set of themes, repeated.
+- **Outcomes over consensus.**
+:::
+
+::: {.column width="50%"}
+**Deliberation** (Ch 4) aims to *arrive at* a shared set of ends in a mutual or general interest — through inclusive, rational-critical debate.
+
+::: {.callout-note}
+### The tension
+Platform logics reward *strategic* over *deliberative* communication: emotional engagement over argument, virality over nuance, influence over understanding.
+:::
+:::
+:::
+
+## Strategic communication is central to democracy {.smaller}
+
+- In the absence of coercion, democratic consent is secured through **persuasion**: leaders justifying actions, rivals making their case, the accused defending themselves.
+- So strategic communication is not a pathology *added* to democracy — it is part of how non-coercive politics works.
+- The **central battleground is public opinion** — increasingly shaped, represented, and fought over on platforms.
+
+::: {.callout-tip}
+This is why A1 asks you to pick a *practice* with a *goal*. "Raise awareness" is not a goal — political marketing, PR, public diplomacy, crisis comms and lobbying each pursue a different kind of end.
+:::
+
+---
+
+# Public opinion as a strategic battleground
+
+## Public opinion is constructed, not found {.smaller}
+
+> Public opinion is "the pictures in our heads" (Lippmann 1922) — and it is *indelibly linked to the ways we have of representing it*.
+
+- Publics cannot tell us what they think on their own. Opinion has to be **represented**.
+- The questions a survey asks *create* the opinion it then reports.
+- Many actors produce representations of public opinion: **pollsters, journalists, lobbyists, candidates, movements** ("the people united…").
+
+::: {.callout-important}
+Strategic communication is the practice of **influencing public opinion** — *and* of **creating publics** for strategic ends (turning private individuals into "taxpayers", "climate voters", "patriots").
+:::
+
+## Platforms as a new way of representing public opinion {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+Platforms are central to strategic communication in **two** ways:
+
+1. Their **affordances** give rise to new forms of public opinion — affective publics, interest communities, network flows.
+2. They **represent** public opinion back to political actors — through the **analytics** they hand to practitioners (likes, shares, sentiment, "the conversation").
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Metrics become proxies
+Engagement statistics get treated *as* public opinion — and then shape messaging, targeting, and even policy decisions.
+:::
+:::
+:::
+
+::: {.footer}
+Kreiss & McGregor (2019); McGregor (2019), cited in Klinger, Kreiss & Mutsvairo (2023), Ch 6.
+:::
+
+## In-class activity 2 {.smaller}
+
+::: {.center}
+
+**Quick reflection — Mentimeter (open text)**
+
+:::
+
+Think of a recent moment when a politician or campaign claimed to speak for "what the public wants" / "ordinary Australians" / "the silent majority".
+
+**What evidence, if any, did they offer that this "public" actually holds that view — and how was that public being *constructed* by the claim itself?**
+
+---
+
+# The five practices
+
+## 1. Political marketing {.smaller}
+
+> "Platforms are not neutral means of distributing political content — they shape that content by creating incentives for political actors." [@klingerPlatformsPowerPolitics2023, Ch 6]
+
+- **Political marketing** = all attempts to promote policies/ideas, change opinion, secure power, or shape debate — *far beyond elections*.
+- It is a **holistic positioning** exercise. The four-part analysis (Ch 6.4):
+  1. the organisation's **goals**
+  2. the field of **allies and adversaries**
+  3. the **state of play**
+  4. the organisation's **strengths and weaknesses** (symbolic and resource-wise)
+
+::: {.callout-tip}
+This four-part analysis is directly usable in A1's "Audience & platform strategy" section.
+:::
+
+## Political marketing: message and audience {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**A coherent set of narratives** — not infinite, not contradictory. Research: messages with "clearly identifiable core elements" persuade best (Green 2021).
+
+Strategic ambiguity buys flexibility, but risks being **defined first by your adversaries**.
+:::
+
+::: {.column width="50%"}
+**Delivered to some set of audiences** — the platform era multiplies both the *vehicles* and the *publics*:
+
+- fan / affinity communities
+- influencers as trusted messengers
+- microtargeted appeals alongside broad messaging
+- journalists targeted *as a route to* lawmakers
+:::
+:::
+
+::: {.callout-note}
+### The shift
+From **broadcasting** to **precision persuasion** — but managing coherence across many fragmented, sometimes contradictory publics.
+:::
+
+## 2. Public relations {.smaller}
+
+> "Press releases are now rarely just for journalists." [@klingerPlatformsPowerPolitics2023, Ch 6]
+
+- PR = creating and maintaining a **positive public image** through relationships with journalists, influencers, opinion leaders, supporters.
+- Established tools: press briefings, releases, conferences, background cultivation of reporters, staged events.
+- In the platform era the press release gets **re-versioned across platforms** to reach supporter networks directly — Facebook post, tweet thread, Instagram story, YouTube video, email list.
+- **Real-time feedback** (sentiment analysis, engagement data) reshapes the *next* message.
+
+## 3. Public diplomacy {.smaller}
+
+> Public diplomacy: state strategic communication to **foreign populations or international audiences**, to shape attitudes and pressure governments — and for **nation-branding**.
+
+- Long-standing: BBC World Service, Voice of America, Deutsche Welle, Al Jazeera, Russia Today.
+- Digital age: **bots and state troll farms** (the Russian Internet Research Agency), "selfie diplomacy", diplomats and embassies on social media.
+- Platforms opened international audiences to a **wider range of actors** — NGOs, small activist groups, even terrorist groups.
+
+::: {.callout-important}
+### In war, "the first casualty is truth"
+Multiple sides compete to frame the conflict — and it is no longer just governments and militaries doing it, but civil society, activists, and celebrities.
+:::
+
+## Case: Schwarzenegger's anti-war video {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- 17 March 2022. Addressed to the **Russian people** on Twitter during the invasion of Ukraine.
+- Opens with his love of Russia, childhood memories, his father's trauma as a WWII soldier — **building trust before the hard message**.
+- Then: you have been misinformed; soldiers, do not become guilty of war crimes (an indirect call to desert).
+- Also addressed **Putin directly** — `@Schwarzenegger` was one of only 22 accounts `@KremlinRussia_E` followed.
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Why it's a good case
+A **non-state actor** conducting public diplomacy, bypassing official diplomatic channels, using classic persuasion technique (identification, then dissonance) at platform scale.
+:::
+:::
+:::
+
+## 4. Crisis communication {.smaller}
+
+> Crisis communication: "the strategic use of words and actions to manage information and meaning during the crisis process" (Coombs 2018).
+
+- A crisis has **phases** — communicative demands change as it "morphs".
+- It breaks strategic communication's core requirement: **a consistent message**. Covid-era mask guidance is the standard example — the advice reversed, and governments had to explain why.
+- **Organisational crises** (scandals, reputational threats): response frames run from *attack the accuser / find a scapegoat / make excuses* through to *accept responsibility and offer change* (Coombs 2018) — the choice depends on attributed culpability.
+- Social media = **new speed and new exposure**: monitor real-time opinion, self-disclose, apologise, correct — all in public, all fast.
+
+## 5. Digital lobbying {.smaller}
+
+> "Lobbying" = attempts to influence policymaking **without being directly involved in the process** — an intermediary level, between stakeholder groups and those in power.
+
+- Traditionally **interpersonal and often hidden** (tobacco, arms) — lobbyists prefer direct contact to public campaigns.
+- Platforms **lowered the cost**: small groups can now approach politicians directly, without a paid lobbyist.
+
+::: {.callout-note}
+### Two logics (Johansson & Scaramuzzino 2019)
+- **Logic of influence** — pushing a specific message / ask.
+- **Logic of presence** — building political *presence*: demonstrating and amplifying your connections with politicians. "Promoting *who you are* rather than *what you stand for*."
+:::
+
+## Case: "We are more than numbers" {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Norway, 2017. A proposal to cut welfare income for families of chronically ill children.
+- An **ad hoc network of mothers** posted "heart-wrenching public letters" on the Facebook pages of the PM and ministers — tagging them directly.
+- Personalised, emotional, authentic storytelling: selfies at children's bedsides, first-hand accounts.
+- **Also aimed at engagement → media coverage**: "sick children 'sell'… it evokes strong emotions because it is unfair."
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### The dilemma
+Figenschou & Thorbjørnsrud (2020): it was powerful, but it forced the mothers to **invade their own children's privacy** and negotiate their roles as parents vs. lay activists.
+:::
+:::
+:::
+
+## In-class activity 3 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+You've now seen the five practices. **For your A1, which one are you (currently) planning to build your campaign around?**
+
+- Political marketing
+- Public relations
+- Public diplomacy
+- Crisis communication
+- Digital lobbying
+- Still deciding
+
+---
+
+# Case: Cambridge Analytica and the panic about persuasion
+
+## The story as it was told {.smaller}
+
+::: {.columns}
+::: {.column width="60%"}
+- After the **2016 Brexit referendum** and the **2016 US election**, Cambridge Analytica became shorthand for a new kind of threat: **psychographic microtargeting** that could get "directly into people's heads" and swing elections.
+- Harvested Facebook data on tens of millions of users; claimed to build "psychological profiles" and serve individually tailored persuasive ads.
+- The framing: voters as **dupes**, democracy **hacked**.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### The chapter's own framing
+Klinger, Kreiss & Mutsvairo put this alongside the **"War of the Worlds" panic** of 1938 and 1930s–40s fears of Nazi propaganda — a recurring **overestimation** of media's power to control minds.
+:::
+:::
+:::
+
+## Why the effects were overstated {.smaller}
+
+::: {.incremental}
+- **Decades of research** show people are **not simple dupes** of media messages — they are embedded in social networks and engage in **motivated reasoning**, holding on to what already fits their identity and values.
+- Jamieson [-@jamiesonCyberwar2020] and others: the evidence that psychographic microtargeting *changed vote choice at scale* is thin. Persuasion effects in campaigns are generally **small**.
+- Cambridge Analytica had a **commercial incentive to exaggerate** its own capabilities — and journalists had a compelling narrative.
+- This does **not** mean nothing happened — data was misused, norms were broken, regulation followed — but the "mind-control" story does not survive contact with the effects literature.
+:::
+
+## What the panic gets wrong — and right {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Wrong**
+
+- That microtargeted ads reliably *convert* voters.
+- That the manipulation is *individually* psychological and near-total.
+- That platforms are a uniquely powerful new mind-control technology.
+:::
+
+::: {.column width="50%"}
+**Right — and this is where the reading picks up**
+
+- Platforms *are* deeply involved in campaigns — just not in the way the panic imagines.
+- The real story is **structural and relational**: which data, which ad products, which formats, which firm staff are in the room.
+:::
+:::
+
+::: {.callout-important}
+So: be **skeptical of strong persuasion claims** in your A1's critical-reflection section — but take seriously how platforms **shape what campaigns can do in the first place**.
+:::
+
+---
+
+# Reading: Kreiss & McGregor (2018)
+
+## The study {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+Kreiss & McGregor [-@kreissMcGregorTechnologyFirms2018], *Political Communication* 35(2).
+
+- **The first empirical analysis** of what technology firms — **Facebook, Twitter, Google, Microsoft** — actually *do* with US electoral campaigns.
+- **Data**: field observations at the 2016 Democratic National Convention (the firms' event spaces), plus interviews with firm representatives and with **nine senior digital staffers** on 2016 primary and general-election campaigns, both parties.
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Why this reading, this week
+The textbook says platforms "shape content by creating incentives". This paper shows *how*, concretely — and it is an **empirical** complement to Ch 6's more conceptual treatment.
+:::
+:::
+:::
+
+## Finding 1: why the firms are in politics at all {.smaller}
+
+Three motivations, stated by representatives of **all four firms**:
+
+1. **Direct revenue** — digital political advertising and data services. US presidential politics is a ~$2 billion industry; Trump's 2016 campaign put **50%** of its ad spend into digital.
+2. **Product visibility** — high-profile campaigns showcase their tools to a watching public and press.
+3. **Relationship-building for lobbying** — "campaigns run ultimately to regulate technology firms if they win". Helping candidates get elected builds ties with **future regulators**. (At least one firm said this work "was not specifically tied to any revenue expectations".)
+
+## Finding 2: the firms are organised along party lines {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Facebook, Google, Twitter and Microsoft all built **dedicated Democratic and Republican teams**, staffed by people with **backgrounds in partisan politics**.
+- Rationale: **trust**. Campaign operatives work with people who "share their political ideology and identity" — someone who "used to have to do those jobs… and, in some ways, is one of them."
+- Twitter's Nu Wexler: *"if I'm the ACLU and I know my ad rep is also working with Trump's Super PAC, I'm going to be less inclined to give you my money."*
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### The point
+The firms **adapted their internal structure to the partisan logic of the political field** — the same institutional-adaptation move Nielsen & Ganter describe for platforms and news publishers, but here it's the *firm* reshaping itself.
+:::
+:::
+:::
+
+## Finding 3: quasi-digital consultants, not neutral channels {.smaller}
+
+The firms went **beyond** selling ads and facilitating buys. They:
+
+- advised on **targeting strategies** and **which audiences** to reach;
+- helped **develop and place content** — e.g. Google's Ali-Jae Henke worked with campaigns on "everything from targeting strategies to content development", populating the free "cards" on the Google search page;
+- ran **"ideation" / "executive summit"** sessions (Google flew the Rand Paul campaign to Mountain View to work with creative teams);
+- had **standing weekly calls** and daily contact — *"we are so close with them we are typically sitting in their offices."*
+
+::: {.callout-note}
+Kreiss & McGregor call this **digital consulting**. The firms are "**quasi-digital consultants** … shaping digital strategy, content, and execution."
+:::
+
+## Finding 4: the resources help the under-resourced most {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- **Trump's lean campaign** leaned heavily on firm expertise ("free labour", per Wexler); the RNC's ad director called a Facebook staffer an "MVP" of the campaign.
+- **Clinton's large in-house team** "viewed us as vendors rather than consultants" — dictated its own buys.
+- Sanders and Trump both **worked closely** with the firms; Clinton did not.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+### A "subsidy" of expertise
+Like the informational subsidies strategic communicators give journalists (Ch 6) — mutually beneficial: firms get ad revenue and relationships, campaigns get optimised, extended reach. It benefits **cash-strapped campaigns** more.
+:::
+:::
+:::
+
+## Finding 5: "A/B testing on steroids" {.smaller}
+
+> On any given day the Trump campaign was running **40,000–50,000 variants** of its ads… On the day of the third presidential debate, **175,000 variations**. (Gary Coby, RNC/Trump Director of Advertising)
+
+- Sue Halpern: "Facebook's real influence came from the campaign's strategic and perfectly legal use of Facebook's suite of marketing tools" — ~$70m spent, ~$250m in donations netted.
+- **This is the CA counter-point made precise**: the consequential thing was not secret psychographic mind-control — it was **ordinary, disclosed, industrial-scale ad optimisation**, done *with* platform staff in the room.
+
+## What Kreiss & McGregor conclude {.smaller}
+
+::: {.incremental}
+- Political communication scholars have treated platforms as **channels**. They are **active agents** in political processes — shaping strategy, content and execution.
+- Campaigns increasingly **outsource** digital expertise (data science, targeting, even creative) to for-profit firms — in a world where the same firm is **consultant and distribution channel**.
+- The firms "hold themselves up as neutral, infrastructural carriers" while **making editorial decisions** that grow engagement (the 2016 Facebook Trending Topics / News Feed row).
+- **Normative worry**: key infrastructures for democratic debate are **beholden to market forces**, with "a troubling lack of transparency" — and campaigns can only use these tools "**on terms increasingly shaped by these [firms]**."
+- **Counterweight**: elected officials — future regulators — have more leverage over the firms than publishers do.
+:::
+
+## In-class activity 4 {.smaller}
+
+::: {.center}
+
+**Short answer — Mentimeter (open text)**
+
+:::
+
+Kreiss & McGregor show platform staff sitting *inside* campaigns, shaping strategy and content — not just selling ad space.
+
+**For the campaign you're designing in A1: would you want a Meta / Google / TikTok "partner manager" in your strategy meetings? What would you gain, and what would you be handing over?**
+
+---
+
+# Where this leaves the verdict
+
+## Bringing the week together {.smaller}
+
+::: {.incremental}
+- **The panic** (Cambridge Analytica / Brexit): platforms as mind-control machines that hacked democracy. The **effects literature does not support this** — persuasion effects are small, voters are not dupes, CA had reasons to exaggerate.
+- **The reality** (Kreiss & McGregor): platforms shape political communication through something **quieter and more structural** — partisan firm teams, quasi-consulting relationships, control over ad products and data, industrial-scale optimisation. Campaigns operate "on terms shaped by these firms."
+- **For the running verdict**: this week is a **caution against the strong "platforms broke democracy" reading** — *and* a reminder that "platforms are just neutral pipes" is equally wrong. The influence is real but it is **infrastructural**, not hypnotic.
+:::
+
+## Where this connects forward {.smaller}
+
+::: {.incremental}
+- **Week 7** — campaigns and campaigning (Ch 7): the election-specific version of this week's strategic communication, and **Leg 2** (the participation paradox).
+- **Week 8** — movements (Ch 8): strategic communication *from below*; **Leg 3** (Internet capital vs. social capital).
+- **Week 9** — governance: can regulation restore transparency over the ad products and editorial decisions Kreiss & McGregor flag?
+- **Week 10** — misinformation & propaganda (Kate): state troll farms and public diplomacy's dark side, at length.
+- **Week 13** — the verdict: how much weight does the "platforms manipulate voters" claim actually bear?
+:::
+
+## Key takeaways {.smaller}
+
+- **Strategic political communication** = intentional communication to legitimate, persuade, contest, or secure power. It is **central to democracy**, not external to it — and its battleground is **public opinion**, which platforms both *shape* and *represent back* to political actors.
+- Ch 6's five practices — **political marketing, PR, public diplomacy, crisis communication, digital lobbying** — are the toolkit for A1. Political marketing's **four-part positioning analysis** is directly usable.
+- **Cambridge Analytica / Brexit** is largely a **moral panic**: persuasion effects are small and voters are not dupes. Be skeptical of strong persuasion claims.
+- **Kreiss & McGregor**: technology firms are **active agents**, not neutral channels — partisan teams, quasi-digital consulting, "A/B testing on steroids", and campaigns working "on terms shaped by these firms."
+
+## In-class quiz! {.smaller}
+
+::: {.center}
+
+In-class tasks during lectures are not assessed, but participation is timestamped and recorded.
+
+:::
+
+## {.center}
+
+# Attendance
+
+Get your phone out again!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+## References
