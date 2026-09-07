@@ -81,19 +81,17 @@ Two moves today:
 
 ::: {.center}
 
-**Quick poll — Mentimeter (multiple choice)**
+**Quick poll — Mentimeter (scale, 1–10)**
 
 :::
 
-Think of the last time a political message clearly changed your mind — or someone you know changed theirs.
+On a scale of **1** (basically no power) to **10** (can flip an election) —
 
-**Where did that persuasion actually come from?**
+**How much power do you think a single targeted political ad has to change someone's vote?**
 
-- A paid ad (on any platform or channel)
-- Something a friend, family member, or someone I follow posted
-- A news story or journalist
-- A politician or campaign speaking directly
-- Honestly, I can't think of a time my mind was changed
+::: {.callout-tip}
+Keep your answer in mind — we'll come back to it later in the lecture.
+:::
 
 ---
 
@@ -106,10 +104,10 @@ Think of the last time a political message clearly changed your mind — or some
 - Any attempt to **legitimate, persuade, convince, contest, or secure power** in line with a pre-established goal.
 - **"Strategic" = there is intent behind it.** Governments, campaigns, leaders, NGOs, citizens — all do it.
 - It varies along four dimensions:
-  - *what* the actor wants to achieve
-  - *how* public the communication is (a rally vs. a quiet word with a legislator)
-  - the *means* they can legitimately use
-  - *who* the actor is
+  1. *what* the actor wants to achieve
+  2. *how* public the communication is (a rally vs. a quiet word with a legislator)
+  3. the *means* they can legitimately use
+  4. *who* the actor is
 
 ## Strategic ≠ deliberative {.smaller}
 
@@ -124,7 +122,7 @@ Think of the last time a political message clearly changed your mind — or some
 :::
 
 ::: {.column width="50%"}
-**Deliberation** (Ch 4) aims to *arrive at* a shared set of ends in a mutual or general interest — through inclusive, rational-critical debate.
+**Deliberation** (Ch 4 and the Public Sphere theory) aims to *arrive at* a shared set of ends in a mutual or general interest — through inclusive, rational-critical debate.
 
 ::: {.callout-note}
 ### The tension
@@ -149,7 +147,7 @@ This is why A1 asks you to pick a *practice* with a *goal*. "Raise awareness" is
 
 ## Public opinion is constructed, not found {.smaller}
 
-> Public opinion is "the pictures in our heads" (Lippmann 1922) — and it is *indelibly linked to the ways we have of representing it*.
+> Public opinion is "the pictures in our heads" [@lippmannPublicOpinion1922] — and it is *indelibly linked to the ways we have of representing it*.
 
 - Publics cannot tell us what they think on their own. Opinion has to be **represented**.
 - The questions a survey asks *create* the opinion it then reports.
@@ -216,7 +214,7 @@ This four-part analysis is directly usable in A1's "Audience & platform strategy
 
 ::: {.columns}
 ::: {.column width="50%"}
-**A coherent set of narratives** — not infinite, not contradictory. Research: messages with "clearly identifiable core elements" persuade best (Green 2021).
+**A coherent set of narratives** — not infinite, not contradictory. Research: messages with "clearly identifiable core elements" persuade best [@greenTransportationNarrativeWorlds2021].
 
 Strategic ambiguity buys flexibility, but risks being **defined first by your adversaries**.
 :::
@@ -262,7 +260,7 @@ Multiple sides compete to frame the conflict — and it is no longer just govern
 
 ::: {.columns}
 ::: {.column width="55%"}
-- 17 March 2022. Addressed to the **Russian people** on Twitter during the invasion of Ukraine.
+- 17 March 2022. Addressed to the **Russian people** on Twitter during the invasion of Ukraine. [Link to video](https://www.abc.net.au/news/2022-03-18/arnold-schwarzenegger-russian-misinformation-twitter/100920224)
 - Opens with his love of Russia, childhood memories, his father's trauma as a WWII soldier — **building trust before the hard message**.
 - Then: you have been misinformed; soldiers, do not become guilty of war crimes (an indirect call to desert).
 - Also addressed **Putin directly** — `@Schwarzenegger` was one of only 22 accounts `@KremlinRussia_E` followed.
@@ -276,13 +274,30 @@ A **non-state actor** conducting public diplomacy, bypassing official diplomatic
 :::
 :::
 
+## Case: Iran's "Explosive Media" and AI-generated diplomacy {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- **Explosive Media** (اخبار انفجاری) — an Iranian digital media operation established 2025, presenting itself as an anonymous "student-led" team but confirmed by the BBC to take **direct commissions from the Iranian government**. [Wikipedia: Explosive Media](https://en.wikipedia.org/wiki/Explosive_Media) · [Telegram channel (videos)](https://t.me/ExplosiveMedia)
+- Produces **AI-generated, Lego-style satirical videos** targeting **Western, English-speaking audiences** — Trump, Netanyahu and Hegseth as characters, referencing the Epstein files, "MIGA", and past US actions (Abu Ghraib, Iran Air Flight 655).
+- Distributed on Telegram, Instagram, YouTube, TikTok and X; went viral **March–April 2026** during the Iran War, before YouTube/Instagram terminated the accounts.
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Why it's a good case
+State-commissioned public diplomacy laundered through a deniable "anonymous creator" persona, using **generative AI** to produce high volumes of shareable, casual-looking content — what commentators called **"slopaganda"**: propaganda that works *because* it looks unofficial and low-effort.
+:::
+:::
+:::
+
 ## 4. Crisis communication {.smaller}
 
-> Crisis communication: "the strategic use of words and actions to manage information and meaning during the crisis process" (Coombs 2018).
+> Crisis communication: "the strategic use of words and actions to manage information and meaning during the crisis process" [@coombsCrisisCommunication2018].
 
 - A crisis has **phases** — communicative demands change as it "morphs".
 - It breaks strategic communication's core requirement: **a consistent message**. Covid-era mask guidance is the standard example — the advice reversed, and governments had to explain why.
-- **Organisational crises** (scandals, reputational threats): response frames run from *attack the accuser / find a scapegoat / make excuses* through to *accept responsibility and offer change* (Coombs 2018) — the choice depends on attributed culpability.
+- **Organisational crises** (scandals, reputational threats): response frames run from *attack the accuser / find a scapegoat / make excuses* through to *accept responsibility and offer change* [@coombsCrisisCommunication2018] — the choice depends on attributed culpability.
 - Social media = **new speed and new exposure**: monitor real-time opinion, self-disclose, apologise, correct — all in public, all fast.
 
 ## 5. Digital lobbying {.smaller}
@@ -290,10 +305,10 @@ A **non-state actor** conducting public diplomacy, bypassing official diplomatic
 > "Lobbying" = attempts to influence policymaking **without being directly involved in the process** — an intermediary level, between stakeholder groups and those in power.
 
 - Traditionally **interpersonal and often hidden** (tobacco, arms) — lobbyists prefer direct contact to public campaigns.
-- Platforms **lowered the cost**: small groups can now approach politicians directly, without a paid lobbyist.
+- Platforms **lowered the cost**: small groups can now approach politicians directly, without a paid lobbyist — though it is still mainly **larger, resourced organisations** that turn this into systematic mobilisation and lobbying [@figenschouFredheimInterestGroups2020].
 
 ::: {.callout-note}
-### Two logics (Johansson & Scaramuzzino 2019)
+### Two logics [@johanssonScaramuzzinoLogicsDigital2019]
 - **Logic of influence** — pushing a specific message / ask.
 - **Logic of presence** — building political *presence*: demonstrating and amplifying your connections with politicians. "Promoting *who you are* rather than *what you stand for*."
 :::
@@ -311,7 +326,7 @@ A **non-state actor** conducting public diplomacy, bypassing official diplomatic
 ::: {.column width="45%"}
 ::: {.callout-important}
 ### The dilemma
-Figenschou & Thorbjørnsrud (2020): it was powerful, but it forced the mothers to **invade their own children's privacy** and negotiate their roles as parents vs. lay activists.
+Figenschou & Thorbjørnsrud [-@figenschouThorbjornsrudHeyThere2020]: it was powerful, but it forced the mothers to **invade their own children's privacy** and negotiate their roles as parents vs. lay activists.
 :::
 :::
 :::
@@ -324,7 +339,7 @@ Figenschou & Thorbjørnsrud (2020): it was powerful, but it forced the mothers t
 
 :::
 
-You've now seen the five practices. **For your A1, which one are you (currently) planning to build your campaign around?**
+You've now seen the five practices. **For your A1, which one are you (currently) planning to build your campaign around? And what is the political or social issue you are attaching it to?**
 
 - Political marketing
 - Public relations
@@ -341,6 +356,7 @@ You've now seen the five practices. **For your A1, which one are you (currently)
 
 ::: {.columns}
 ::: {.column width="60%"}
+- [Link to NYT video](https://www.youtube.com/watch?v=mrnXv-g4yKU)
 - After the **2016 Brexit referendum** and the **2016 US election**, Cambridge Analytica became shorthand for a new kind of threat: **psychographic microtargeting** that could get "directly into people's heads" and swing elections.
 - Harvested Facebook data on tens of millions of users; claimed to build "psychological profiles" and serve individually tailored persuasive ads.
 - The framing: voters as **dupes**, democracy **hacked**.
@@ -355,6 +371,11 @@ Klinger, Kreiss & Mutsvairo put this alongside the **"War of the Worlds" panic**
 :::
 
 ## Why the effects were overstated {.smaller}
+
+::: {.callout-note}
+### Back to Activity 1
+Where did the room land — closer to 1 or closer to 10? The research below suggests most people (and most journalists) overrate this.
+:::
 
 ::: {.incremental}
 - **Decades of research** show people are **not simple dupes** of media messages — they are embedded in social networks and engage in **motivated reasoning**, holding on to what already fits their identity and values.
@@ -422,7 +443,7 @@ Three motivations, stated by representatives of **all four firms**:
 ::: {.column width="55%"}
 - Facebook, Google, Twitter and Microsoft all built **dedicated Democratic and Republican teams**, staffed by people with **backgrounds in partisan politics**.
 - Rationale: **trust**. Campaign operatives work with people who "share their political ideology and identity" — someone who "used to have to do those jobs… and, in some ways, is one of them."
-- Twitter's Nu Wexler: *"if I'm the ACLU and I know my ad rep is also working with Trump's Super PAC, I'm going to be less inclined to give you my money."*
+- Twitter's Nu Wexler: *"if I'm the ACLU [American Civil Liberties Union] and I know my ad rep is also working with Trump's Super PAC, I'm going to be less inclined to give you my money."*
 :::
 
 ::: {.column width="45%"}
@@ -490,7 +511,7 @@ Like the informational subsidies strategic communicators give journalists (Ch 6)
 
 Kreiss & McGregor show platform staff sitting *inside* campaigns, shaping strategy and content — not just selling ad space.
 
-**For the campaign you're designing in A1: would you want a Meta / Google / TikTok "partner manager" in your strategy meetings? What would you gain, and what would you be handing over?**
+**For the campaign you're pitching in A1: would you want a Meta / Google / TikTok "partner manager" in your strategy meetings? What would you gain, and what would you be handing over?**
 
 ---
 
