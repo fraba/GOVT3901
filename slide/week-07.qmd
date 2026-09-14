@@ -1,0 +1,641 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 07: Platforms, Campaigns, and Campaigning<br>Last updated: 2026-09-15
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    include-after-body: assets/print-pdf-button.html
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Housekeeping {.smaller}
+
+::: {.callout-tip}
+### A1 simple extension granted to everyone (now due 18 Sep)
+Next up is **A2 — Digital Politics Artefacts Portfolio (30%)**, due **Sunday 25 October 2026** (Week 11).
+:::
+
+## Last week: where we left off {.smaller}
+
+::: {.incremental}
+- **The panic** (Cambridge Analytica/Brexit) about platforms as mind-control machines does not survive contact with the effects literature — persuasion effects are small, voters are not dupes.
+- **The reality** (Kreiss & McGregor): platforms are **active agents** in campaigns — partisan firm teams, quasi-digital consulting, industrial-scale ad optimisation — not neutral pipes.
+- The takeaway was **infrastructural, not hypnotic** influence: platforms shape what campaigns *can do*, without hacking anyone's mind.
+:::
+
+## Today's running question {.smaller}
+
+::: {.callout-important}
+### Leg 2 of the semester's verdict
+Does digital media strengthen or weaken democratic institutions? Today we test this by asking: **does lowering the cost of political participation close the gap between the engaged and the disengaged — or does it just give the already-engaged one more advantage?**
+:::
+
+Today's class (Ch 7):
+
+- Meet the **four ages of campaigning** — and how platforms extend, rather than replace, what came before.
+- Ask whether platforms actually **decide election outcomes** (spoiler: rarely, alone).
+- Unpack platform campaign strategies: **attention & interaction, persuasion, mobilisation & demobilisation**.
+- Read Heiss & Matthes [-@heissMatthesDoesIncidental2019] on whether **incidental exposure** to political content equalises or reinforces the gap between the politically interested and disengaged.
+- Case: an Austrian two-wave panel study around the 2017 national election.
+
+## In-class activity 1 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+Think about the last political thing you did online that took less than 10 seconds (liking, sharing, signing an online petition).
+
+**Did you go looking for the chance to do that — or did it just appear in your feed?**
+
+- I was actively looking for something political to engage with
+- It appeared in my feed and I acted on impulse
+- I don't remember / can't tell
+- I haven't done this recently
+
+## Case: the Bird of the Year scandal {.smaller}
+
+::: {.columns}
+::: {.column width="60%"}
+- November 2020: New Zealand's **Bird of the Year** contest — a genuinely popular annual vote (55,000+ voters, celebrity endorsements) — was hit by **1,500 fraudulent ballots** from fake emails, all from the same IP address.
+- The **Kākāpō** ("fat, flightless" parrot) won; furious fans called it a "stolen election."
+- 2019: suspected "Russian meddling" turned out to be legitimate votes from Russian bird lovers.
+:::
+
+::: {.column width="40%"}
+::: {.callout-note}
+### Why the textbook opens Ch 7 with this
+Even a *bird contest* needs legitimate, trusted procedures to produce results people accept — and campaigning is **affective and emotional**, not just informational, whatever is being contested [@klingerPlatformsPowerPolitics2023, Ch 7].
+:::
+:::
+:::
+
+::: {.callout-important}
+Elections matter because they let people **replace rulers without violence** — but that only works if losers accept the result. This is why "the election was stolen" claims, however trivial the contest, are corrosive.
+:::
+
+## The Kākāpō {.smaller}
+
+::: {.center}
+![The Kākāpō — 2020's controversial Bird of the Year winner](https://upload.wikimedia.org/wikipedia/commons/d/d5/Strigops_habroptilus_1-1c.jpg){width="60%"}
+:::
+
+## The four ages of campaigning {.smaller}
+
+| Era | Roughly when | Logic |
+|---|---|---|
+| **Party-centred** | Late 1800s–1950s | Strong party apparatus plans everything; social identity of party membership matters more than ideology |
+| **Mass-media-centred** | 1950s–1970s | Parties adapt to TV's logic — sound bites, polling, "mediatization" |
+| **Target-group-centred** | 1970s–1990s | Cable TV + early Internet enable "narrowcasting" to predefined groups (partisanship, geography, race) |
+| **Individual-centred** | 2008–present | Platforms enable **data-driven, personalised** micro-targeting of individual voters |
+
+---
+
+::: {.callout-tip}
+No era fully replaces the last — parties still doorknock and print T-shirts. Each new era **adds** tools and logics on top of the old ones.
+:::
+
+::: {.center}
+![](../img/week-07-doorknocking-chandler-mather.webp){width="45%"}
+:::
+
+::: {.footer}
+Max Chandler-Mather doorknocking in his Brisbane electorate, 2024. Greens MPs and volunteers have become synonymous with doorknocking and field work in recent years. Paul Harris, [Sydney Morning Herald](https://www.smh.com.au/national/queensland/has-a-politician-knocked-on-your-door-of-late-if-so-did-they-sway-your-views-20240913-p5kacl.html)
+:::
+
+## Individual-centred campaigning, in detail {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Campaigns mine **public, party, and commercial data** — plus platform behavioural data — to score individual voters' probability of voting and their issue positions.
+- Ads are **micro-targeted** to scored groups, not broad demographic categories.
+- **"A/B testing on steroids"**: campaigns run thousands of message variants and adjust based on what performs (Ch 6's Trump example: up to 175,000 ad variants in one day).
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Two subtypes [@rommeleGibsonScientificSubversive2020]
+- **Scientific**: data science, algorithms, machine learning as an integrated strategy.
+- **Subversive**: disinformation, weaponising social media *against* mass media, embracing foreign interference.
+:::
+:::
+:::
+
+## Do platforms decide who wins? {.smaller}
+
+::: {.callout-important}
+### The textbook's answer: rarely, alone
+"Elections are not won or lost on social media." Obama 2008 and Trump 2016 both used platforms skilfully — but the economy, party coalitions, incumbency, and the fractured state of the opposing party mattered just as much, if not more.
+:::
+
+- Social media can **equalise resources** between well-funded and under-resourced candidates — low barriers to entry, potential for large reach.
+- But well-established parties with deep pockets can *also* out-invest challengers in digital expertise and data.
+- **Schradie** [-@schradieRevolutionThatWasnt2019]: ideology, class, resources, organisation, and skills shape who actually benefits from "free" digital tools — comparatively **older forms of power persist** even as the technology looks revolutionary.
+- Her North Carolina case study of labour and Tea Party activists finds a **"digital activism gap"**: better-funded, more hierarchical organisations — often the conservative ones — sustain the *routine, paid-staff labour* digital production actually requires, while resource-poor, horizontally organised progressive groups burn out despite genuinely embracing participatory digital culture.
+
+## In-class activity 2 {.smaller}
+
+::: {.center}
+
+**Quick reflection — Mentimeter (open text)**
+
+:::
+
+Schradie argues that digital campaigning tools look equalising but often just add a new layer on top of existing advantages (money, staff, data skills).
+
+**Can you think of an Australian (or non-Australian) example — a campaign, party, or movement — where "everyone has access to social media" did *not* translate into equal political influence?**
+
+---
+
+# Platform campaign strategies
+
+## Attention and interaction {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Early campaign websites were **one-way, broadcast** channels. Interactivity crept in through the 2000s.
+- Despite the *potential* for dialogue, research consistently finds **more broadcasting than genuine interaction** — campaigns have clear, narrow goals (votes, volunteers, funds) and interacting at scale is resource-intensive.
+- Parties construct **"authenticity illusions"** [@klingerPlatformsPowerPolitics2023, Ch 7] — staged-but-convincing self-presentation — because audiences expect candidates to seem "real."
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### Not inevitable
+Austria took until **2013** for all parties to use social media — driven less by strategy than by fear of ridicule for *not* being on Twitter/Facebook.
+:::
+:::
+:::
+
+## What is an "authenticity illusion"? {.smaller}
+
+::: {.callout-note}
+### Enli's [-@enliTrustMeAuthentic2015] concept
+Political actors deliberately deploy markers of **spontaneity** and **amateurism** — the visual/verbal signals audiences associate with "unscripted" — inside content that is, in fact, planned and produced. The illusion isn't lying; it's borrowing the *aesthetic* of authenticity.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+**Spontaneity markers**
+
+- Live or live-looking video (Instagram/TikTok "stories" over polished ads)
+- Casual, in-the-moment framing — a kitchen, a car, a doorstep
+- Apparent mistakes or asides left in, signalling "this wasn't rehearsed"
+:::
+
+::: {.column width="50%"}
+**Amateurism markers**
+
+- Handheld, lower-fidelity footage instead of studio production
+- Selfie angles, informal language, deliberately "rough" editing
+- A famous example: Obama's campaign signed tweets **he personally wrote** "-bo" — distinguishing them from staff-drafted ones, so the *authentic* tweets could be told apart from the professionally managed account
+:::
+:::
+
+---
+
+::: {.callout-important}
+### Why it matters for this unit
+This is the same move as the Norway "We are more than numbers" case (Ch 6): platforms reward content that **looks** personal and unmediated — so professionalised campaigns learn to perform informality, which is itself a strategic, resourced skill, not the absence of one.
+:::
+
+For example, let's check [this video](https://www.youtube.com/watch?v=5G2xDe-h-H0) released by Mamdani to show that his videos were authentic and not AI generated.  
+
+
+
+
+## Persuasion: harder than it looks {.smaller}
+
+- Partisanship, ideology and identity are **stable**, formed through long socialisation — short campaigns rarely flip them.
+- What campaigns *can* shift, short-term: which **issues and identities feel salient** right now.
+- Social media is potent here because it **blends mass messaging with social diffusion** — political content arrives from friends and weak ties, not just ads, which makes it more trusted (even though most people distrust platforms and political ads generally).
+- Schudson's [-@schudsonGoodCitizenHistory1998] **"monitorial citizen"**: most people don't need to be, and aren't, constantly informed — they pay attention when something big happens. This isn't a democratic failure so much as a realistic description of busy lives.
+
+## Mobilisation and demobilisation {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+**Mobilising** your own supporters is usually easier than persuading the undecided — and increasingly important as elections narrow to a small swing bloc.
+
+- Facebook's 2010/2012 **"I voted" button experiments**: social pressure from friends significantly increased turnout — at platform scale, and with no public oversight of the experiment.
+:::
+
+::: {.column width="45%"}
+**Demobilising opponents** is a parallel strategy:
+
+- Merkel's CDU: campaigns deliberately made **boring**, to avoid mobilising the other side.
+- **Negative campaigning**: evidence is mixed on whether it demobilises or backfires.
+- Extreme case: delegitimising the *election itself* — Kligler-Vilenchik et al.'s [-@kliglerMobilizationDemobilizationDiscourses2021] Jerusalem study found a Palestinian Twittersphere segment framing voting as "betrayal of one's collective identity."
+:::
+:::
+
+## In-class activity 3 {.smaller}
+
+::: {.center}
+
+**Quick poll — Mentimeter (multiple choice)**
+
+:::
+
+We've now seen that platforms can lower the cost of taking *some* political action (liking, sharing, signing a petition).
+
+**Do you think that makes politically disengaged people more likely to participate — or does it mostly just give already-engaged people one more easy option?**
+
+- Mostly helps the disengaged catch up
+- Mostly benefits people who were already engaged
+- Both, about equally
+- No real effect either way
+
+---
+
+# Reading: Heiss & Matthes (2019)
+
+## Leg 2: the participation paradox {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+Heiss & Matthes [-@heissMatthesDoesIncidental2019], *New Media & Society* 21(11–12).
+
+- The chapter says platforms lower the cost of participation. This paper asks the sharper question: **for whom?**
+- **RQ**: Does incidental exposure to political information on social media *equalise* the participation gap between politically interested and disinterested people — or *reinforce* it?
+:::
+
+::: {.column width="45%"}
+::: {.callout-note}
+### "Incidental exposure"
+Coming across political content **without searching for it** — a friend's share, a "liked" news page turning up in your feed — as opposed to deliberately seeking out political information.
+:::
+:::
+:::
+
+## Two competing hypotheses {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Equalising hypothesis**
+
+- Low-interest people wouldn't otherwise see *any* political content.
+- Even brief, incidental encounters can be liked/shared cheaply, potentially building future engagement.
+- Content shared by trusted friends may carry more weight than content from an outlet you'd never have sought out.
+:::
+
+::: {.column width="50%"}
+**Reinforcing hypothesis**
+
+- High-interest people follow *more* political sources — so they get incidentally exposed *more often* too.
+- Only people who already care are likely to **systematically process** and act on what they encounter.
+- Low-interest people may find unwanted political content annoying (**reactance**) or feel less capable next to politically active friends (**negative social comparison**) — actively discouraging participation.
+:::
+:::
+
+## The design {.smaller}
+
+- **Two-wave online panel**, Austria, around the **2017 national election** (N = 559; representative quotas for age, gender, education).
+- Wave 1: 29 Aug–2 Sep 2017. Wave 2: 5–12 Oct 2017 — **one month of intensive campaigning** between waves.
+- **Incidental exposure** measured at Wave 1: "How often are you accidentally exposed to political posts in your social media newsfeed without having actively searched for or intentionally included such information?" (1 = never, 7 = often).
+- **Political interest** measured at Wave 1 (interest in politics + the election).
+- Digital participation split into **low-effort** (liking/sharing, brief comments, signing an online petition) and **high-effort** (writing a substantive comment, contacting a politician/journalist, creating a political group) — measured at *both* waves.
+
+## Why split low- vs high-effort participation? {.smaller}
+
+::: {.callout-important}
+### The paper's hypothesis, going in
+Incidental exposure will have a **more pronounced effect on low-effort than high-effort participation** — because incidental content tends to get only shallow (implicit/heuristic) processing, and high-effort activities need the kind of deliberate, systematic processing that requires actually caring.
+:::
+
+This directly refines the textbook's "platforms lower the cost of participation" claim: **which** kind of participation, and lowered for **whom**, are separate empirical questions — not a single effect.
+
+## Findings 1: low-effort participation {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Incidental exposure has a clear **positive main effect** on low-effort participation in both the cross-sectional and (more robust) panel models.
+- Critically, this effect is **not conditional on political interest** — it boosts low-effort activity **roughly equally**, whether someone is highly engaged or not.
+:::
+
+::: {.column width="45%"}
+::: {.callout-tip}
+### So far, equalising?
+Low-cost activities (liking, sharing, signing a petition) can be done almost reflexively, on heuristic cues like emotional content — so *this part* of the story looks consistent with the optimistic, equalising view.
+:::
+:::
+:::
+
+## Findings 2: high-effort participation — the twist {.smaller}
+
+::: {.callout-important}
+### Against the equalising hypothesis
+For **high-effort participation**, the panel model shows incidental exposure has **no positive effect for anyone** — and a **significant negative effect for people with low political interest**. For the highly interested, the effect trends positive but doesn't reach significance.
+:::
+
+- In plain terms: incidentally stumbling on political content on your feed does **not** turn a disengaged person into someone who writes substantive comments or contacts a politician — if anything, it seems to actively **suppress** that kind of costly participation for them.
+- The gap in high-effort participation between high- and low-interest people, if anything, **widens**.
+
+## Why would incidental exposure backfire for the disengaged? {.smaller}
+
+::: {.incremental}
+- **Shallow processing**: incidental content is processed implicitly/heuristically — enough to prompt a quick like, not enough to build the motivation for costly action.
+- **Psychological reactance**: politically disengaged people may find unwanted, unsought political content annoying — repeated unwanted exposure can produce a negative reaction rather than engagement.
+- **Negative social comparison**: seeing politically sophisticated friends' posts may make less-engaged people feel *less* capable and *less* politically efficacious — lowering, not raising, their willingness to participate.
+- The authors could not fully adjudicate between these mechanisms with survey data alone — flagged as a direction for future (experimental) research.
+:::
+
+## The bottom line {.smaller}
+
+::: {.callout-important}
+### RQ answered
+Incidental exposure on social media **reinforces**, rather than equalises, the participation gap that matters most — costly, high-effort political participation. It does lift *low-effort* activity for everyone roughly equally, but that is not the kind of participation classical democratic theory cares most about.
+:::
+
+- This directly **replicates-and-overturns** Valeriani & Vaccari's [-@valerianiVaccariAccidentalExposure2016] earlier, cross-sectional finding of an equalising effect — Heiss & Matthes's own cross-sectional model reproduces that result, but it **does not survive** the switch to panel data, which better handles reverse causation and selection.
+
+## Not just Austria: the gap at home {.smaller}
+
+```{r}
+#| label: setup-aes
+#| include: false
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+aes_path <- "data/Australian Election Study, 1987-2022 Trends.xlsx"
+aes_raw <- read_excel(aes_path, sheet = "5.4", col_names = FALSE)
+aes_years <- as.numeric(unlist(aes_raw[2, 3:11]))
+
+# item label carries down every row (rows 3-53); breakdown label is NA for
+# the "Total" rows and filled for Gender/Age/Education/Vote sub-groups
+aes_dat <- aes_raw[3:53, ] |>
+  setNames(c("item", "breakdown", as.character(aes_years))) |>
+  mutate(breakdown = ifelse(is.na(breakdown), "Total", breakdown)) |>
+  filter(item == "Taken part in a protest") |>
+  pivot_longer(cols = as.character(aes_years), names_to = "year", values_to = "pct") |>
+  mutate(year = as.numeric(year)) |>
+  filter(!is.na(pct))
+
+brand_blue <- "#0148A4"
+brand_red <- "#e64626"
+brand_charcoal <- "#424242"
+
+aes_theme <- theme_minimal(base_size = 14) +
+  theme(
+    plot.background = element_rect(fill = "white", colour = NA),
+    panel.background = element_rect(fill = "white", colour = NA),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    axis.text = element_text(colour = brand_charcoal),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    axis.title = element_text(colour = brand_charcoal),
+    legend.position = "top",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 12),
+    plot.title = element_text(face = "bold", colour = brand_charcoal, size = 14)
+  )
+```
+
+::: {.callout-note}
+### The Australian Election Study, 1987–2022
+The AES asks Australians every election whether they've **taken part in a protest** in the past five years — tracked here across 35 years and nine elections.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+```{r}
+#| label: fig-aes-education
+#| fig-cap: "Protest participation by education, 1987–2022 (AES)"
+#| fig-width: 5.5
+#| fig-height: 4
+educ_dat <- aes_dat |>
+  filter(breakdown %in% c(
+    "Education: No qualification",
+    "Education: Non-tertiary qualification",
+    "Education: Tertiary qualification"
+  )) |>
+  mutate(breakdown = recode(breakdown,
+    "Education: No qualification" = "No qualification",
+    "Education: Non-tertiary qualification" = "Non-tertiary",
+    "Education: Tertiary qualification" = "Tertiary"
+  ))
+educ_dat$breakdown <- factor(educ_dat$breakdown, levels = c("No qualification", "Non-tertiary", "Tertiary"))
+
+ggplot(educ_dat, aes(x = year, y = pct, colour = breakdown)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+  scale_colour_manual(values = c(
+    "No qualification" = "#A9C6E8",
+    "Non-tertiary" = brand_blue,
+    "Tertiary" = "#002B5C"
+  )) +
+  scale_x_continuous(breaks = aes_years) +
+  labs(x = NULL, y = "% participated in past 5 years", title = "By education") +
+  aes_theme
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-aes-gender
+#| fig-cap: "Protest participation by gender, 1987–2022 (AES)"
+#| fig-width: 5.5
+#| fig-height: 4
+gender_dat <- aes_dat |>
+  filter(breakdown %in% c("Gender: Male", "Gender: Female")) |>
+  mutate(breakdown = recode(breakdown, "Gender: Male" = "Male", "Gender: Female" = "Female"))
+
+ggplot(gender_dat, aes(x = year, y = pct, colour = breakdown)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+  scale_colour_manual(values = c("Male" = brand_blue, "Female" = brand_red)) +
+  scale_x_continuous(breaks = aes_years) +
+  labs(x = NULL, y = NULL, title = "By gender") +
+  aes_theme
+```
+:::
+:::
+
+::: {.footer}
+Cameron, S. & McAllister, I. (2022). *Trends in Australian Political Opinion: Results from the Australian Election Study, 1987–2022*. Canberra: ANU. [DOI: 10.26193/HPA0BY](https://doi.org/10.26193/HPA0BY)
+:::
+
+## Context: who's at university? {.smaller}
+
+```{r}
+#| label: fig-highered-gender
+#| fig-cap: "Commencing domestic higher education students by gender, 2015–2024"
+#| fig-width: 9
+#| fig-height: 4.5
+highered_dat <- readr::read_csv("data/aes-commencing-highered-gender-2015-2024.csv", show_col_types = FALSE) |>
+  rename(Other = `Indeterminate/intersex/other`) |>
+  pivot_longer(cols = c(Females, Males, Other), names_to = "gender", values_to = "n") |>
+  group_by(Year) |>
+  mutate(pct = 100 * n / sum(n)) |>
+  ungroup()
+highered_dat$gender <- factor(highered_dat$gender, levels = c("Females", "Males", "Other"))
+
+ggplot(highered_dat, aes(x = Year, y = pct, colour = gender)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2) +
+  scale_colour_manual(values = c("Females" = brand_red, "Males" = brand_blue, "Other" = "#FFB800")) +
+  scale_x_continuous(breaks = unique(highered_dat$Year)) +
+  scale_y_continuous(labels = scales::label_number(suffix = "%")) +
+  labs(x = NULL, y = "% of commencing students", title = "Commencing higher ed students, by gender") +
+  aes_theme
+```
+
+::: {.footer}
+Department of Education (2025). *Selected Higher Education Statistics — 2024 Student Data*. [education.gov.au](https://www.education.gov.au/higher-education-statistics/student-data/selected-higher-education-statistics-2024-student-data/key-findings-2024-higher-education-student-statistics)
+:::
+
+## What does each group's media diet look like, among younger voters? {.smaller}
+
+```{r}
+#| label: fig-media-diet
+#| fig-cap: "Media diet composition for following the 2025 election, ages 18-40, by education (AES 2025)"
+#| fig-width: 7
+#| fig-height: 5
+aes2025 <- read.csv("data/AES2025_general.csv", check.names = FALSE)
+names(aes2025)[1] <- "id"
+
+media2025_dat <- aes2025 |>
+  filter(AGE >= 18, AGE < 40, G3_EDU %in% c(1, 2)) |>
+  mutate(edu = ifelse(G3_EDU == 1, "Higher education", "Non-higher education")) |>
+  select(edu, A2_1, A2_2, A2_3, A2_4) |>
+  pivot_longer(cols = A2_1:A2_4, names_to = "item", values_to = "val") |>
+  filter(val %in% 1:4) |>
+  mutate(
+    # A2 is coded 1 = "a good deal" ... 4 = "none at all"; invert to an
+    # attention score (0-3, higher = more attention) before averaging
+    score = 4 - val,
+    item = recode(item, A2_1 = "Newspapers", A2_2 = "Television", A2_3 = "Radio", A2_4 = "Internet")
+  ) |>
+  group_by(edu, item) |>
+  summarise(mean_score = mean(score), .groups = "drop") |>
+  group_by(edu) |>
+  mutate(share = 100 * mean_score / sum(mean_score)) |>
+  ungroup()
+
+media2025_dat$item <- factor(media2025_dat$item, levels = c("Internet", "Newspapers", "Radio", "Television"))
+
+ggplot(media2025_dat, aes(x = edu, y = share, fill = item)) +
+  geom_col(position = "stack", width = 0.6) +
+  geom_text(
+    aes(label = paste0(round(share), "%"), colour = item),
+    position = position_stack(vjust = 0.5), size = 4.5, fontface = "bold", show.legend = FALSE
+  ) +
+  scale_fill_manual(values = c(
+    "Television" = "#A9C6E8",
+    "Radio" = "#FFB800",
+    "Newspapers" = brand_charcoal,
+    "Internet" = brand_red
+  )) +
+  scale_colour_manual(values = c(
+    "Television" = brand_charcoal,
+    "Radio" = brand_charcoal,
+    "Newspapers" = "white",
+    "Internet" = "white"
+  )) +
+  scale_y_continuous(labels = scales::label_number(suffix = "%")) +
+  labs(x = NULL, y = "Share of media diet") +
+  aes_theme
+```
+
+::: {.footer}
+Australian Election Study 2025 (general release), ages 18–40 (n = 499). Attention to the campaign via each medium (A2), by university-level education (G3_EDU).
+:::
+
+## Reading the 2025 media-diet chart {.smaller}
+
+::: {.incremental}
+- Pooled across ages 18–40, both groups' diets are **internet-led**: 39% for higher education, 41% for non-higher education — no education gap in flagship medium, if anything a slight reversal.
+- Television is a stable second for both (26% vs 29%).
+- Newspapers are the clearest point of difference: **16% for higher education vs 13% for non-higher education** — the one medium where graduates lean in more, though it's still the smallest slice for both.
+:::
+
+::: {.callout-important}
+Across every age cut we've tried — under-45, under-30, four 5-year bands, and now the full 18–40 pool — the story doesn't change: education does not predict *which* medium dominates a younger Australian's media diet. It may predict *whether* they turn that diet into political action (the AES protest-participation gap earlier this week), but not the composition of the diet itself.
+:::
+
+## In-class activity 4 {.smaller}
+
+::: {.center}
+
+**Short answer — Mentimeter (open text)**
+
+:::
+
+Heiss & Matthes suggest that being incidentally exposed to friends' sophisticated political posts might make less-engaged people feel *less* capable, not more — and so participate *less*, not more.
+
+**Think of a friend who isn't into politics. When your (politically engaged) posts or shares show up in their feed — does it draw them in, or switch them off?**
+
+---
+
+# Where this leaves the verdict
+
+## Bringing the week together {.smaller}
+
+::: {.incremental}
+- Platforms genuinely **lower the cost** of some political actions — that part of the "platforms democratise participation" story is real, for low-effort activity.
+- But the **high-effort participation that most shapes political voice** — writing, organising, contacting decision-makers — is **not** equalised by incidental exposure. If anything, the gap between interested and disinterested citizens **widens**.
+- This is **Leg 2** of the semester's argument: platforms don't uniformly weaken *or* strengthen democratic participation — they **change its texture**, making cheap participation abundant while leaving (or worsening) the deeper inequality in who does the costly, consequential kind.
+- Connects to **Week 3**'s Leg 1: just as algorithmic gatekeeping is invisible and unaccountable, the participation gap here is also largely **invisible** — it looks like "everyone's engaging," because everyone likes and shares, while the substantive gap hides underneath.
+:::
+
+## Where this connects forward {.smaller}
+
+::: {.incremental}
+- **Week 8** — movements (Ch 8): **Leg 3**, Internet capital vs. social capital — does *collective*, movement-level organising bypass the individual participation gap we saw today?
+- **Week 9** — governance: could platform design changes (not just individual behaviour) narrow the high-effort participation gap?
+- **Week 12** — entertainment/politainment: another "low-effort, high-reach" channel — does it suffer the same reinforcing dynamic?
+- **Week 13** — the verdict: participation looks more abundant in the platform era, but is it more *equal*? Today's evidence says no.
+:::
+
+## Key takeaways {.smaller}
+
+- The **four ages of campaigning** (party-, mass-media-, target-group-, individual-centred) accumulate rather than replace one another; platforms intensify the most recent, **data-driven, personalised** era.
+- Platforms rarely **decide** election outcomes alone — structural factors (economy, incumbency, party coalitions) matter as much or more; digital tools can equalise *and* reinforce existing resource advantages, depending on who has the skills and money to use them well.
+- Campaign strategies on platforms: mostly **broadcasting over interaction**; persuasion works mainly on the margins (salience, not identity); mobilisation (turnout, social pressure) and demobilisation (boring campaigns, negative ads, delegitimising elections) are both platform-amplified.
+- **Heiss & Matthes**: incidental exposure boosts **low-effort** participation for everyone roughly equally, but has **no positive — and for the disengaged, a negative — effect on high-effort participation**. The participation gap that matters most is **reinforced**, not closed.
+
+## In-class quiz! {.smaller}
+
+::: {.center}
+
+In-class tasks during lectures are not assessed, but participation is timestamped and recorded.
+
+:::
+
+## {.center}
+
+# Attendance
+
+Get your phone out again!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+## References
