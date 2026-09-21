@@ -1,0 +1,377 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 08: Platforms and Movements<br>Last updated: 2026-09-21
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    include-after-body: assets/print-pdf-button.html
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Today's class {.smaller}
+
+Platforms and Movements (Ch 8)
+
+- Define social movements and situate them against the classic theories that explain why they emerge and succeed.
+- Explain how platforms shift movements from collective to connective action, and what that costs as well as buys.
+- **Leg 3 of the running verdict**: does "Internet capital" let movements bypass the institutions that social capital used to gatekeep?
+- Two empirical cases from Francesco's own research: Meetup-driven mobilisation and multi-platform fragmentation inside Italy's Five Star Movement (M5S).
+
+## Where we are in the argument {.smaller}
+
+::: {.incremental}
+- **Week 3** — losing human gatekeepers to algorithms: does this weaken accountability?
+- **Week 7** — lowering the cost of participation: does it equalise, or reinforce, the participation gap?
+- **Week 8 (today)** — movements without offices, memberships, or committees: can "Internet capital" substitute for the social capital that used to be the price of entry into collective action?
+:::
+
+::: {.callout-tip}
+### Recall from Week 1
+The unit's running question: does the massification of digital media strengthen or weaken democratic institutions and participation?
+:::
+
+# Defining Social Movements
+
+## What is a social movement? {.smaller}
+
+> "Networks of informal interactions between a plurality of individuals, groups and/or organizations, engaged in political or cultural conflicts, on the basis of shared collective identities." — Diani [-@dianiConceptSocialMovement1992]
+
+::: {.columns}
+::: {.column width="50%"}
+**Key elements**
+
+- **Networks** — loosely connected individuals and organisations, not a single body.
+- **Conflict-driven** — political or cultural conflict is central, whatever the cause.
+- **Collective identity** — a shared sense of purpose binds otherwise disparate actors.
+:::
+
+::: {.column width="50%"}
+**What movements are not**
+
+- Not necessarily formal (contrast with a registered NGO or party).
+- Not necessarily democratic in aim — movements can defend the status quo, not just challenge it (e.g., nativist backlash movements).
+- Not necessarily peaceful, though most studied here are.
+:::
+:::
+
+## Social movement organisations (SMOs) {.smaller}
+
+- Formalised, centrally organised groups: Greenpeace, Amnesty International, Planned Parenthood.
+- Provide the *routinised* resources movements need: funding, staff, media contacts, institutional memory.
+- Trade-off: SMOs can also become conservative, protecting their own position rather than the movement's original goals.
+
+::: {.callout-important}
+### The core pre-digital problem
+Organising people costs money, time, and coordination. Pamphlets, office space, permits, phone bills. This is why movements historically needed **formal organisations** to exist at scale.
+:::
+
+## Movements and democracy {.smaller}
+
+Movements cut both ways.
+
+::: {.columns}
+::: {.column width="50%"}
+**Can strengthen democracy**
+
+- Expand whose voice counts (civil rights, feminist movements).
+- Hold power to account outside electoral cycles.
+:::
+
+::: {.column width="50%"}
+**Can destabilise it**
+
+- Nativist movements resisting demographic change.
+- Backlash movements (e.g., white backlash to Black Lives Matter in the US, echoing the collapse of Reconstruction).
+:::
+:::
+
+This ambivalence is exactly why Ch 8 matters for the unit's running question — movements are not automatically pro-democratic.
+
+# Theories of Social Movements
+
+## Four classic lenses {.smaller}
+
+::: {.incremental}
+1. **Resource Mobilisation Theory** [@mccarthyResourceMobilizationSocial1977] — movements succeed or fail on money, people, time, skills. No resources, no movement, however deep the grievance.
+2. **New Social Movement Theory** — from the 1960s–70s, a shift from class politics to **identity and culture** (gender, race, sexuality, environment).
+3. **Deprivation Theory** — movements arise from *perceived or real* deprivation, whether absolute or relative to another group.
+4. **Political Process Theory** [Tilly, 1978] — success depends on political opportunity structures: elite unity kills movements, elite division opens space.
+:::
+
+## In-class task! {.smaller}
+
+::: {.callout-tip}
+In-class tasks during lectures are not assessed but participation is timestamped and recorded.
+:::
+
+::: {.center}
+Which of the four theories best explains a movement you know personally or from the news — RMT, New Social Movement Theory, Deprivation Theory, or Political Process Theory? Why that one and not the others?
+
+[<img src="../img/week-08-qr-inclass-task.png" width="200"/>](https://sres.sydney.edu.au/go/67fc2ffdde3555401806746f)
+
+or try <https://sres.sydney.edu.au/go/67fc2ffdde3555401806746f>
+:::
+
+## "Quiet encroachment" {.smaller}
+
+Not all movement activity is loud. In authoritarian or repressive settings, activism can be silent and diffuse.
+
+> "The silent, protracted, but pervasive advancement of the ordinary people on the propertied, powerful, or the public, in order to survive and improve their lives." [@bayatArabSpringIts2013, p. 46]
+
+::: {.callout-important}
+### Why this matters for platforms
+Quiet encroachment reminds us movements aren't always about visibility. But — as we'll see — platforms are built to reward exactly the opposite: loud, visible, engagement-optimised activity. That tension runs through the rest of this lecture.
+:::
+
+# From Collective to Connective Action
+
+## The pre-digital cost of organising {.smaller}
+
+- Classic collective action problem [Olson, 1965]: people share a goal but face a **free-rider incentive** — let others do the costly work, share the benefit anyway.
+- Solution: formal organisations that can command resources routinely — an office, paid staff, a bank account.
+- Result: movement capacity was, in practice, **gated by social capital** — who you knew, which associations you belonged to, which networks could reach you.
+
+## Connective action [@bennettLogicConnectiveAction2013] {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- Studying Occupy Wall Street, Bennett & Segerberg show platforms enable **self-organising networks** that need no central organisation at all.
+- Personalised sharing — "my story," not a party's official frame — replaces collective, centrally coordinated messaging.
+- Hybrid forms are common: an organisational core using digital tools alongside genuinely decentralised participation.
+:::
+
+::: {.column width="45%"}
+**Spotlight: Fridays for Future**
+
+One teenager, alone, outside the Swedish parliament. No organisation, no funding, no membership drive — and yet a global movement within a year, amplified almost entirely through personalised social media sharing.
+:::
+:::
+
+::: {.callout-important}
+### Not just a progressive story
+The same connective-action dynamics that built Fridays for Future also built PEGIDA — a German far-right movement that grew from a small Facebook friend group to 15,000-strong weekly demonstrations within months.
+:::
+
+## Networked mobilisation: how it actually spreads {.smaller}
+
+- **Not** centre-to-periphery. Messages that recruit people into a movement can originate anywhere in the network — including places socially distant from the organisational "core."
+- **Peripheral networks** matter: celebrities, influencers, and issue-adjacent communities often do more to spread a frame than the movement's own core group.
+- **Superspreaders / hyperactive users**: a tiny fraction of users generate a hugely disproportionate share of content — in one study of a far-right anti-migration campaign, 0.27% of Twitter users produced 21% of all interactions.
+
+::: {.callout-important}
+### The risk this creates
+Platforms let a small, loud minority manufacture the *appearance* of a mass movement. This is a genuine vulnerability, exploited across the political spectrum — not a partisan critique of any one side.
+:::
+
+# Leg 3: Internet Capital and Institutional Bypass
+
+## The question for today {.smaller}
+
+::: {.center}
+
+**Can "Internet capital" let movements bypass the institutions that social capital used to gatekeep?**
+
+:::
+
+Social capital — dense, local, reciprocal networks built through civic associations — has always structured who gets pulled into political participation and who is left out.
+
+Two of Francesco's own studies test this directly, using a case that is close to an extreme test of the idea: Italy's Five Star Movement (M5S) — a party that quite literally began as a blog with no offices, no members, and no legacy mobilisation infrastructure at all.
+
+## Defining Internet capital {.smaller}
+
+> "The stock of digital resources that enable collective action ... independently of existing social capital resources." [@bailoBreakingOutLegacy2025]
+
+::: {.columns}
+::: {.column width="50%"}
+**Social capital**
+
+- Dense, local, high-quality ties.
+- Built through civic associations over time.
+- Reciprocal — strong commitment, but geographically bound.
+:::
+
+::: {.column width="50%"}
+**Internet capital**
+
+- Interest-based, not tie-based — Meetup.com connects strangers around a shared cause, not pre-existing friendship.
+- Geographically unconstrained.
+- Weaker, more easily severed ties — lower local reinforcement.
+:::
+:::
+
+Two affordances make this possible: **visibility** (your profile can be seen) and **searchability** (you can find others by interest, not by who you already know).
+
+## Case 1: Two waves of M5S mobilisation {.smaller}
+
+Bailo [-@bailoBreakingOutLegacy2025] traces 45,000+ Meetup.com events organised by M5S supporters (2005–2013), matched against census and electoral data.
+
+::: {.incremental}
+- **Wave 1 (2007–2012)** — meetup activity is **strongly predicted by local social capital** (density of civic associations, past turnout). Internet-enabled mobilisation initially just *replicated* the geography of legacy mobilisation networks.
+- **A turning point (2012)** — a surge in legacy news media attention toward M5S's leader coincides almost exactly with a second wave of meetup activity.
+- **Wave 2 (2012–2013)** — the association between meetups and social capital **disappears**. Meetups now spread into low-social-capital areas: unemployed populations, homemakers, areas without dense civic infrastructure.
+:::
+
+## What explains the shift? {.smaller}
+
+::: {.callout-important}
+### The mechanism: outrage needs external validation
+Internet networks alone are too weak and diffuse to self-sustain mobilisation — they lack the reciprocal density of social capital. What tips a diffuse network into action is an **exogenous shock**: a surge of legacy media attention that supplies a shared sense of collective efficacy to people the Movement's ground organisations could never otherwise reach.
+:::
+
+- Second-wave meetup activity — not first-wave — is what statistically predicts M5S's 2013 electoral success.
+- Among voters **disconnected** from legacy civic associations, M5S voters reported discussing politics significantly *more* than non-M5S voters in the same position — the diffuse network did activate people social capital had missed.
+
+## So: does Internet capital replace social capital? {.smaller}
+
+A qualified **yes, but** — and this is the leg-3 verdict for today.
+
+::: {.incremental}
+- **Yes**: Internet capital can reach and activate people entirely outside legacy mobilisation networks — genuinely expanding *who* gets pulled into politics.
+- **But**: it needed legacy media's validation to do it. Internet networks, on their own, are too sparse and weakly tied to sustain collective action — they still needed an "old media" institution to supply legitimacy and a shared sense that the moment mattered.
+- **Implication**: outrage, amplified by legacy media, may be the emotional catalyst that lets political outsiders overcome weak-tie limitations — which could crowd out more measured, compromising forms of politics.
+:::
+
+## Case 2: Multi-platform fragmentation inside M5S {.smaller}
+
+Marolla, Miotto, Cassani & Bailo [-@marollaAffordingFragmentedAudiences2026] ask a different institutional-bypass question: once a movement *becomes* a party, does its own internal digital infrastructure still bypass, or does it start to replicate, old power hierarchies?
+
+They analyse five platforms central to M5S's 2010–2012 organisation, coded by two affordances:
+
+- **Visibility** — can users see and be seen?
+- **Associability** — can users form ties with others?
+
+Each platform is measured as **local** (small, dense engagement) vs **global** (broadcast reach) on each affordance.
+
+## Five platforms, five roles {.smaller}
+
+| Platform | Orientation | Local V/A | Global V/A |
+|---|---|---|---|
+| **Beppe Grillo's Blog** | Top-down, centripetal | low | high |
+| **Facebook** | Top-down, centripetal | high (but underused) | high |
+| **Meetup** | Horizontal, centrifugal | high | low |
+| **Forum** | Horizontal, centrifugal | high | low |
+| **E-voting site (2012 primaries)** | Top-down & bottom-up | mixed | low |
+
+::: {.callout-tip}
+### Centripetal vs centrifugal
+**Centripetal** power consolidates control with leadership (top-down broadcast). **Centrifugal** power decentralises influence toward grassroots users. The same "movement" runs both simultaneously, on different platforms.
+:::
+
+## What the data show {.smaller}
+
+::: {.incremental}
+- **Fragmentation is real**: users mostly stayed within one platform. The horizontally-oriented Meetup and Forum users were *more* likely to also show up elsewhere; Blog and Facebook users mostly stayed put — different platforms attracted structurally different audiences.
+- **Topics diverge by platform** too — a machine-learning classifier could predict *which platform* a post came from just from its topic, meaning the party's internal conversation was not one conversation but several, running in parallel.
+- **Leadership's language propagated unevenly**: Grillo's own phrasing showed up far more on Meetup (grassroots events echoing his wording) than on the Forum (which developed its own independent discourse) — a sign of latent internal tension.
+- **Candidate selection rewarded local network centrality on Meetup**, not activity on the more deliberative Forum — suggesting the "horizontal" platforms were not all equal in the power they actually conferred.
+:::
+
+## Tying case 1 and case 2 together {.smaller}
+
+::: {.callout-important}
+### The institutional-bypass verdict, in one line
+Internet capital *did* let M5S bypass the traditional gatekeeping role of civic-association social capital — reaching voters legacy mobilisation networks structurally excluded (case 1). But the party's own internal digital ecosystem simultaneously reproduced a familiar centripetal/centrifugal power split — leadership platforms concentrating control, grassroots platforms fragmenting into separate, only loosely connected audiences (case 2).
+:::
+
+Institutional bypass, in other words, is not a one-way escalator toward flatter, more open politics. It **relocates** where gatekeeping happens — from geography and civic membership toward platform affordances and algorithmic curation.
+
+## Poll: which factor matters most? {.smaller}
+
+Which factor is MOST important for the success of a social movement in the platform era?
+
+::: {.center}
+[<img src="../img/week-08-qr-menti.png" width="220"/>](https://www.menti.com/ala5d7qtq8h4)
+
+or try <https://www.menti.com/ala5d7qtq8h4>
+:::
+
+# State Responses to Movements
+
+## Suppression, legal and extra-legal {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**Legal mechanisms**
+
+- Surveillance, infiltration.
+- Discrediting via press statements.
+- Criminal charges, asset seizure.
+:::
+
+::: {.column width="50%"}
+**Extra-legal mechanisms**
+
+- Violence, intimidation.
+- Character assassination.
+- Extra-judicial arrest.
+:::
+:::
+
+## Digital authoritarianism {.smaller}
+
+- Internet shutdowns — a common tactic since the Arab Spring; Sri Lanka banned Facebook, Twitter, YouTube, and WhatsApp in 2022 in anticipation of mass protests.
+- Facial recognition and real-name policies erode the anonymity movements rely on.
+- Dedicated state cyber-repression apparatus — Zimbabwe appointed the first "Cyber Security" minister in 2017.
+
+::: {.callout-important}
+### The asymmetry
+The same platform affordances (visibility, searchability, associability) that let Internet capital reach the politically disengaged also make activists newly traceable, in a way legacy-network activism, hidden inside dense trusted ties, rarely was.
+:::
+
+# Movements and Journalism
+
+## A complicated, double-edged relationship {.smaller}
+
+- Movements need media coverage to publicise causes, gain supporters, pressure lawmakers.
+- But professional media also sensationalise, apply their own frames, and can undermine a movement's own self-presentation.
+- Coverage bias runs in predictable directions — Gruber's 26-year UK study found most protest coverage remains dismissive; Brazilian evidence shows journalists cover left- and right-leaning protests differently depending on their own political leanings.
+
+::: {.callout-tip}
+### Connecting back to Case 1
+This is precisely the mechanism Bailo's paper identifies: it was *legacy media attention*, not platform activity alone, that tipped diffuse Internet-capital mobilisation into a successful second wave. Movements and journalism remain entangled even in a "digital-first" case.
+:::
+
+# Summary
+
+## Key takeaways {.smaller}
+
+1. Platforms shift movement organising from **collective action** (formal organisations, resource-intensive) toward **connective action** (personalised, decentralised, low-cost) — but hybrid forms are the norm, not the exception.
+2. **Internet capital** can reach voters and participants social capital networks structurally excluded — but it typically needs legacy media validation, or extreme discontent, to convert diffuse ties into sustained mobilisation.
+3. Bypassing *external* institutional gatekeeping does not mean escaping gatekeeping altogether — multi-platform organisations can simultaneously decentralise (grassroots platforms) and re-centralise (leadership platforms) power internally.
+4. Movements remain vulnerable to state suppression, and platform visibility affordances that enable mobilisation can equally enable surveillance.
+5. **Running verdict, Leg 3**: digital media's institutional bypass is real but partial and conditional — not a clean answer to "strengthens or weakens democracy," but evidence for the next weeks' more granular argument.
+
+## {.center}
+
+# Attendance
+
+Get your phone out!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+## References
