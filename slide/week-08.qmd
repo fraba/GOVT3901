@@ -36,6 +36,19 @@ Platforms and Movements (Ch 8)
 - **Leg 3 of the running verdict**: does "Internet capital" let movements bypass the institutions that social capital used to gatekeep?
 - Two empirical cases from Francesco's own research: Meetup-driven mobilisation and multi-platform fragmentation inside Italy's Five Star Movement (M5S).
 
+## Recap: the three legs of the unit {.smaller}
+
+| | Week 3 — Leg 1 | Week 7 — Leg 2 | Week 8 (today) — Leg 3 |
+|---|---|---|---|
+| **Theme** | Algorithmic gatekeeping crisis | Participation paradox | Institutional bypass via Internet capital |
+| **Reading** | Soffer (2021) | Heiss & Matthes (2019) | Bailo (2025); Marolla et al. (2026) |
+| **Finding** | Algorithms replace opinion leaders as gatekeepers, and their power is largely invisible and unaccountable | Incidental exposure boosts low-effort participation but reinforces the high-effort participation gap | *Today's question:* can Internet capital substitute for the social capital that gatekept collective action? |
+
+::: {.callout-tip}
+### The running verdict
+Does digital media strengthen or weaken democratic institutions? So far: platforms change **who holds power**, **who participates**, and (today) **who can organise**, rather than simply strengthening or weakening democracy.
+:::
+
 ## Where we are in the argument {.smaller}
 
 ::: {.incremental}
@@ -106,6 +119,23 @@ Movements cut both ways.
 
 This ambivalence is exactly why Ch 8 matters for the unit's running question — movements are not automatically pro-democratic.
 
+## Reflection: two movements, two relations to democracy {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+![](../img/week-08-civil-rights-march.jpg){fig-alt="Marchers carrying signs demanding voting rights, jobs and an end to segregated schools at the 1963 March on Washington" height="330px"}
+
+March on Washington for Jobs and Freedom, 1963 (NARA)
+:::
+
+::: {.column width="50%"}
+![](../img/week-08-kkk-rally.jpg){fig-alt="Hooded Ku Klux Klan members standing at a night rally in Chicago beside an American flag" height="330px"}
+
+Ku Klux Klan night rally, Chicago, c. 1920s (Library of Congress)
+:::
+:::
+
+
 # Theories of Social Movements
 
 ## Four classic lenses {.smaller}
@@ -114,7 +144,7 @@ This ambivalence is exactly why Ch 8 matters for the unit's running question —
 1. **Resource Mobilisation Theory** [@mccarthyResourceMobilizationSocial1977] — movements succeed or fail on money, people, time, skills. No resources, no movement, however deep the grievance.
 2. **New Social Movement Theory** — from the 1960s–70s, a shift from class politics to **identity and culture** (gender, race, sexuality, environment).
 3. **Deprivation Theory** — movements arise from *perceived or real* deprivation, whether absolute or relative to another group.
-4. **Political Process Theory** [Tilly, 1978] — success depends on political opportunity structures: elite unity kills movements, elite division opens space.
+4. **Political Process Theory** [@tillyMobilizationRevolution1978] — success depends on political opportunity structures: elite unity kills movements, elite division opens space.
 :::
 
 ## In-class task! {.smaller}
@@ -126,9 +156,7 @@ In-class tasks during lectures are not assessed but participation is timestamped
 ::: {.center}
 Which of the four theories best explains a movement you know personally or from the news — RMT, New Social Movement Theory, Deprivation Theory, or Political Process Theory? Why that one and not the others?
 
-[<img src="../img/week-08-qr-inclass-task.png" width="200"/>](https://sres.sydney.edu.au/go/67fc2ffdde3555401806746f)
 
-or try <https://sres.sydney.edu.au/go/67fc2ffdde3555401806746f>
 :::
 
 ## "Quiet encroachment" {.smaller}
@@ -146,7 +174,7 @@ Quiet encroachment reminds us movements aren't always about visibility. But — 
 
 ## The pre-digital cost of organising {.smaller}
 
-- Classic collective action problem [Olson, 1965]: people share a goal but face a **free-rider incentive** — let others do the costly work, share the benefit anyway.
+- Classic collective action problem [@olsonLogicCollectiveAction1965]: people share a goal but face a **free-rider incentive** — let others do the costly work, share the benefit anyway.
 - Solution: formal organisations that can command resources routinely — an office, paid staff, a bank account.
 - Result: movement capacity was, in practice, **gated by social capital** — who you knew, which associations you belonged to, which networks could reach you.
 
@@ -154,7 +182,7 @@ Quiet encroachment reminds us movements aren't always about visibility. But — 
 
 ::: {.columns}
 ::: {.column width="55%"}
-- Studying Occupy Wall Street, Bennett & Segerberg show platforms enable **self-organising networks** that need no central organisation at all.
+- Studying [Occupy Wall Street](https://youtu.be/GgJ5f9ZqOFc?si=YStQT-OV2wCHghOe), Bennett & Segerberg show platforms enable **self-organising networks** that need no central organisation at all.
 - Personalised sharing — "my story," not a party's official frame — replaces collective, centrally coordinated messaging.
 - Hybrid forms are common: an organisational core using digital tools alongside genuinely decentralised participation.
 :::
@@ -194,7 +222,7 @@ Platforms let a small, loud minority manufacture the *appearance* of a mass move
 
 Social capital — dense, local, reciprocal networks built through civic associations — has always structured who gets pulled into political participation and who is left out.
 
-Two of Francesco's own studies test this directly, using a case that is close to an extreme test of the idea: Italy's Five Star Movement (M5S) — a party that quite literally began as a blog with no offices, no members, and no legacy mobilisation infrastructure at all.
+Two of Francesco's own studies test this directly, using a case that is close to an extreme test of the idea: Italy's [Five Star Movement](https://youtu.be/ThCc6sIU280?si=sF6VWfZ1cKQFlxPh) (M5S) — a party that quite literally began as a blog with no offices, no members, and no legacy mobilisation infrastructure at all.
 
 ## Defining Internet capital {.smaller}
 
@@ -261,6 +289,51 @@ They analyse five platforms central to M5S's 2010–2012 organisation, coded by 
 
 Each platform is measured as **local** (small, dense engagement) vs **global** (broadcast reach) on each affordance.
 
+## Local vs global: two network structures {.smaller}
+
+```{r}
+#| label: fig-local-global
+#| fig-alt: "Left: five small, tightly interconnected clusters joined by a few ties. Right: one central node connected to many peripheral nodes that are not connected to each other."
+#| fig-width: 10
+#| fig-height: 4.6
+#| out-width: "100%"
+library(igraph)
+brand_red <- "#e64626"; brand_blue <- "#0148A4"; brand_charcoal <- "#424242"
+n_groups <- 5; group_size <- 6; n <- n_groups * group_size
+set.seed(8)
+
+# Local: small, dense clusters, joined only by a handful of ties between neighbours
+g_local <- sample_islands(n_groups, group_size, islands.pin = 0.85, n.inter = 1)
+grp <- rep(seq_len(n_groups), each = group_size)
+ends_local <- as_edgelist(g_local, names = FALSE)
+between <- grp[ends_local[, 1]] != grp[ends_local[, 2]]
+g_local <- delete_edges(g_local, which(between))
+ring <- cbind((seq_len(n_groups) - 1) * group_size + 1,
+              (seq_len(n_groups) %% n_groups) * group_size + 4)
+g_local <- add_edges(g_local, as.vector(t(ring)))
+E(g_local)$color <- c(rep(brand_blue, ecount(g_local) - n_groups), rep("grey70", n_groups))
+angle_c <- 2 * pi * (seq_len(n_groups) - 1) / n_groups + pi / 2
+angle_n <- 2 * pi * (seq_len(group_size) - 1) / group_size
+lay_local <- cbind(cos(angle_c)[grp] + 0.3 * cos(angle_n)[rep(seq_len(group_size), n_groups)],
+                   sin(angle_c)[grp] + 0.3 * sin(angle_n)[rep(seq_len(group_size), n_groups)])
+V(g_local)$color <- brand_blue
+
+# Global: one broadcaster reaching many followers who barely connect to each other
+g_global <- make_star(n, mode = "undirected", center = 1)
+V(g_global)$color <- c(brand_red, rep(brand_charcoal, n - 1))
+lay_global <- layout_as_star(g_global, center = 1)
+
+par(mfrow = c(1, 2), mar = c(0, 0, 2.5, 0))
+plot(g_local, layout = lay_local, rescale = TRUE, vertex.size = 9, vertex.label = NA,
+     vertex.frame.color = "white", edge.width = 1.5,
+     main = "Local: small, dense engagement", cex.main = 1.4)
+plot(g_global, layout = lay_global, vertex.size = c(16, rep(7, n - 1)), vertex.label = NA,
+     vertex.frame.color = "white", edge.color = "grey60", edge.width = 1.2,
+     main = "Global: broadcast reach", cex.main = 1.4)
+```
+
+Illustrative, not the M5S data: same number of people (30), very different structure of engagement.
+
 ## Five platforms, five roles {.smaller}
 
 | Platform | Orientation | Local V/A | Global V/A |
@@ -298,10 +371,6 @@ Institutional bypass, in other words, is not a one-way escalator toward flatter,
 
 Which factor is MOST important for the success of a social movement in the platform era?
 
-::: {.center}
-[<img src="../img/week-08-qr-menti.png" width="220"/>](https://www.menti.com/ala5d7qtq8h4)
-
-or try <https://www.menti.com/ala5d7qtq8h4>
 :::
 
 # State Responses to Movements
@@ -328,8 +397,8 @@ or try <https://www.menti.com/ala5d7qtq8h4>
 
 ## Digital authoritarianism {.smaller}
 
-- Internet shutdowns — a common tactic since the Arab Spring; Sri Lanka banned Facebook, Twitter, YouTube, and WhatsApp in 2022 in anticipation of mass protests.
-- Facial recognition and real-name policies erode the anonymity movements rely on.
+- Internet shutdowns — a common tactic since the Arab Spring; Sri Lanka banned Facebook, Twitter, YouTube, and WhatsApp in 2022 in anticipation of mass protests; 2025 Nepalese Gen Z protests.
+- Facial recognition and real-name policies erode the anonymity movements rely on (China's surveillance state)
 - Dedicated state cyber-repression apparatus — Zimbabwe appointed the first "Cyber Security" minister in 2017.
 
 ::: {.callout-important}
@@ -343,11 +412,11 @@ The same platform affordances (visibility, searchability, associability) that le
 
 - Movements need media coverage to publicise causes, gain supporters, pressure lawmakers.
 - But professional media also sensationalise, apply their own frames, and can undermine a movement's own self-presentation.
-- Coverage bias runs in predictable directions — Gruber's 26-year UK study found most protest coverage remains dismissive; Brazilian evidence shows journalists cover left- and right-leaning protests differently depending on their own political leanings.
+- Coverage bias runs in predictable directions — Gruber's [-@gruberTroublemakersStreetsFraming2023] 26-year UK study found most protest coverage remains dismissive; Brazilian evidence shows journalists cover left- and right-leaning protests differently depending on their own political leanings.
 
 ::: {.callout-tip}
 ### Connecting back to Case 1
-This is precisely the mechanism Bailo's paper identifies: it was *legacy media attention*, not platform activity alone, that tipped diffuse Internet-capital mobilisation into a successful second wave. Movements and journalism remain entangled even in a "digital-first" case.
+As mentioned, it was *legacy media attention*, not platform activity alone, that tipped diffuse Internet-capital mobilisation into a successful second wave. Movements and journalism remain entangled even in a "digital-first" case.
 :::
 
 # Summary
