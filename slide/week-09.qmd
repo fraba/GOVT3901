@@ -1,0 +1,853 @@
+---
+title: "GOVT3901: Digital Politics"
+subtitle: |
+  Week 09: Platform Governance<br>Last updated: 2026-10-06
+author: "Francesco Bailo"
+format:
+  revealjs:
+    self-contained: true
+    fig-format: retina
+    toc: true
+    toc-depth: 1
+    toc-title: "In this lecture"
+    theme: [default, "assets/sydney.scss"]
+    code-line-numbers: false
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    include-after-body: assets/print-pdf-button.html
+bibliography: assets/biblatex.bib
+csl: assets/apa-old-doi-prefix.csl
+execute:
+  echo: false
+---
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+## Today's class {.smaller}
+
+Platform Governance (Ch 9)
+
+- Define **governance** and distinguish it from regulation, and see how **media governance** shapes the conditions platforms operate in.
+- Compare **state regulation** and **self-regulation** of platforms, from the EU's DSA/DMA to Australia's News Media Bargaining Code.
+- **Required reading**: Gorwa, Binns & Katzenbach [-@gorwaAlgorithmicContentModeration2020] on how **algorithmic content moderation** works, and why automating it raises problems of transparency, justice, and de-politicisation.
+- Examine the **Facebook Oversight Board** as the most ambitious attempt at platform self-governance.
+- **Today's question**: does regulation restore the accountability that platforms took from journalists and gatekeepers?
+
+::: {.callout-tip}
+### Note
+When not otherwise referenced, materials are based on and adapted from Klinger, Kreiss & Mutsvairo (2023), *Platforms, Power, and Politics* (Polity), Ch 9.
+:::
+
+## Recap: the accountability thread {.smaller}
+
+::: {.incremental}
+- **Week 3** — algorithms replaced human gatekeepers, and their power is largely **invisible and unaccountable** [@sofferAlgorithmicPersonalizationTwoStep2021].
+- **Week 5** — journalism's gatekeeping, agenda-setting and framing roles are eroded by platforms' distribution power.
+- **Week 8** — movements can bypass institutions, but platform visibility makes activists traceable and exposes them to state control.
+- **Week 9 (today)** — who writes and enforces the rules that platforms live by? And can those rules make platform power **accountable**?
+:::
+
+::: {.callout-tip}
+### The running verdict
+Does digital media strengthen or weaken democratic institutions? Governance is the institutional answer to that question: if platforms hold the power, **who holds platforms to account**?
+:::
+
+# A Case: The Right to Be Forgotten
+
+## Google Spain, 2014 {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- A Spanish citizen, a financial consultant, searched for himself on Google: an old newspaper notice of his home's **foreclosure auction (1998)** still ranked high.
+- The Court of Justice of the EU (CJEU) ruled that search engines are **responsible for the content in their results** and must comply with EU privacy law: a "**right to be forgotten**".
+- Day one of compliance: **12,000+** removal requests to Google.
+:::
+
+::: {.column width="45%"}
+**The Streisand effect**
+
+The case itself generated so much media coverage that the debt was *more* memorable than before. Named after Barbra Streisand, whose attempt to suppress a photo of her Malibu house drew massive attention to it.
+:::
+:::
+
+::: {.callout-important}
+### The governance dilemma
+A person's right to privacy vs the public's right to know. Is an old bankruptcy a "misstep"... or is it a politician's corruption scandal?
+:::
+
+## In-class task! {.smaller}
+
+::: {.center}
+Imagine you are drafting the rule. **Who should decide** whether an old, true, but damaging story is removed from search results: the platform, a court, a regulator, or the person affected? What exceptions would you write in for people in public life?
+
+- Answer on Mentimeter.
+
+:::
+
+# Governance as a Concept
+
+## What is governance? {.smaller}
+
+> "Governance extends the scope of regulation and rule-making beyond state actors such as governments."
+
+::: {.incremental}
+1. **Broader than state regulation**: includes transnational bodies (EU, UN), treaties, firms, professional associations, civil society.
+2. **Rule-setting *and* enforcement**: rules without monitoring or sanctions for non-compliance are not governance.
+3. **Multidimensional**: governance systems intersect and overlap (a platform answers to a national court, EU law, its own terms of service, and app-store rules at once).
+:::
+
+## Coordination, regulation, governance {.smaller}
+
+Following Hofmann, Katzenbach & Gollatz [-@hofmannCoordinationRegulationFinding2017]:
+
+| | What it is | Example |
+|---|---|---|
+| **Coordination** | The broadest category: all reciprocal interactions that mediate mutual adjustment, with no collective rule-making necessarily intended | Two platforms converging on similar feed designs |
+| **Regulation** | Goal-oriented, intentional intervention to influence behaviour in a domain | A law requiring takedown within 24 hours |
+| **Governance** | **Reflexive** processes that question and redefine the norms underpinning coordination, often without predefined outcomes | A platform revising its community standards after a public controversy |
+
+## Media governance {.smaller}
+
+> "Media governance sets the background conditions that media and platforms operate in." (Ch 9)
+
+- The prescribed set of rules, structures, and processes that administer and influence the behaviour of media in a context.
+- Sets **incentives and limitations**: how platforms emerge, what their affordances are, how they are used.
+
+::: {.callout-tip}
+### Reflection: platforms reporting on government takedown requests
+Several platforms publish transparency reports counting the requests governments make to remove content, and how often they comply. What can we learn from such reports, and what can't we? Think about who decides what is counted, whether the figures can be verified from the outside, and what a rise in requests from one country would (and would not) tell us.
+:::
+
+## Government removal requests to Google, July–December 2025 {.smaller}
+
+```{r}
+#| label: setup-gov
+#| include: false
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(scales)
+
+brand_red <- "#e64626"; brand_blue <- "#0148A4"; brand_charcoal <- "#424242"
+
+# Google Transparency Report, "Government requests to remove content"
+gov <- read_csv("data/google-government-removal-requests.csv", show_col_types = FALSE)
+latest <- "July - December 2025"
+gov_latest <- gov |> filter(time_period == latest)
+
+gov_theme <- theme_minimal(base_size = 15) +
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major.y = element_blank(),
+        plot.title = element_text(face = "bold"),
+        legend.position = "bottom")
+```
+
+::: {.columns}
+::: {.column width="50%"}
+```{r}
+#| label: fig-gov-countries
+#| fig-alt: "Horizontal bar chart of the ten countries making the most removal requests to Google in July to December 2025, led by Russia, then South Korea and India; Australia is highlighted."
+#| fig-width: 5.5
+#| fig-height: 4.2
+top_countries <- gov_latest |>
+  group_by(country_name) |>
+  summarise(n = sum(number_of_requests), .groups = "drop") |>
+  slice_max(n, n = 10) |>
+  mutate(country_name = reorder(country_name, n),
+         highlight = country_name == "Australia")
+
+ggplot(top_countries, aes(x = n, y = country_name, fill = highlight)) +
+  geom_col(width = 0.7) +
+  geom_text(aes(label = comma(n)), hjust = -0.1, size = 4.2) +
+  scale_fill_manual(values = c(`TRUE` = brand_red, `FALSE` = brand_blue), guide = "none") +
+  scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.18))) +
+  labs(x = "Removal requests", y = NULL, title = "Top 10 requesting countries") +
+  gov_theme
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: fig-gov-reasons
+#| fig-alt: "Horizontal bar chart of the ten most common reasons governments cited for removal requests to Google in July to December 2025, led by copyright, then privacy and security."
+#| fig-width: 5.5
+#| fig-height: 4.2
+top_reasons <- gov_latest |>
+  group_by(reason) |>
+  summarise(n = sum(number_of_requests), .groups = "drop") |>
+  slice_max(n, n = 10) |>
+  mutate(reason = reorder(reason, n))
+
+ggplot(top_reasons, aes(x = n, y = reason)) +
+  geom_col(width = 0.7, fill = brand_blue) +
+  geom_text(aes(label = comma(n)), hjust = -0.1, size = 4.2) +
+  scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.18))) +
+  labs(x = "Removal requests", y = NULL, title = "Top 10 reasons cited") +
+  gov_theme
+```
+:::
+:::
+
+Source: Google Transparency Report. Counts are **requests**, not items removed, and are self-reported by Google.
+
+## Requests and removals by year, 2011–2025 {.smaller}
+
+```{r}
+#| label: fig-gov-outcomes
+#| fig-alt: "100 percent stacked bar chart by year, 2011 to 2025, of what happened to items governments asked Google to remove: removed on legal grounds, removed on policy grounds, no action taken, other or unresolved. Items requested grow from about 20,000 in 2011 to about 1.5 million in 2025, and the share removed falls from over 90 percent to about 60 percent."
+#| fig-width: 10
+#| fig-height: 4.6
+#| out-width: "100%"
+outcomes <- gov |>
+  mutate(year = as.integer(sub(".* ", "", time_period))) |>
+  group_by(year) |>
+  summarise(requested = sum(items_requested),
+            `Removed (legal grounds)` = sum(items_removed_legal),
+            `Removed (policy grounds)` = sum(items_removed_policy),
+            `No action taken` = sum(items_no_action_taken),
+            .groups = "drop") |>
+  mutate(`Other / unresolved` = requested - `Removed (legal grounds)` -
+           `Removed (policy grounds)` - `No action taken`) |>
+  tidyr::pivot_longer(-c(year, requested), names_to = "outcome", values_to = "items") |>
+  mutate(share = items / requested,
+         outcome = factor(outcome, levels = c("Removed (legal grounds)", "Removed (policy grounds)",
+                                              "No action taken", "Other / unresolved")))
+
+totals <- outcomes |> distinct(year, requested)
+
+ggplot(outcomes, aes(x = year, y = share, fill = outcome)) +
+  geom_col(width = 0.75) +
+  geom_text(data = totals, aes(x = year, y = 1.04, label = comma(round(requested / 1000))),
+            inherit.aes = FALSE, size = 3.6, colour = brand_charcoal) +
+  scale_x_continuous(breaks = 2011:2025) +
+  scale_y_continuous(labels = percent, breaks = seq(0, 1, 0.25), expand = expansion(mult = c(0, 0.08))) +
+  scale_fill_manual(values = c(brand_blue, "#6FA0D8", brand_red, "grey70"), name = NULL) +
+  labs(x = NULL, y = "Share of items requested",
+       title = "What happened to the items governments asked Google to remove?",
+       subtitle = "Numbers above bars: thousands of items requested, all countries and reasons") +
+  theme_minimal(base_size = 13) +
+  theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
+        legend.position = "bottom", plot.title = element_text(face = "bold"))
+```
+
+Source: Google Transparency Report. Share of **items** (not requests). Google only began reporting policy-based removals and the "other" outcomes in 2019, so earlier years show just legal removals vs no action.
+
+## Russia's requests to Google: reasons, 2020–2025 {.smaller}
+
+```{r}
+#| label: fig-gov-russia
+#| fig-alt: "Horizontal bar chart of all reasons cited in Russian government removal requests to Google, 2020 to 2025 combined; national security and copyright dominate with over 100,000 requests each."
+#| fig-width: 10
+#| fig-height: 4.8
+#| out-width: "100%"
+ru_reasons <- gov |>
+  filter(country_name == "Russia",
+         as.integer(sub(".* ", "", time_period)) >= 2020) |>
+  group_by(reason) |>
+  summarise(n = sum(number_of_requests), .groups = "drop") |>
+  mutate(reason = reorder(reason, n))
+
+ggplot(ru_reasons, aes(x = n, y = reason)) +
+  geom_col(width = 0.75, fill = brand_blue) +
+  geom_text(aes(label = comma(n)), hjust = -0.1, size = 3.6) +
+  scale_x_continuous(labels = comma, expand = expansion(mult = c(0, 0.12))) +
+  labs(x = "Removal requests, January 2020 – December 2025 combined", y = NULL,
+       title = "Russia: reasons cited, 2020–2025") +
+  theme_minimal(base_size = 12) +
+  theme(panel.grid.minor = element_blank(), panel.grid.major.y = element_blank(),
+        plot.title = element_text(face = "bold"))
+```
+
+Source: Google Transparency Report.
+
+## Did Google remove what Russia asked for? {.smaller}
+
+```{r}
+#| label: fig-gov-russia-outcomes
+#| fig-alt: "100 percent stacked bar chart by year, 2012 to 2025, of what happened to items the Russian government asked Google to remove. Removal on legal grounds is the large majority until 2022, reaching about 97 percent in 2021, then falls to roughly half in 2024 and 2025, as items not found, with insufficient information, or already removed grow."
+#| fig-width: 10
+#| fig-height: 4.4
+#| out-width: "100%"
+ru_outcomes <- gov |>
+  filter(country_name == "Russia") |>
+  mutate(year = as.integer(sub(".* ", "", time_period))) |>
+  filter(year >= 2012) |>
+  group_by(year) |>
+  summarise(requested = sum(items_requested),
+            `Removed (legal grounds)` = sum(items_removed_legal),
+            `Removed (policy grounds)` = sum(items_removed_policy),
+            `No action taken` = sum(items_no_action_taken),
+            .groups = "drop") |>
+  mutate(`Not found / not enough info / already removed` = requested - `Removed (legal grounds)` -
+           `Removed (policy grounds)` - `No action taken`) |>
+  tidyr::pivot_longer(-c(year, requested), names_to = "outcome", values_to = "items") |>
+  mutate(share = items / requested,
+         outcome = factor(outcome, levels = c("Removed (legal grounds)", "Removed (policy grounds)",
+                                              "No action taken",
+                                              "Not found / not enough info / already removed")))
+
+ru_totals <- ru_outcomes |> distinct(year, requested)
+
+ggplot(ru_outcomes, aes(x = year, y = share, fill = outcome)) +
+  geom_col(width = 0.75) +
+  geom_text(data = ru_totals, aes(x = year, y = 1.04, label = comma(round(requested / 1000, 1))),
+            inherit.aes = FALSE, size = 3.6, colour = brand_charcoal) +
+  scale_x_continuous(breaks = 2012:2025) +
+  scale_y_continuous(labels = percent, breaks = seq(0, 1, 0.25), expand = expansion(mult = c(0, 0.08))) +
+  scale_fill_manual(values = c(brand_blue, "#6FA0D8", brand_red, "grey70"), name = NULL) +
+  labs(x = NULL, y = "Share of items requested",
+       title = "Did Google comply with Russian removal requests?",
+       subtitle = "Numbers above bars: thousands of items requested by Russia") +
+  theme_minimal(base_size = 13) +
+  theme(panel.grid.minor = element_blank(), panel.grid.major.x = element_blank(),
+        legend.position = "bottom", plot.title = element_text(face = "bold"))
+```
+
+Source: Google Transparency Report. Share of **items**, not requests. Before 2019 only legal removals vs no action are reported.
+
+## Australia's requests to Google {.smaller}
+
+```{r}
+#| label: fig-gov-australia
+#| fig-alt: "Stacked bar chart of Australian government removal requests to Google per half-year from 2011 to 2025, coloured by reason; requests rise sharply after 2019 and peak in the second half of 2025, driven by fraud."
+#| fig-width: 10
+#| fig-height: 4.4
+#| out-width: "100%"
+au <- gov |>
+  filter(country_name == "Australia") |>
+  mutate(year = as.integer(sub(".* ", "", time_period)),
+         t = year + ifelse(grepl("^January", time_period), 0, 0.5))
+
+au_top <- au |>
+  group_by(reason) |>
+  summarise(n = sum(number_of_requests)) |>
+  slice_max(n, n = 5) |>
+  pull(reason)
+
+au_plot <- au |>
+  mutate(reason = ifelse(reason %in% au_top, reason, "All other reasons")) |>
+  group_by(t, reason) |>
+  summarise(n = sum(number_of_requests), .groups = "drop") |>
+  mutate(reason = factor(reason, levels = c(setdiff(unique(reason), "All other reasons"), "All other reasons")))
+
+ggplot(au_plot, aes(x = t, y = n, fill = reason)) +
+  geom_col(width = 0.45) +
+  scale_x_continuous(breaks = seq(2011, 2025, 2)) +
+  scale_fill_manual(values = c(brand_red, brand_blue, "#6FA0D8", "#F2A38F", brand_charcoal, "grey70"), name = NULL) +
+  labs(x = NULL, y = "Removal requests per half-year",
+       title = "Australia: requests and reasons, 2011–2025") +
+  theme_minimal(base_size = 15) +
+  theme(panel.grid.minor = element_blank(), legend.position = "bottom",
+        plot.title = element_text(face = "bold"))
+```
+
+Source: Google Transparency Report.
+
+## Who else governs? {.smaller}
+
+- **Civil society** — NGOs, universities, trade groups; inform citizens and steer the policy debate.
+- **Researchers** — their evidence drives regulation (but in some countries they are jailed or fired for it).
+- **Whistleblowers and dissidents** — e.g. Frances Haugen on Facebook. Essential for accountability, often punished.
+- **Platforms themselves** — through terms of service, community standards, and *code*.
+
+::: {.callout-important}
+### Code is law
+Lessig [-@lessigCodeLawLiberty2000]: even where law is absent, the **design and code** of a technology define what users can and cannot do. A feed ranking, a character limit, or a filter is a rule, just one that is not written as one.
+:::
+
+# State Regulation and Self-Regulation
+
+## Media regulation: more technology, more state {.smaller}
+
+- The more (and more complex) the technology, the more the state regulates. **Print** is largely self-regulated in many countries; **broadcasting** is licensed because the spectrum was scarce.
+- **Self-regulation** (journalists' ethics codes, press councils) is often designed to **stave off state intervention** and protect autonomy.
+- It does not always work: the 2011 **News of the World phone-hacking scandal** closed a 170-year-old paper and led to the creation of IPSO.
+
+::: {.callout-important}
+### Non-regulation is not neutral
+Mexican community radios operated for decades without legal recognition "at the arbitrary goodwill of those in power". Argentina took 26 years to replace its junta's media law. The absence of rules can be an instrument of power.
+:::
+
+## Transnational governance and the "forum shopping" problem {.smaller}
+
+- UN Article 19 guarantees freedom of expression, but it is **not legally binding**: international bodies set norms without enforcement means.
+- Rules differ across jurisdictions, and **platforms exploit the gaps**:
+
+::: {.columns}
+::: {.column width="50%"}
+**Ireland**
+
+Google and others chose Ireland as their EU headquarters, partly because it was soft on enforcing EU privacy rules.
+:::
+
+::: {.column width="50%"}
+**Telegram**
+
+Moved to Dubai in 2017 after the Kremlin pressed for user data, and its founder says it may never have a permanent location.
+:::
+:::
+
+## Media pluralism {.smaller}
+
+- **Internal pluralism**: diversity of content and viewpoints *within* an outlet.
+- **External pluralism**: number of sources and **who owns them**.
+- Media concentration (Murdoch's News Corp; Berlusconi in Italy) is an economic logic that can narrow public debate, and sometimes the product of **governance neglect** or political bargains.
+
+::: {.callout-tip}
+### Did platforms fix this?
+Information abundance does not guarantee diversity: "more of the same from fewer sources" — the **diversity paradox** [@vanaelstPoliticalCommunicationHighchoice2017]. Ownership of the key digital properties is as concentrated as old media, often in the hands of a single individual.
+:::
+
+# The History of Platform Governance
+
+## "Cyberspace" and the libertarian origins {.smaller}
+
+- 1990s: the Internet was cast as free and unregulatable. Barlow's *A Declaration of the Independence of Cyberspace* (1996) told governments they had no sovereignty there.
+- Early platforms adopted **few explicit rules**: an approach that soon proved unworkable (pornography, threats, hate speech, grift).
+- But there was always governance: **code** (Lessig) and **Section 230** (US, 1996), which shields platforms from liability for what users post and was central to their growth.
+- The word **"platform"** itself did regulatory work: it suggests an open, neutral intermediary with no liability for content, outside media and telecoms law.
+
+## Explainer: Section 230 (US, 1996) {.smaller}
+
+Enacted **8 February 1996** as part of the Communications Decency Act. Drafted by Reps. Chris Cox (R) and Ron Wyden (D) to stop the Internet becoming "the Wild West".
+
+**The problem it answered: two conflicting court rulings**
+
+| Case | Ruling | Lesson for platforms |
+|---|---|---|
+| *Cubby v. CompuServe* | CompuServe **not liable**: a distributor that did not moderate | Don't moderate and you are safe |
+| *Stratton Oakmont v. Prodigy* | Prodigy **liable as a publisher**: it moderated content | Moderate and you take on liability |
+
+::: {.callout-important}
+### The perverse incentive
+Under that case law, a platform that tried to clean up its forum became *more* legally exposed than one that did nothing. Section 230 removes that penalty for moderating.
+:::
+
+## Section 230: the two provisions {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**230(c)(1): the shield**
+
+> "No provider or user of an interactive computer service shall be treated as the **publisher or speaker** of any information provided by **another** information content provider."
+
+Platforms are not legally responsible for what **users** post. (The author of the content still is.)
+:::
+
+::: {.column width="50%"}
+**230(c)(2): the "Good Samaritan" clause**
+
+Platforms are protected when they **voluntarily remove** content that is "obscene, lewd, lascivious, filthy, excessively violent, harassing, or otherwise objectionable", acting in "good faith".
+
+Platforms may moderate, but are **not required** to.
+:::
+:::
+
+**Not covered**: federal criminal law, intellectual property (handled through copyright takedown notices), electronic privacy law, and, since **FOSTA-SESTA (2018)**, sex trafficking.
+
+## Section 230 in practice and under pressure {.smaller}
+
+- ***Zeran v. AOL* (1997)** set the broad reading: AOL was not liable for being slow to remove defamatory ads that tied a man to the Oklahoma City bombing.
+- ***Gonzalez v. Google* and *Twitter v. Taamneh* (2023)**: the Supreme Court held the platforms not liable for terrorist content and recommendations, **without ruling on Section 230 itself**.
+- **Reform proposals**: EARN IT Act (2020), SAFE TECH Act (2021), PACT Act, TAKE IT DOWN Act; Trump's Executive Order 13925 (28 May 2020, rescinded 14 May 2021).
+
+::: {.columns}
+::: {.column width="50%"}
+**Criticism from the left**
+
+Platforms do too little about hate speech, misinformation, and algorithmic harms to marginalised groups.
+:::
+
+::: {.column width="50%"}
+**Criticism from the right**
+
+Platforms use moderation to suppress conservative speech ("anti-conservative bias").
+:::
+:::
+
+::: {.callout-tip}
+### Why it matters for today
+The same law is attacked for opposite reasons: it lets platforms **moderate too little** and **too much**. Compare the EU's DSA, which attaches a **conditional** liability exemption (see later) and **transparency duties** to platform status.
+:::
+
+Source: [Wikipedia, "Section 230"](https://en.wikipedia.org/wiki/Section_230).
+
+## Governance at every layer of the stack {.smaller}
+
+Governance is not only about what is posted on Facebook. Every layer of the Internet "stack" is a point of control:
+
+::: {.incremental}
+1. **Physical**: undersea cables, servers
+2. **Infrastructure**: ISPs, domain registrars, ICANN, payment processors, hosting
+3. **Protocols and standards**
+4. **Hardware and software**: devices, operating systems, app stores
+5. **Application**: platforms and their policies
+:::
+
+Sites such as 4chan learned how precarious their access is: the intermediaries that host, name, and pay for them have their own policies.
+
+## Case: when the stack is the lever, Australia, March 2019 {.smaller}
+
+After the Christchurch attack (15 March 2019), the gunman's livestream, first on Facebook, kept circulating on other sites. Within days, Australian **internet service providers (ISPs)** blocked access to several of them [@brennanChristchurchBlockedAustralianISPs2019]:
+
+::: {.columns}
+::: {.column width="50%"}
+- **Telstra** blocked 4chan, 8chan, Voat, Zero Hedge, and LiveLeak.
+- **Optus** and **Vodafone** also blocked access, without publicly naming the sites.
+- The 4chan block was lifted after hours; others stayed inaccessible with no end date given.
+- The ISPs described the step as a response to "extraordinary" and "extreme" circumstances.
+:::
+
+::: {.column width="50%"}
+> "We understand this may inconvenience some legitimate users of these sites, but these are extreme circumstances, and we feel this is the right thing to do." — Telstra
+
+> The block "was an extreme case which we think requires an extraordinary response." — Vodafone, as reported by Newsweek
+:::
+:::
+
+::: {.callout-important}
+### Why the stack matters
+The sites never had to take the video down themselves. Governance happened at the **infrastructure layer**, by companies that carry the traffic, not at the **application layer** where platforms write community standards. Whoever controls a lower layer can cut off everything above it, bluntly: as Telstra acknowledged, legitimate users of these sites were inconvenienced too.
+:::
+
+Source: Brennan [-@brennanChristchurchBlockedAustralianISPs2019], *Newsweek*, 19 March 2019.
+
+## Poll: which approach? {.smaller}
+
+Which approach to governing platforms do you find most legitimate?
+
+- State regulation (laws, regulators)
+- Platform self-regulation (community standards)
+- Co-regulation / independent oversight bodies
+- Civil society and users
+
+# Regulating Platforms: States Act
+
+## Many states, many agendas {.smaller}
+
+The same word, "regulation", covers very different projects:
+
+| Country / bloc | Measure | Aim (and criticism) |
+|---|---|---|
+| **Germany** (2017) | NetzDG: delete "obviously illegal" content within **24 hours** | Counter hate speech; criticised for pushing platforms to over-remove |
+| **Turkey** (2021) | Platforms >1M users appoint a local representative; data localised | Framed as accountability; seen as a tool to surveil critics |
+| **Cuba, Pakistan, India, Uganda** | Cybercrime and social media laws | Criticised as instruments against opponents of the government |
+| **Australia** | Proposed Anti-Trolling Bill: unmask anonymous defamers | Criticised as risking silencing of critics |
+
+---
+
+::: {.callout-important}
+### Regulation can be an instrument of repression
+"Regulating platforms" is not automatically pro-democratic. Who writes the rule and who it is aimed at decides whether it protects or suppresses speech.
+:::
+
+## Case: Australia's News Media Bargaining Code {.smaller}
+
+::: {style="font-size: 0.75em;"}
+
+Platforms must **pay Australian news publishers**, or face mandatory arbitration. In force **3 March 2021**, after a 2019 ACCC inquiry and a 2020 government direction to make the code mandatory.
+
+::: {.columns}
+::: {.column width="50%"}
+**How it worked**
+
+- Negotiate directly; if that fails, the Treasurer may **designate** a platform and disputes go to **final offer arbitration** ("pendulum"). **No platform has ever been designated**: deals came under the *threat* of designation.
+- **Facebook** blocked all Australian news (17–22 Feb 2021), also catching emergency and health pages [@bailoNewsMediaFacebook2021]; **Google** called the bill "untenable", then signed deals.
+- Result: 30+ agreements, over **A$200 million** over 3–5 years [@meeseCompellingNegotiationsNews2026].
+:::
+
+::: {.column width="50%"}
+**Did it work?**
+
+- **Yes**: more money flowed under the threat than before, and journalism's sustainability reached the policy agenda.
+- **But**: platforms chose who to fund and how much, with no recourse, and could walk away. Critics said it favoured **News Corp**.
+- **Meta stopped renewing** in 2024; Google renewed on shorter terms. The government's fallback is a **News Bargaining Incentive**, a levy on platforms (revenue threshold A$250m per Meese et al., A$270m per Wikipedia) offset by publisher deals, **paused** during US trade talks.
+:::
+:::
+
+Sources: Meese, Bossio & Carson [-@meeseCompellingNegotiationsNews2026]; Wikipedia, "News Media Bargaining Code".
+
+:::
+
+## Case: Canada's Online News Act and the limits of bargaining {.smaller}
+
+::: {style="font-size: 0.75em;"}
+
+::: {.columns}
+::: {.column width="50%"}
+**Canada (2023)**
+
+- Copied the Australian model, with a **formal designation process**, annual audits, and diversity objectives.
+- **Meta removed news** from Facebook and Instagram in October 2023, and it was still blocked a year and a half on.
+- **Google** offered C$100 million at the last minute and got an **exemption**, below the C$170–300 million stakeholders expected.
+- Google's playbook elsewhere: **News Showcase** in New Zealand, **US$250 million** to California newsrooms.
+:::
+
+::: {.column width="50%"}
+**Meese, Bossio & Carson's argument**
+
+1. Codes presume an **enduring** platform–news relationship, but it is **dynamic**: Meta deprioritised news and dropped US fact-checking, while publishers sign **AI licensing deals**.
+2. They **misread firm power**: Google largely avoids enforcement through anticipatory deals.
+
+They add that competition policy was the wrong frame: the goal is **sustaining journalism**, which belongs to media policy.
+:::
+:::
+
+::: {.callout-tip}
+### Link to today's question
+Governments can write rules, but platforms can **exit**, **pay to avoid the rules**, or move on. Does regulation restore accountability when the regulated party can leave the market?
+:::
+
+Source: Meese, Bossio & Carson [-@meeseCompellingNegotiationsNews2026].
+
+:::
+
+## The EU: DSA and DMA {.smaller}
+
+- **Digital Services Act (DSA)**: platforms as "intermediaries". A **conditional liability exemption**: if they know content is illegal they must remove it. More transparency on algorithms, bans on some targeted advertising, and assessment of **"systemic risks"**.
+- **Digital Markets Act (DMA)**: targets the market power of the largest "gatekeeper" platforms (see Week 3).
+- Terrorist content regulation (2021): remove within **60 minutes** or risk fines of up to 4% of global revenue.
+
+::: {.callout-tip}
+### The contrast with the US
+Section 230 means US platforms cannot be held accountable for user content. The EU model creates conditional liability *and* transparency duties. Same companies, different governance regimes.
+:::
+
+
+# Self-Governance: Platforms as Rule-Makers
+
+## Platform self-regulation {.smaller}
+
+- Platforms set the rules, enforce them, and sanction users: **community standards**, advertising policies, targeting affordances.
+- Rules emerge **ad hoc**, in "critical moments" when routine activity becomes problematic [@hofmannCoordinationRegulationFinding2017].
+- **"Platform transience"** [@barrettPlatformTransienceChanges2019]: continual, rapid change in policies, procedures, and affordances, often driven by external pressure (especially from journalists) and economic considerations. It makes it harder for stakeholders to **hold platforms accountable**. The [Platform Governance Archive](https://pga.hiig.de) tracks these changes.
+- The most visible form: **content moderation**. Tens of thousands of often outsourced workers review millions of flagged posts (see the documentary [The Cleaners](https://www.youtube.com/watch?v=FwbwxStnI3M)), increasingly **triaged by algorithms**.
+
+## Case: deplatforming Donald Trump {.smaller}
+
+- After 6 January 2021, Facebook and Twitter suspended Trump (both later reinstated).
+- Platforms had long **let him get away with** what they would not allow other users, on the theory that the public should hear from elected leaders.
+- It took an attempted coup for the line to be enforced: platforms have little appetite to be "arbiters of truth" for political actors [@kreissMcGregorTechnologyFirms2018].
+
+::: {.callout-important}
+### Whose decision was it?
+A private company, applying its own evolving rules, silenced a head of state. Supporters called it necessary; critics, including leaders abroad, called it censorship. Either way, the decision was **not accountable to anyone but the company** — which is the problem the rest of today addresses.
+:::
+
+## Problems with self-governance {.smaller}
+
+::: {.incremental}
+- **Opacity**: quarterly transparency reports (mandated in Germany by NetzDG) count what was removed, but there is "no way to validate these reports from the outside".
+- **Language gap**: moderation works best in English, yet only about 5% of the world speaks it. In Myanmar, Facebook failed to detect a hate campaign against the Rohingya, and calls to kill Rohingya in paid ads; the UN pointed to its role in the ethnic cleansing.
+- **Automation is not a fix**: during Covid, Facebook sent human moderators home and left moderation to algorithms. More content was flagged or removed, yet much problematic content stayed up.
+- **No consensus on the goal**: the right sees censorship, others see hate speech and violence; governments decry targeted political ads, then use them.
+:::
+
+# Required Reading: Algorithmic Content Moderation
+
+## Why this paper? {.smaller}
+
+Gorwa, Binns & Katzenbach [-@gorwaAlgorithmicContentModeration2020] — *Big Data & Society*.
+
+- The textbook says moderation "relies on automation". This paper opens the black box: **how does automated moderation actually work, and what follows politically?**
+- It is not an experiment: the evidence is **public reporting, white papers, transparency reports, and investigative journalism**. The authors stress that companies are "cagey" and the systems likely incompletely documented.
+- Their definition: **algorithmic moderation** = systems that classify user-generated content by **matching or prediction**, leading to a **decision and governance outcome** (removal, geoblocking, account takedown...).
+- Scope: **"hard" moderation** (decisions about content and accounts), not "soft" moderation such as recommender systems.
+
+## Hook: Christchurch, 15 March 2019 {.smaller}
+
+::: {.columns}
+::: {.column width="55%"}
+- A gunman live-streamed the Al Noor Mosque attack on Facebook.
+- Within hours, hundreds of thousands of altered copies (watermarks, edits) were re-uploaded to Facebook, YouTube and Twitter.
+- Facebook reported **1.5 million** upload attempts in the first 24 hours, with about **80% (1.2 million) blocked at upload**.
+- It had added hashes of **about 800 different versions** to the industry-shared database.
+:::
+
+::: {.column width="45%"}
+::: {.callout-important}
+### A technical triumph, and the paper's starting point
+Automated moderation has become *necessary* to meet public expectations of safety. But the same systems "remain opaque, unaccountable and poorly understood".
+:::
+:::
+:::
+
+## Two kinds of system: matching vs prediction {.smaller}
+
+| | **Matching** (hash-matching) | **Prediction** (classification) |
+|---|---|---|
+| **Question** | "Is this file the *same as* a known bad file?" | "Does this *belong to a category* (hate speech, spam...)?" |
+| **Needs** | A curated database of known examples | A model trained on human-labelled examples (supervised machine learning) |
+| **Examples** | PhotoDNA (child abuse imagery), GIFCT's shared hash database, YouTube Content ID | Google Jigsaw's Perspective API, Facebook's hate speech classifiers, Twitter's quality filter |
+| **Typical error** | Fair use, context lost; hash "collisions" or database poisoning | Over- and under-blocking on slippery, contextual concepts |
+
+The consequence can be **hard** (blocking, removal) or **soft** (flagging, downranking). The authors' point: "AI" is not one thing, and harms to free expression **vary by implementation**.
+
+## How hash-matching works {.smaller}
+
+- A **hash** is a short fingerprint of a file. Comparing hashes is far cheaper than comparing files.
+- **Cryptographic hashes** change completely if one pixel changes, so cropping or adding a watermark defeats them.
+- Moderation therefore uses **perceptual hashing**: fingerprints salient features (corners in images, frequencies in audio), so near-copies produce *similar* hashes. Robust to edits, but this means matches are **not exact and unique**, and a malicious user could craft a benign image that collides with a banned one.
+- **Classification** historically meant keyword blacklists (easy to evade, over-blocks "ASS-ociation"), then machine learning on **bag of words** and **word embeddings**.
+
+## Three domains {.smaller}
+
+::: {.columns}
+::: {.column width="33%"}
+**Copyright**
+
+YouTube **Content ID** (after the Viacom suit, 2007): rightsholders upload works; a match lets them block or monetise. Tilted to rightsholders; uploaders have "virtually no recourse"; research documents **overblocking** (fair use, parody).
+:::
+
+::: {.column width="33%"}
+**Terrorism**
+
+GIFCT **shared hash database** (Facebook, Google, Twitter, Microsoft; 13 firms use it). Facebook: 1.9M ISIS/al-Qaeda items removed in Q1 2018, 7M+ in Q2. Syrian **witness videos** documenting atrocities were removed as "terrorist content".
+:::
+
+::: {.column width="33%"}
+**Toxic speech**
+
+Perspective was trained on Wikipedia talk pages labelled by crowd-workers. Users showed that "Arabs" scored **63% toxic** while "I love führer" scored **3%**.
+:::
+:::
+
+## Where is the human in the loop? {.smaller}
+
+- Civil society argues that **fully automated decisions** without a human are dangerous.
+- Yet Facebook said matched content would be *flagged for review*, then reported automatically blocking **millions** of ISIS/al-Qaeda posts: "remove the human from the decision loop in certain cases".
+- For prediction, a score can sort the **review queue** (higher score = faster review) or trigger automatic removal when the tool's confidence is "high enough that it will be more accurate than our human reviewers".
+- Twitter's quality filter was designed to **downrank**, not remove, matching its "free expression" stance.
+
+::: {.callout-tip}
+### Governance choices hidden in a design choice
+Whether content is blocked, queued, or downranked is a **policy decision made in the system's architecture** — Lessig's "code is law" in action.
+:::
+
+## In-class task! {.smaller}
+
+::: {.center}
+Which system fits each case: **matching** or **prediction**? Where would you require a **human in the loop**, and why?
+
+1. A re-upload of a known terrorist video, cropped and watermarked.
+2. A comment that says "I'll kill you" in a friendly argument between friends.
+3. An activist's video documenting a war crime.
+4. A classic song performed live at a school concert.
+:::
+
+## The paper's argument: three political problems {.smaller}
+
+Even "well optimised" systems can **exacerbate** existing problems with content policy:
+
+::: {.incremental}
+1. **Decisional transparency** — it is already hard to audit moderation. If the first flag is automatic and its criteria unknown, it gets harder to know *why* content came down or even *whether* an algorithm was involved. Databases of prohibited content are closed to auditors and researchers, and there is **scope creep** (GIFCT experimenting with shared URL blocklists, with no apparent oversight).
+2. **Justice** — classifiers can disproportionately flag language used by (or aimed at) certain groups. Even an "accurate" classifier encodes a particular idea of offence. Fairness framings also miss **structural harm**.
+3. **De-politicisation** — automation makes speech rules **invisible**, "much like the labour and practices of content moderation used to be". Facebook boasts of removing **99.6%** of terrorist propaganda proactively, yet that elides the political question of **who counts as a terrorist group** (it reports only al-Qaeda and ISIS).
+:::
+
+## The spam analogy {.smaller}
+
+> "Have you recently thought about spam?"
+
+Spam filtering is a once-contested, context-dependent judgment now **optimised to convenience**: the social questions disappear into infrastructure.
+
+::: {.callout-important}
+### The risk for speech governance
+A perfectly "accurate" system would hide the complex moderation bureaucracy *and* "depoliticise the fundamentally political nature of speech rules being executed by potentially unjust software at scale". Better technology does not change **how the standards were written, or by whom**.
+:::
+
+## What the reading adds to the textbook {.smaller}
+
+| Textbook (Ch 9) | Gorwa et al. (2020) |
+|---|---|
+| Content moderation is the main form of self-regulation; relies on automation | **Opens the black box**: matching vs prediction, hashes, classifiers |
+| Self-regulation lacks transparency and appeals | Explains **why automation deepens** the problem, in three arguments |
+| Regulators demand fast takedowns (NetzDG, 24 hours; EU 60 minutes) | **Short deadlines effectively necessitate automation**, so regulation itself pushes platforms toward opaque systems |
+| Facebook's Oversight Board as accountability | Accountability for *standards* does not equal accountability for *enforcement at scale* |
+
+::: {.callout-tip}
+### Link to Week 3
+The same question we asked of algorithmic gatekeeping in feeds returns for **algorithmic enforcement**: power exercised by systems that cannot be seen or contested.
+:::
+
+# The Facebook Oversight Board
+
+## A "supreme court" for speech {.smaller}
+
+- Facebook governs speech from candidates' posts to family photos and Coca-Cola ads, across **disparate national laws**, balancing shareholders, engagement, and users' expectations (free expression *and* protection from hate).
+- The **Community Standards** emerged ad hoc and were interpreted, applied, and enforced at the company's discretion. The Board was created to add **consistency, transparency, justification, and appeal** — in part under external pressure.
+- Announced Nov 2018, launched Oct 2020 [@klonickFacebookOversightBoard2020]. **11 members** from different regions; users and Facebook can submit cases; initially only review of **removed** content.
+- Rulings are **binding in the case at hand**, not on similar future cases. The Board can also issue **policy recommendations**.
+
+## Case: the Trump suspension {.smaller}
+
+- After 6 January 2021, Facebook suspended Trump's accounts *indefinitely*.
+- The Board **upheld** the suspension but sent it back: indefinite suspension was not a defined penalty in Facebook's own rules.
+- Facebook responded with a **two-year ban**, new policies for public figures during civil unrest, and reinstatement conditions. Accounts restored in **February 2023**.
+
+::: {.callout-important}
+### The test of accountability
+The Board did not decide *whether* Facebook should have power over presidential speech. It made Facebook **explain and clarify its own rules**.
+:::
+
+## Reading the Oversight Board with Gorwa et al. {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+**What it achieves**
+
+- Due process for individual **content decisions**.
+- Pressure for clearer reasons and processes.
+- Overturned a number of takedowns in its first years.
+:::
+
+::: {.column width="50%"}
+**What it leaves out**
+
+- **Algorithmic decisions** (amplification) are out of scope [@vaidhyanathanMakingSenseFacebook2021].
+- Millions of **automated** removals are never seen by it: a handful of cases cannot audit moderation at scale.
+- Does it **de-politicise** by presenting a legal-looking process as legitimacy?
+:::
+:::
+
+# Summary
+
+## Poll: does regulation restore accountability? {.smaller}
+
+After today, which statement is closest to your view?
+
+- Regulation largely restores accountability to platforms.
+- It helps, but it pushes platforms to automate and obscure their decisions.
+- Regulation is too easily captured by governments for their own agendas.
+- Self-governance with independent oversight is the best realistic option.
+
+## Key takeaways {.smaller}
+
+1. **Governance** is wider than state regulation: it includes rule-setting and enforcement by states, transnational bodies, platforms, and civil society, and platforms are governed at every layer of the Internet stack.
+2. **State regulation** varies widely in aim: the EU's DSA/DMA and Australia's Bargaining Code seek accountability or redistribution; other laws are tools of control. Regulation is not automatically pro-democratic.
+3. **Self-regulation** is the default, but it is opaque, ad hoc, unevenly enforced across languages, and accountable mostly to the company.
+4. **Algorithmic moderation** (matching and prediction) makes enforcement possible at scale, and regulatory deadlines make it necessary — yet it threatens to increase **opacity**, entrench **injustice**, and **de-politicise** speech rules [@gorwaAlgorithmicContentModeration2020].
+5. The **Oversight Board** adds due process to individual decisions without governing the algorithms.
+6. **Running verdict**: governance does not simply restore the accountability platforms took from gatekeepers. Rules shift **where** power sits (state, platform, algorithm, independent board); they do not make it visible by default.
+
+## {.center}
+
+# Attendance
+
+Get your phone out!
+
+## {.center}
+
+# Any quick question?
+
+## {.center}
+
+# See you next week!
+
+Week 10 — guest lecture (Kate): Misinformation, Disinformation, and Propaganda
+
+## References
