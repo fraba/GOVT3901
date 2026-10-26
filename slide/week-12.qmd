@@ -42,9 +42,6 @@ Platforms, Politics, and Entertainment (Ch 12)
 When not otherwise referenced, materials are based on and adapted from Klinger, Kreiss & Mutsvairo (2023), *Platforms, Power, and Politics* (Polity), Ch 12.
 :::
 
-## Student feedback survey: 5 minutes now {.smaller}
-
-![](../img/week-12-set-survey.png){fig-alt="University of Sydney Student Experience of Teaching (SET) survey slide: 'Have your say', with a QR code linking to the survey, a note that respondents go in the draw to win a share of $2250 in gift cards, and a reminder to make comments specific, informative and respectful in line with the Student Charter" width="88%" fig-align="center"}
 
 ## Recap: three legs, and a fourth channel {.smaller}
 
@@ -70,8 +67,8 @@ Does digital media strengthen or weaken democratic institutions? Weeks 3, 7 and 
 - Athletes **kneel** during anthems to protest police brutality and racism.
 - Late-night comedians and satirical shows **mock governments** and the powerful.
 - Shows such as *The West Wing*, *Borgen* and *Game of Thrones* portray governance, legitimacy and succession.
-- Reality TV with audience voting models forms of **citizenship** (Ouellette & Hay 2007, cited in Ch 12).
-- Under authoritarian rule, criticism happens "**between the lines**": in plays, jokes and songs (Scott 1985, 1990, cited in Ch 12).
+- Reality TV with audience voting models forms of **citizenship** [@ouelletteBetterLivingReality2008].
+- Under authoritarian rule, criticism happens "**between the lines**": in plays, jokes and songs [@scottWeaponsWeakEveryday2008; @scottDominationArtsResistance1990].
 :::
 
 ::: {.column width="40%"}
@@ -80,6 +77,26 @@ Does digital media strengthen or weaken democratic institutions? Weeks 3, 7 and 
 Washington players kneel during the national anthem, FedExField, 24 September 2017. Source: Wikimedia Commons.
 :::
 :::
+
+## Of course: from *The Apprentice* to the White House {.smaller}
+
+We can't forget that the current US president is an example of a **TV personality turned social media personality** turned *politician*.
+
+::: {.columns}
+::: {.column width="45%"}
+![](../img/week-12-the-apprentice-logo.png){fig-alt="Original logo of the NBC reality show The Apprentice: the title in large metallic letters in front of a New York skyline silhouette, with a drawing of Donald Trump on the right" width="100%"}
+:::
+
+::: {.column width="55%"}
+![](../img/week-12-trump-birther-tweet.png){fig-alt="Screenshot of a 2012 tweet by Donald J. Trump: 'An extremely credible source has called my office and told me that @BarackObama's birth certificate is a fraud.' 7.5K replies, 33K reposts, 31K likes" width="100%"}
+
+[Source: \@realDonaldTrump on Twitter, August 2012]{style="font-size: 0.7em;"} ([link](https://x.com/realDonaldTrump/status/232572505238433794))
+:::
+:::
+
+## Student feedback survey: 5 minutes now {.smaller}
+
+![](../img/week-12-set-survey.png){fig-alt="University of Sydney Student Experience of Teaching (SET) survey slide: 'Have your say', with a QR code linking to the survey, a note that respondents go in the draw to win a share of $2250 in gift cards, and a reminder to make comments specific, informative and respectful in line with the Student Charter" width="88%" fig-align="center"}
 
 ## In-class task! {.smaller}
 
@@ -529,6 +546,12 @@ Fame and entertainment let political actors go around party machines, structured
 3. Wood et al. [-@woodJustUsEveryday2016]: in an age of **anti-politics**, celebrity is shifting from **superstar** (broadcast, structured, exceptional) to **everyday** (post-broadcast, spontaneous, authentic). Johnson shows that "normality" can be a **brand for elite politicians**.
 4. **Influencers** are the everyday-celebrity strategy without an office: effective because they seem authentic, risky because they can be paid, undisclosed, or foreign-funded.
 5. **Running verdict**: entertainment is a **fourth, softer bypass** of democratic institutions. It widens *who* can reach the public, but moves accountability from the **record** to the **persona**. Whether that strengthens representation depends on who gets to be "just like us".
+
+## {.center}
+
+# Weekly quiz
+
+Three questions on today's class. Answer on Mentimeter before you go!
 
 ## {.center}
 
